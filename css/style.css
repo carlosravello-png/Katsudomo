@@ -138,11 +138,29 @@ a {
     display: flex;
     align-items: center;
     padding: 100px 5% 60px;
-    /* Clear navbar and bottom */
     position: relative;
-    background: url('../images/hero-comida-callejera-japonesa-trujillo.webp') center/cover no-repeat;
-    /* Placeholder fallback */
     background-color: #111;
+    overflow: hidden;
+}
+
+/* LCP image: absolute background via <img> for early discovery */
+.hero-bg-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
+}
+
+/* Icon SVG helper */
+.svg-icon {
+    display: inline-block;
+    vertical-align: -0.125em;
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
 }
 
 .hero-overlay {
