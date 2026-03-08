@@ -20,6 +20,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -157,10 +158,11 @@ a {
     position: relative;
     z-index: 10;
     max-width: 600px;
+    width: 100%;
 }
 
 .hero-content h1 {
-    font-size: 4rem;
+    font-size: clamp(2rem, 8vw, 4rem);
     line-height: 1.1;
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -189,7 +191,7 @@ a {
 }
 
 .section-title h2 {
-    font-size: 2.5rem;
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
     color: var(--accent-red);
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -275,7 +277,7 @@ a {
 }
 
 .about-content h2 {
-    font-size: 3rem;
+    font-size: clamp(1.8rem, 6vw, 3rem);
     line-height: 1.2;
     margin-bottom: 5px;
     text-transform: uppercase;
@@ -636,7 +638,7 @@ a {
 }
 
 .cta_final_block h2 {
-    font-size: 3.5rem;
+    font-size: clamp(1.5rem, 6vw, 3.5rem);
     text-transform: uppercase;
 }
 
@@ -748,9 +750,7 @@ a {
         font-size: 2rem;
     }
 
-    .cta_final_block h2 {
-        font-size: 2.5rem;
-    }
+    /* cta_final_block h2 usa clamp(1.5rem, 6vw, 3.5rem) — sin override necesario */
 
     .recipe_card {
         padding: 25px;
@@ -796,9 +796,7 @@ a {
         display: none;
     }
 
-    .hero-content h1 {
-        font-size: 2.5rem;
-    }
+    /* hero h1 usa clamp(2rem, 8vw, 4rem) — sin override necesario */
 
     .hero-buttons {
         flex-direction: column;
@@ -1698,6 +1696,35 @@ a {
     }
 }
 
+
+/* ========================================================================= */
+/* MOBILE OVERFLOW — Padding mínimo 1rem en pantallas muy pequeñas           */
+/* ========================================================================= */
+@media (max-width: 400px) {
+    .hero,
+    .menu-section,
+    .about-section,
+    .hub-section,
+    .footer,
+    .cta_final_block {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .editorial-body {
+        padding: 20px 16px;
+    }
+
+    .receta-nav-info {
+        padding: 16px;
+    }
+
+    .recipe_article,
+    .recipe_breadcrumb {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
 
 /* Author Credits */
 .author-credits {
