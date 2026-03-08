@@ -836,7 +836,7 @@ a {
     }
 
     .nav-logo {
-        height: 70px;
+        height: 80px;
     }
 
     .nav-links {
@@ -1621,6 +1621,28 @@ a {
     .cta_box {
         padding: 1.8rem 1.2rem;
     }
+}
+
+/* ── Inter-page explore links (recipe pages) ─────────── */
+.recipe-also {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+.recipe-also a {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.recipe-also a:hover {
+    color: var(--accent-red);
 }
 
 /* ── Language switch button ──────────────────────────── */
