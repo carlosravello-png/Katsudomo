@@ -4,54 +4,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>メンチカツ：技法、起源、そしてお客様への敬意 | Katsudōmo Trujillo</title>
-    <meta name="description" content="El tazón que los japoneses comen antes de los exámenes más importantes de su vida. Descubre la técnica detrás del Menchi Katsu Box perfecto: dashi, tonkatsu a 170°C, y el huevo que no se debe revolver.">
+    <title>メンチカツ：揚げ包む挽き肉の技 | カツドーモ・トルヒーヨ</title>
+    <meta name="description" content="明治時代のmince cutletが日本で変換された。外側の衣の音と内側の柔らかさが同時に口の中で完成する。ペルー・トルヒーヨの本格日本食デリバリー、カツドーモ。">
 
-    <!-- Canonical y hreflang (SEO Técnico Absoluto) -->
+    <!-- Canonical y hreflang -->
     <link rel="canonical" href="https://katsudomo.com/ja/recetas/menchi-katsu.html">
     <link rel="alternate" hreflang="x-default" href="https://katsudomo.com/recetas/menchi-katsu.html">
     <link rel="alternate" hreflang="es" href="https://katsudomo.com/recetas/menchi-katsu.html">
     <link rel="alternate" hreflang="ja" href="https://katsudomo.com/ja/recetas/menchi-katsu.html">
 
-    <!-- Favicon & PWA App Setup -->
+    <!-- Favicon & PWA -->
     <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon-32x32.png">
     <link rel="apple-touch-icon" href="../../images/apple-touch-icon.png">
     <link rel="manifest" href="../../manifest.json">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Menchi Katsu Box: Técnica, Origen y el Ritual antes del Examen | Katsudōmo">
-    <meta property="og:description" content="El tazón que los japoneses comen antes de los exámenes más importantes de su vida. Tonkatsu crujiente, caldo dashi, huevo apenas cuajado. Desde Trujillo, Perú.">
-    <meta property="og:image" content="https://katsudomo.com/images/katsudon-clasico-comida-japonesa-trujillo.webp">
-    <meta property="og:url" content="https://katsudomo.com/recetas/katsudon.html">
+    <meta property="og:title" content="メンチカツ：揚げ包む挽き肉の技 | カツドーモ・トルヒーヨ">
+    <meta property="og:description" content="明治時代のmince cutletが日本で変換された。外の音と内の柔らかさが口の中で完成する。ペルー・トルヒーヨ配達。">
+    <meta property="og:image" content="https://katsudomo.com/images/menchikatsu-comida-japonesa-trujillo.webp">
+    <meta property="og:url" content="https://katsudomo.com/ja/recetas/menchi-katsu.html">
     <meta property="og:type" content="article">
-    <meta property="og:locale" content="es_PE">
+    <meta property="og:locale" content="ja_JP">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Menchi Katsu Box: Técnica y Origen | Katsudōmo Trujillo">
-    <meta name="twitter:description" content="El tazón ritual japonés antes de los exámenes. Técnica completa con temperaturas exactas.">
-    <meta name="twitter:image" content="https://katsudomo.com/images/katsudon-clasico-comida-japonesa-trujillo.webp">
+    <meta name="twitter:title" content="メンチカツ：揚げ包む挽き肉の技 | カツドーモ">
+    <meta name="twitter:description" content="明治時代からの挽き肉カツレツ。外の音と内の柔らかさ。トルヒーヨ配達。">
+    <meta name="twitter:image" content="https://katsudomo.com/images/menchikatsu-comida-japonesa-trujillo.webp">
 
     <!-- PWA -->
     <meta name="theme-color" content="#0a0a0a">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-    <!-- Fonts -->
+    <!-- Fonts: async, non-blocking -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Outfit:wght@300;400;600&display=swap" as="style">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Outfit:wght@300;400;600&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet"></noscript>
 
-    <!-- FontAwesome -->
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+    <link rel="preload" href="../../css/style.css?v=1.4" as="style">
+    <!-- Critical CSS inline -->
+    <style>
+:root{--bg-color:#0a0a0a;--bg-card:#141414;--text-primary:#f5f5f5;--text-secondary:#aaaaaa;--accent-red:#d32f2f;--accent-red-hover:#b71c1c;--font-heading:'Noto Serif JP',"Hiragino Mincho ProN","Yu Mincho","MS PMincho",serif;--font-body:'Outfit',"Hiragino Sans","Meiryo","Yu Gothic",sans-serif;--transition:all 0.3s ease}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;overflow-x:hidden}
+body{background-color:var(--bg-color);color:var(--text-primary);font-family:var(--font-body);line-height:1.6;overflow-x:hidden}
+h1,h2,h3,h4{font-family:var(--font-heading);font-weight:700}
+a{text-decoration:none;color:var(--text-primary);transition:var(--transition)}
+.btn-primary{background-color:var(--accent-red);color:#fff;padding:10px 24px;border-radius:4px;font-weight:700;text-transform:uppercase;letter-spacing:1px;display:inline-block}
+.navbar{display:flex;justify-content:space-between;align-items:center;padding:20px 5%;background-color:rgba(10,10,10,.95);position:fixed;width:100%;top:0;z-index:1000;border-bottom:1px solid #222}
+.nav-logo{height:90px;width:auto;filter:drop-shadow(0 2px 4px rgba(0,0,0,.5))}
+.nav-links{display:flex;align-items:center;gap:30px}
+.nav-links a{font-weight:500;text-transform:uppercase;font-size:.9rem;letter-spacing:1px}
+.lang-switch .active{color:var(--accent-red);font-weight:700}
+.svg-icon{display:inline-block;vertical-align:-.125em;width:1em;height:1em;fill:currentColor}
+.btn-lang{font-size:.72rem;font-weight:600;letter-spacing:1.5px;border:1px solid #333;padding:6px 13px;border-radius:3px;color:var(--text-secondary)!important;transition:var(--transition);white-space:nowrap}
+@media(max-width:768px){.navbar{flex-direction:row;padding:10px 5%;justify-content:space-between;flex-wrap:nowrap}
+.nav-logo{height:80px}
+.nav-links{margin-top:0;flex-wrap:nowrap;justify-content:flex-end;gap:15px}
+.nav-links>a:not(.btn-primary):not(.btn-lang){display:none}}
+    </style>
+    <!-- Full stylesheet: async-loaded, non-blocking -->
+    <link rel="stylesheet" href="../../css/style.css?v=1.4" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="../../css/style.css?v=1.4"></noscript>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="../css/style.css">
-
-    <!-- JSON-LD: Article + BreadcrumbList -->
+    <!-- JSON-LD: Recipe + BreadcrumbList -->
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -59,17 +78,15 @@
     {
       "@type": "Recipe",
       "name": "本格メンチカツ",
-      "image": [
-        "https://katsudomo.com/images/menchikatsu-comida-japonesa-trujillo.webp"
-      ],
+      "image": ["https://katsudomo.com/images/menchikatsu-comida-japonesa-trujillo.webp"],
       "author": {
         "@type": "Person",
         "name": "Katsudomo Master Chef",
-        "url": "https://katsudomo.com/cultura-japonesa-peru.html"
+        "url": "https://katsudomo.com/ja/cultura-japonesa-peru.html"
       },
       "datePublished": "2026-03-07",
-      "description": "Hamburguesa japonesa frita con centro jugoso.",
-      "prepTime": "PT15M",
+      "description": "明治時代のmince cutletが日本で変換された。挽き肉を170°Cで揚げる、外の音と内の柔らかさを両立させる技術。",
+      "prepTime": "PT20M",
       "cookTime": "PT35M",
       "totalTime": "PT35M",
       "recipeYield": "1 serving",
@@ -81,33 +98,15 @@
         "priceCurrency": "PEN",
         "availability": "https://schema.org/InStock",
         "url": "https://katsudomo.com/ja/recetas/menchi-katsu.html",
-        "seller": {
-          "@type": "Organization",
-          "name": "Katsudōmo"
-        }
+        "seller": {"@type": "Organization", "name": "Katsudōmo"}
       }
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Inicio",
-          "item": "https://katsudomo.com/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Recetas",
-          "item": "https://katsudomo.com/#recetas"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "本格メンチカツ",
-          "item": "https://katsudomo.com/ja/recetas/menchi-katsu.html"
-        }
+        {"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://katsudomo.com/ja/"},
+        {"@type": "ListItem", "position": 2, "name": "レシピ", "item": "https://katsudomo.com/ja/#recetas"},
+        {"@type": "ListItem", "position": 3, "name": "本格メンチカツ", "item": "https://katsudomo.com/ja/recetas/menchi-katsu.html"}
       ]
     }
   ]
@@ -117,126 +116,88 @@
 </head>
 
 <body>
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <symbol id="icon-whatsapp" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></symbol>
+  <symbol id="icon-instagram" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></symbol>
+  <symbol id="icon-facebook" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></symbol>
+</svg>
     <!-- Navbar -->
     <nav class="navbar">
         <div class="logo">
             <a href="../index.html">
-                <img src="../images/logo-katsudomo-comida-japonesa-trujillo.webp" alt="logo katsudomo comida japonesa en trujillo" class="nav-logo">
+                <img src="../../images/logo-katsudomo-comida-japonesa-trujillo.webp" alt="logo katsudomo comida japonesa en trujillo" class="nav-logo">
             </a>
         </div>
         <div class="nav-links">
             <a href="../index.html#menu">お品書き</a>
-            <a href="../index.html#recetas">レシピ</a>
-            <a href="../index.html#cultura">文化</a>
-            <a href="../ja/recetas/katsudon.html" class="btn-lang" hreflang="ja">🇯🇵 日本語</a>
+            <a href="../index.html#recetas">作り方</a>
+            <a href="../index.html#cultura">日本文化</a>
+            <a href="../../recetas/menchi-katsu.html" class="btn-lang" hreflang="es">🇵🇪 Español</a>
             <a href="https://wa.me/c/51906777436" class="btn-primary" target="_blank" rel="noopener">今すぐ注文</a>
         </div>
     </nav>
 
     <!-- Breadcrumb -->
-    <nav class="recipe_breadcrumb" aria-label="Miga de pan">
+    <nav class="recipe_breadcrumb" aria-label="パンくずリスト">
         <a href="../index.html">ホーム</a>
         <span>›</span>
         <a href="../index.html#recetas">こうして作る</a>
         <span>›</span>
-        <span>Menchi Katsu Box</span>
+        <span>メンチカツ</span>
     </nav>
 
-    <!-- Artículo principal -->
+    <!-- 記事本文 -->
     <article class="recipe_article">
 
-        <div class="recipe_header_image" style="background-image:url('../images/katsudon-clasico-comida-japonesa-trujillo.webp')" role="img" aria-label="Menchi Katsu Box servido en tazón japonés con huevo apenas cuajado"></div>
+        <div class="recipe_header_image" style="background-image:url('../../images/menchikatsu-comida-japonesa-trujillo.webp')" role="img" aria-label="メンチカツボックス — パン粉の衣と挽き肉"></div>
 
-        <a href="../index.html#recetas" class="back_to_recetas"><i class="fas fa-arrow-left"></i> レシピ一覧へ</a>
+        <a href="../index.html#recetas" class="back_to_recetas">← レシピ一覧へ</a>
 
-        <h2>メンチカツ · お客様のために</h2>
-        <p class="recipe_tagline">日本の誇り高き挽肉のフライ。ご自宅で最高の状態でお召し上がりいただくための、私たちの情熱と技法についてお話しさせてください。</p>
+        <h2>メンチカツ · 揚げ包む挽き肉の技</h2>
+        <p class="recipe_tagline">日本が挽き肉に施した最高の変換。外側の音と内側の柔らかさが、同時に口の中で完成する。</p>
 
-        <p>Hay platos que alimentan. Y hay platos que convencen. El katsudon pertenece a la segunda categoría.</p>
+        <p>メンチカツという名前はミンチ・カツレツ（英語の <em>minced cutlet</em>）から来ている。明治時代（1868〜1912年）、日本が西洋の料理技術を吸収し始めたとき、肉の扱い方も変わった。上野の洋食屋が1890年代に「ミンスミートカツレツ」として記録したものが最初の文献とされる。</p>
 
-        <p>No es el plato más sofisticado de la cocina japonesa. No usa ingredientes raros. No requiere técnica de años para reconocerlo. Pero hacerlo bien —de verdad bien, con cada capa en su punto exacto— es una de las pruebas más honestas que existe en la cocina cotidiana japonesa. Porque el katsudon no perdona el descuido. Cada error se come.</p>
-
-        <h3>El origen: Tokio, finales del siglo XIX</h3>
-
-        <p>El tonkatsu —la chuleta de cerdo empanada— llega al Japón durante el período Meiji (1868–1912), cuando el país decide abrirse al mundo occidental después de dos siglos de aislamiento. Las técnicas de fritura europeas, específicamente la <em>schnitzel</em> vienesa y la <em>côtelette</em> francesa, son adaptadas por cocineros japoneses que las refinan con panko en lugar de pan rallado, y aceite neutro de alta temperatura en lugar de mantequilla.</p>
-
-        <p>El primer tonkatsu documentado como plato independiente aparece en 1899 en el restaurante Rengatei de Ginza, Tokio. Pero el katsudon —el paso de poner ese tonkatsu sobre un tazón de arroz con huevo y caldo— aparece documentado por primera vez alrededor de 1913, en una <em>shokudo</em> (食堂), un comedor popular del barrio universitario de Waseda.</p>
+        <p>とんかつが豚の塊肉を使うのに対し、メンチカツは挽き肉を使う。その違いは技術的な課題を根本から変える。塊肉は形が決まっている。挽き肉は形成そのものが技術だ。</p>
 
         <blockquote class="fact_callout">
-            <strong>¿Sabías esto?</strong>
-            La palabra <em>katsu</em> (カツ) es la japonización de <em>cutlet</em>, la chuleta inglesa. Pero <em>katsu</em> (勝) también significa "vencer" en japonés. Esa coincidencia fonética convirtió al katsudon en el plato ritual que los estudiantes japoneses comen la noche antes de los exámenes de ingreso universitario —los más difíciles y determinantes de su vida— desde hace más de cien años. No es superstición. Es una forma de materializar la intención.
+            <strong>知っていましたか？</strong>
+            「メンチカツ」か「ミンチカツ」かは地域によって違う。東日本では「メンチカツ」、関西では「ミンチカツ」と呼ぶことが多い。揚げ物の本場・大阪では、スーパーのお惣菜コーナーに必ずある定番中の定番だ。語源の <em>minced cutlet</em> から来ているが、今では完全に日本料理として定着している。
         </blockquote>
 
-        <h3>La anatomía del katsudon perfecto</h3>
+        <h3>挽き肉を形にする技術</h3>
 
-        <p>El katsudon tiene cinco componentes. Cada uno tiene una temperatura ideal, un tiempo de cocción específico y una función que no puede ser reemplazada por otro elemento.</p>
+        <p>メンチカツの材料は豚の合い挽き肉（または牛豚合い挽き）、玉ねぎ、パン粉、卵、塩、胡椒。シンプルだ。だが難しいのは「空気」のコントロールだ。</p>
 
-        <p><strong>Componente 1 — El arroz (ご飯 · gohan)</strong></p>
+        <p>挽き肉に玉ねぎ・パン粉・卵を混ぜ、成形する工程で空気が入りすぎると油の中で割れる。逆に空気が少なすぎると中が詰まって重く、食感が失われる。ちょうどいい密度で形成し、衣をつけ、<strong>170°C</strong>の油で揚げる。とんかつと同じ温度だ。しかしコントロールの難しさは別物だ。</p>
 
-        <p>Variedad: arroz japónica de grano corto. No arroz largo, no arroz basmati, no arroz vaporizado. El grano corto tiene mayor contenido de amilopectina, el almidón que produce la textura ligeramente pegajosa característica del arroz japonés. Esa textura no es un defecto. Es lo que permite que el caldo se adhiera al arroz en lugar de escurrir al fondo del tazón.</p>
+        <p class="difficulty_note"><strong>難しくするものは何か：</strong></p>
+        <p>とんかつは肉の厚みで揚げ時間が決まる。メンチカツは中身の密度と脂の割合が変数だ。合い挽き肉の脂の含有量によって火の通り方が変わる。成形したパティの厚みも、揚げ上がりに直接影響する。</p>
 
-        <p>Proporción de cocción: 1 taza de arroz por 1.1 tazas de agua fría. El arroz se lava en agua fría tres veces hasta que el agua sale casi transparente —este paso elimina el exceso de almidón superficial que haría el arroz gomoso en lugar de sedoso. Reposo en agua fría: 30 minutos antes de cocinar. Temperatura de cocción: fuego alto hasta hervor, luego fuego mínimo por 12 minutos exactos, luego reposo con tapa sin abrir por 10 minutos adicionales.</p>
+        <p>外の衣が割れず、中がしっとり、断面を切ったときに肉汁が滲み出る。そこまで正確に仕上がったメンチカツは、とんかつとは違う満足感がある。衣はとんかつと同じパン粉だが、中の柔らかさはまったく違う種類の喜びだ。</p>
 
-        <p>Sin sal. Sin aceite. Sin condimentos. El arroz del katsudon es neutral porque su trabajo es absorber, no competir.</p>
+        <h3>正しく揚げたときの味</h3>
 
-        <p><strong>Componente 2 — El caldo base (だし · dashi)</strong></p>
+        <p>最初の接触は聴覚だ：箸を入れた瞬間の衣の音。次にアロマ：肉汁と揚げ油の香り。切り分けると断面に肉汁が滲む。一口で二つの世界が同時に来る——外側のサクサクした衣と、内側の柔らかく旨味の濃い挽き肉。玉ねぎの甘みが全体を束ね、パン粉が食感の対比を作る。</p>
 
-        <p>El dashi que se usa en el katsudon es una combinación de kombu (alga kelp seca) y katsuobushi (escamas de bonito fermentado y ahumado). El kombu se pone en agua fría y se calienta lentamente hasta los <strong>60°C</strong> —nunca más, porque a temperaturas superiores el kombu libera compuestos amargos que arruinan el caldo. Se retira el kombu antes de que el agua hierva.</p>
+        <p>衣が柔らかければ、揚げ温度が低かった。中が乾いていれば、揚げすぎた。肉汁が出なければ、成形時に密度が高すぎた。すべてが正しければ、一口で納得する。</p>
 
-        <p>El katsuobushi se añade cuando el caldo alcanza <strong>85°C</strong> y se infusiona por exactamente <strong>3 minutos</strong>. Luego se cuela. El resultado es un caldo transparente, dorado, con un umami profundo y limpio que no necesita sal adicional para sostenerse.</p>
-
-        <p>A ese dashi se añaden: salsa de soja (<em>shoyu</em>), mirin y una pequeña cantidad de azúcar. La proporción estándar es 4 partes de dashi, 1 parte de salsa de soja, 1 parte de mirin. El equilibrio entre salado, dulce y umami es lo que diferencia un caldo de katsudon de cualquier otra cosa.</p>
-
-        <p><strong>Componente 3 — La cebolla</strong></p>
-
-        <p>La cebolla se corta en juliana fina y se cocina en el caldo a fuego medio-bajo por <strong>4 a 5 minutos</strong> hasta que está translúcida pero no caramelizada. La cebolla tiene dos funciones: aportar dulzura natural que suaviza la salinidad del caldo, y actuar como colchón que separa el tonkatsu del fondo de la sartén para que no pierda su textura crujiente al contacto con el líquido.</p>
-
-        <p><strong>Componente 4 — El tonkatsu (el más crítico)</strong></p>
-
-        <p>Corte: lomo de cerdo (<em>hire katsu</em>) o chuleta con algo de grasa (<em>rosu katsu</em>). El grosor ideal es <strong>1.5 cm</strong>. Menos, y se seca antes de que el empanado dore correctamente. Más, y el centro no alcanza los <strong>70°C</strong> internos que necesita la carne antes de que el exterior se queme.</p>
-
-        <p>El empanado se hace en tres etapas sin excepción:</p>
-        <ol>
-            <li>Harina de trigo fina — capa finísima, solo para crear superficie de adhesión</li>
-            <li>Huevo batido con una cucharada de agua fría — el agua hace el huevo más fluido y permite una cobertura más uniforme</li>
-            <li>Panko japonés — no pan rallado europeo. El panko se fabrica horneando pan sin corteza con corriente eléctrica para producir copos grandes, planos y aireados. Esa estructura atrapa el aire durante la fritura y crea una corteza que cruje y se mantiene crujiente. El pan rallado convencional produce una corteza densa que se ablanda en segundos.</li>
-        </ol>
-
-        <p>Temperatura del aceite: <strong>170°C exactos</strong>. A 160°C el empanado absorbe aceite en lugar de sellarse. A 180°C el exterior se dora antes de que la carne esté cocida. Un termómetro de cocina no es opcional aquí. Es obligatorio.</p>
-
-        <p>Tiempo de fritura: <strong>4 minutos por lado</strong> para un corte de 1.5 cm. El tonkatsu se fríe una sola vez, sin dar vuelta más de una vez. Al salir del aceite, reposa sobre rejilla —nunca sobre papel absorbente, que atrapa el vapor y ablanda el empanado— por <strong>2 minutos</strong>.</p>
-
-        <p><strong>Componente 5 — El huevo</strong></p>
-
-        <p>El huevo del katsudon es el elemento más técnico y el más difícil de controlar. Se bate ligeramente —no completamente, deben quedar hilos de clara y yema separados— y se vierte sobre la cebolla y el tonkatsu cuando el caldo está a <strong>fuego muy bajo</strong>, casi apagado.</p>
-
-        <p>Se cubre la sartén y se espera <strong>45 a 60 segundos</strong>. El objetivo es que la clara cuaje pero la yema permanezca líquida. El huevo no se revuelve. No se mezcla con el caldo. Se deja coagular con el vapor. Cuando el borde está cuajado y el centro todavía tiembla, se retira del fuego y se desliza sobre el arroz.</p>
-
-        <p>Si el huevo queda completamente cocido, el katsudon perdió. La yema líquida es parte de la salsa.</p>
-
-        <h3>Lo que hace difícil este plato</h3>
-
-        <p>El katsudon parece simple porque sus ingredientes son cotidianos. Esa apariencia engaña. La dificultad real está en la sincronización: el tonkatsu debe estar caliente y crujiente exactamente cuando el caldo con cebolla está listo, exactamente cuando el arroz termina su reposo, exactamente cuando tienes el huevo en la mano. Si uno de esos elementos llega antes o después, el plato se degrada.</p>
-
-        <p>Los cocineros japoneses tienen un nombre para ese momento de sincronización perfecta: <em>ma</em> (間). El espacio justo entre dos cosas. Ni antes, ni después.</p>
-
-        <h3>Cómo debe saber cuando está bien hecho</h3>
-
-        <p>El primer contacto es auditivo: el crujido del empanado al cortarlo con la cuchara. Luego el aroma: caldo de dashi caliente, huevo, la caramelización ligera de la cebolla. El primer bocado combina cuatro texturas simultáneas: el arroz denso y adherente en el fondo, el caldo sedoso, el huevo apenas cuajado, y el empanado que todavía resiste. La carne debe estar jugosa. El conjunto debe saber a umami profundo, levemente dulce por el mirin, con el crujiente recordando que debajo de toda esa sedosidad hay una milanesa que se frió con precisión.</p>
-
-        <p>Si el empanado está blando, algo salió mal. Si el huevo está completamente cocido, algo salió mal. Si el arroz nada en caldo en lugar de absorberlo, algo salió mal.</p>
-
-        <p>Cuando todo está bien, no sobra nada. El tazón queda limpio.</p>
+        <p>カツドーモのメンチカツボックスは豚の合い挽き肉を使用。玉ねぎは細かく刻み、肉と均等に混ぜる。密度を調整したあと小判型に成形し、薄力粉・卵液・パン粉の三段階で衣をつけて揚げる。ご飯・副菜とともにボックスに詰めてお届けする。</p>
 
         <hr>
 
         <div class="cta_box">
-            <h3>¿Prefieres que lo hagamos nosotros?</h3>
-            <p>Pide tu Menchi Katsu Box directo a tu puerta en Trujillo.</p>
+            <h3>私たちが作りましょうか？</h3>
+            <p>トルヒーヨへ、本格メンチカツボックスをお届けします。</p>
             <a href="https://wa.me/c/51906777436" class="btn_cta_wa" target="_blank" rel="noopener">
-                <i class="fab fa-whatsapp"></i> Pide tu Menchi Katsu Box ahora
+                <svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> 今すぐメンチカツを注文する
             </a>
         </div>
+
+        <nav class="recipe-also" aria-label="カツドーモのメニュー">
+            <a href="../menu/carta.html">お品書きを見る &rarr;</a>
+            <a href="../cultura-japonesa-peru.html">日本文化とこの料理の背景 &rarr;</a>
+        </nav>
 
     </article>
 
@@ -244,45 +205,54 @@
     <footer id="delivery" class="footer">
         <div class="footer-grid">
             <div class="footer-brand">
-                <img src="../images/katsudomo-street-food-japonesa-trujillo.webp" alt="katsudomo street food japonesa en trujillo" class="footer-logo">
-                <p>Dark Kitchen Trujillo</p>
+                <img src="../../images/katsudomo-street-food-japonesa-trujillo.webp" alt="katsudomo street food japonesa en trujillo" class="footer-logo">
+                <p>ダークキッチン・トルヒーヨ</p>
                 <p class="footer-lang-note">
-                    <a href="../ja/recetas/katsudon.html" hreflang="ja">日本語で読む →</a>
+                    <a href="../../recetas/menchi-katsu.html" hreflang="es">Leer en español →</a>
                 </p>
             </div>
             <div class="footer-nav">
                 <h3>レシピ</h3>
                 <ul>
-                    <li><a href="katsudon.html">カツ丼 Menchi Katsu Box</a></li>
-                    <li><a href="takoyaki.html">たこ焼き Takoyaki</a></li>
-                    <li><a href="yakisoba.html">焼きそば Yakisoba</a></li>
-                    <li><a href="onigiri-bento.html">おにぎり Onigiri & Bento</a></li>
+                    <li><a href="katsudon.html">カツ丼</a></li>
+                    <li><a href="takoyaki.html">たこ焼き</a></li>
+                    <li><a href="yakisoba.html">焼きそば</a></li>
+                    <li><a href="onigiri-bento.html">おにぎり・弁当</a></li>
+                    <li><a href="onigirazu.html">おにぎらず</a></li>
+                    <li><a href="menchi-katsu.html">メンチカツ</a></li>
+                </ul>
+            </div>
+            <div class="footer-nav">
+                <h3>探す</h3>
+                <ul>
+                    <li><a href="../menu/carta.html">お品書き</a></li>
+                    <li><a href="../cultura-japonesa-peru.html">日本文化</a></li>
+                    <li><a href="../index.html">ホーム</a></li>
                 </ul>
             </div>
             <div class="footer-contact">
-                <h3>Contacto</h3>
-                <p><i class="fab fa-whatsapp"></i> +51 906 777 436</p>
-                <p><i class="fas fa-map-marker-alt"></i> Trujillo, La Libertad, Perú</p>
-                <p><i class="fas fa-motorcycle"></i> ¡Delivery disponible!</p>
+                <h3>お問い合わせ</h3>
+                <p><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> +51 906 777 436</p>
+                <p>📍 トルヒーヨ、ラ・リベルタード、ペルー</p>
+                <p>🛵 デリバリー受付中</p>
             </div>
             <div class="footer-social">
-                <h3>Síguenos</h3>
+                <h3>フォローする</h3>
                 <div class="social-links">
-                    <a href="https://www.instagram.com/katsudoumotrujillo/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/katsudomotrujillo" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/katsudoumotrujillo/" target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-instagram"/></svg></a>
+                    <a href="https://www.facebook.com/katsudomotrujillo" target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-facebook"/></svg></a>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Katsudōmo. Todos los derechos reservados.</p>
+            <p>&copy; 2026 カツドーモ. All rights reserved.</p>
             <p class="author-credits">Diseño y autoría por Carlos Ravello Joo &nbsp;&bull;&nbsp; Modelo de Coherencia Dinámica &nbsp;&bull;&nbsp; Todos los derechos reservados</p>
         </div>
     </footer>
 
-    <!-- Floating WhatsApp -->
-    <a href="https://wa.me/c/51906777436" class="float_wa" target="_blank" rel="noopener" aria-label="Pedir por WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-        <span class="float_wa__label">Pedir ahora</span>
+    <a href="https://wa.me/c/51906777436" class="float_wa" target="_blank" rel="noopener" aria-label="WhatsAppで注文">
+        <svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg>
+        <span class="float_wa__label">今すぐ注文</span>
     </a>
 
 </body>
