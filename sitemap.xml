@@ -3,20 +3,20 @@
 
   <!-- ===== HOME ===== -->
   <url>
-    <loc>https://www.katsudomo.com/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.katsudomo.com/" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.katsudomo.com/" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.katsudomo.com/ja/" />
+    <loc>https://katsudomo.com/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://katsudomo.com/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://katsudomo.com/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://katsudomo.com/ja/" />
     <lastmod>2026-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://www.katsudomo.com/ja/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.katsudomo.com/" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.katsudomo.com/" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.katsudomo.com/ja/" />
+    <loc>https://katsudomo.com/ja/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://katsudomo.com/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://katsudomo.com/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://katsudomo.com/ja/" />
     <lastmod>2026-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -24,20 +24,20 @@
 
   <!-- ===== CARTA / MENÚ ===== -->
   <url>
-    <loc>https://www.katsudomo.com/menu/carta.html</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.katsudomo.com/menu/carta.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.katsudomo.com/menu/carta.html" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.katsudomo.com/ja/menu/carta.html" />
+    <loc>https://katsudomo.com/menu/carta.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://katsudomo.com/menu/carta.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://katsudomo.com/menu/carta.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://katsudomo.com/ja/menu/carta.html" />
     <lastmod>2026-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.katsudomo.com/ja/menu/carta.html</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.katsudomo.com/menu/carta.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.katsudomo.com/menu/carta.html" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.katsudomo.com/ja/menu/carta.html" />
+    <loc>https://katsudomo.com/ja/menu/carta.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://katsudomo.com/menu/carta.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://katsudomo.com/menu/carta.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://katsudomo.com/ja/menu/carta.html" />
     <lastmod>2026-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -45,20 +45,20 @@
 
   <!-- ===== CULTURA ===== -->
   <url>
-    <loc>https://www.katsudomo.com/cultura-japonesa-peru.html</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.katsudomo.com/cultura-japonesa-peru.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.katsudomo.com/cultura-japonesa-peru.html" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.katsudomo.com/ja/cultura-japonesa-peru.html" />
+    <loc>https://katsudomo.com/cultura-japonesa-peru.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://katsudomo.com/cultura-japonesa-peru.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://katsudomo.com/cultura-japonesa-peru.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://katsudomo.com/ja/cultura-japonesa-peru.html" />
     <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.katsudomo.com/ja/cultura-japonesa-peru.html</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.katsudomo.com/cultura-japonesa-peru.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.katsudomo.com/cultura-japonesa-peru.html" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.katsudomo.com/ja/cultura-japonesa-peru.html" />
+    <loc>https://katsudomo.com/ja/cultura-japonesa-peru.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://katsudomo.com/cultura-japonesa-peru.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://katsudomo.com/cultura-japonesa-peru.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://katsudomo.com/ja/cultura-japonesa-peru.html" />
     <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -66,60 +66,60 @@
 
   <!-- ===== RECETAS (ES) ===== -->
   <url>
-    <loc>https://www.katsudomo.com/recetas/katsudon.html</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.katsudomo.com/recetas/katsudon.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.katsudomo.com/recetas/katsudon.html" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.katsudomo.com/ja/recetas/katsudon.html" />
+    <loc>https://katsudomo.com/recetas/katsudon.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://katsudomo.com/recetas/katsudon.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://katsudomo.com/recetas/katsudon.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://katsudomo.com/ja/recetas/katsudon.html" />
     <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://www.katsudomo.com/recetas/takoyaki.html</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.katsudomo.com/recetas/takoyaki.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.katsudomo.com/recetas/takoyaki.html" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.katsudomo.com/ja/recetas/takoyaki.html" />
+    <loc>https://katsudomo.com/recetas/takoyaki.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://katsudomo.com/recetas/takoyaki.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://katsudomo.com/recetas/takoyaki.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://katsudomo.com/ja/recetas/takoyaki.html" />
     <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://www.katsudomo.com/recetas/yakisoba.html</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.katsudomo.com/recetas/yakisoba.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.katsudomo.com/recetas/yakisoba.html" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.katsudomo.com/ja/recetas/yakisoba.html" />
+    <loc>https://katsudomo.com/recetas/yakisoba.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://katsudomo.com/recetas/yakisoba.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://katsudomo.com/recetas/yakisoba.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://katsudomo.com/ja/recetas/yakisoba.html" />
     <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://www.katsudomo.com/recetas/onigiri-bento.html</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.katsudomo.com/recetas/onigiri-bento.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.katsudomo.com/recetas/onigiri-bento.html" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.katsudomo.com/ja/recetas/onigiri-bento.html" />
+    <loc>https://katsudomo.com/recetas/onigiri-bento.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://katsudomo.com/recetas/onigiri-bento.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://katsudomo.com/recetas/onigiri-bento.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://katsudomo.com/ja/recetas/onigiri-bento.html" />
     <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://www.katsudomo.com/recetas/menchi-katsu.html</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.katsudomo.com/recetas/menchi-katsu.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.katsudomo.com/recetas/menchi-katsu.html" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.katsudomo.com/ja/recetas/menchi-katsu.html" />
+    <loc>https://katsudomo.com/recetas/menchi-katsu.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://katsudomo.com/recetas/menchi-katsu.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://katsudomo.com/recetas/menchi-katsu.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://katsudomo.com/ja/recetas/menchi-katsu.html" />
     <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://www.katsudomo.com/recetas/onigirazu.html</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.katsudomo.com/recetas/onigirazu.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.katsudomo.com/recetas/onigirazu.html" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.katsudomo.com/ja/recetas/onigirazu.html" />
+    <loc>https://katsudomo.com/recetas/onigirazu.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://katsudomo.com/recetas/onigirazu.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://katsudomo.com/recetas/onigirazu.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://katsudomo.com/ja/recetas/onigirazu.html" />
     <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -127,60 +127,60 @@
 
   <!-- ===== RECETAS (JA) ===== -->
   <url>
-    <loc>https://www.katsudomo.com/ja/recetas/katsudon.html</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.katsudomo.com/recetas/katsudon.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.katsudomo.com/recetas/katsudon.html" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.katsudomo.com/ja/recetas/katsudon.html" />
+    <loc>https://katsudomo.com/ja/recetas/katsudon.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://katsudomo.com/recetas/katsudon.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://katsudomo.com/recetas/katsudon.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://katsudomo.com/ja/recetas/katsudon.html" />
     <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <url>
-    <loc>https://www.katsudomo.com/ja/recetas/takoyaki.html</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.katsudomo.com/recetas/takoyaki.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.katsudomo.com/recetas/takoyaki.html" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.katsudomo.com/ja/recetas/takoyaki.html" />
+    <loc>https://katsudomo.com/ja/recetas/takoyaki.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://katsudomo.com/recetas/takoyaki.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://katsudomo.com/recetas/takoyaki.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://katsudomo.com/ja/recetas/takoyaki.html" />
     <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <url>
-    <loc>https://www.katsudomo.com/ja/recetas/yakisoba.html</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.katsudomo.com/recetas/yakisoba.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.katsudomo.com/recetas/yakisoba.html" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.katsudomo.com/ja/recetas/yakisoba.html" />
+    <loc>https://katsudomo.com/ja/recetas/yakisoba.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://katsudomo.com/recetas/yakisoba.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://katsudomo.com/recetas/yakisoba.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://katsudomo.com/ja/recetas/yakisoba.html" />
     <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <url>
-    <loc>https://www.katsudomo.com/ja/recetas/onigiri-bento.html</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.katsudomo.com/recetas/onigiri-bento.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.katsudomo.com/recetas/onigiri-bento.html" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.katsudomo.com/ja/recetas/onigiri-bento.html" />
+    <loc>https://katsudomo.com/ja/recetas/onigiri-bento.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://katsudomo.com/recetas/onigiri-bento.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://katsudomo.com/recetas/onigiri-bento.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://katsudomo.com/ja/recetas/onigiri-bento.html" />
     <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <url>
-    <loc>https://www.katsudomo.com/ja/recetas/menchi-katsu.html</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.katsudomo.com/recetas/menchi-katsu.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.katsudomo.com/recetas/menchi-katsu.html" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.katsudomo.com/ja/recetas/menchi-katsu.html" />
+    <loc>https://katsudomo.com/ja/recetas/menchi-katsu.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://katsudomo.com/recetas/menchi-katsu.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://katsudomo.com/recetas/menchi-katsu.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://katsudomo.com/ja/recetas/menchi-katsu.html" />
     <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <url>
-    <loc>https://www.katsudomo.com/ja/recetas/onigirazu.html</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.katsudomo.com/recetas/onigirazu.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.katsudomo.com/recetas/onigirazu.html" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.katsudomo.com/ja/recetas/onigirazu.html" />
+    <loc>https://katsudomo.com/ja/recetas/onigirazu.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://katsudomo.com/recetas/onigirazu.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://katsudomo.com/recetas/onigirazu.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://katsudomo.com/ja/recetas/onigirazu.html" />
     <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

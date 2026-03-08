@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://www.katsudomo.com/sitemap.xml
+Sitemap: https://katsudomo.com/sitemap.xml
