@@ -6,7 +6,7 @@
 # SECCIÓN 1 — #cultura-japonesa-peru
 
 ## La Cultura Japonesa en Perú: Una Historia que Pocos se Atreven a Contar
-### Y que explica por qué la comida japonesa en Trujillo sabe diferente a todo lo que conoces
+### Y que explica por qué la comida japonesa en Lima sabe diferente a todo lo que conoces
 
 ---
 
@@ -74,15 +74,15 @@ Trujillo no es una ciudad cualquiera en esta historia. Es el punto geográfico d
 
 La memoria de esa presencia no está en museos. Está en los apellidos. Está en los rostros. Está en ciertas formas de trabajar, de ser exacto, de no conformarse con lo suficiente cuando lo excelente es posible.
 
-Cuando Katsudōmo abre en Trujillo, no lo hace en un vacío. Lo hace sobre ese sustrato. Sobre esa historia que pocas personas conocen en profundidad pero que todos, de alguna manera, llevan encima.
+Cuando Katsudōmo abre en Lima, no lo hace en un vacío. Lo hace sobre ese sustrato. Sobre esa historia que pocas personas conocen en profundidad pero que todos, de alguna manera, llevan encima.
 
 La propuesta de Katsudōmo no es traer "lo japonés" como objeto de consumo exótico. Es traer el espíritu que esa cultura ha depositado aquí durante más de cien años: la obsesión con hacer bien una cosa, el respeto por el ingrediente, la honestidad de la calle frente a la pretensión del salón.
 
-No somos un restaurante japonés. No tenemos tatami ni kimono ni música de koto. Somos una dark kitchen que hace katsudon, takoyaki, yakisoba, onigiri y bentos con la precisión de quien ha estudiado de dónde vienen esos platos y por qué importan. Con el respeto de saber que detrás de cada receta hay generaciones de shokunin que la perfeccionaron.
+No somos un restaurante japonés. No tenemos tatami ni kimono ni música de koto. Somos una barra que hace katsudon, takoyaki, yakisoba, onigiri y bentos con la precisión de quien ha estudiado de dónde vienen esos platos y por qué importan. Con el respeto de saber que detrás de cada receta hay generaciones de shokunin que la perfeccionaron.
 
-Y con la claridad de que esa historia, esa profundidad, ese carácter —todo eso llega a tu puerta.
+Y con la claridad de que esa historia, esa profundidad, ese carácter —todo eso en Lima.
 
-En Trujillo. Hoy.
+En Lima. Hoy.
 
 ---
 
@@ -120,7 +120,7 @@ Cuando lo abres, el vapor sube. El aroma del caldo y el crujiente del empanado c
 ---
 
 ### 02 — たこ焼き · Takoyaki
-**"Osaka lo inventó. El mundo entero lo adoptó. Trujillo ahora lo sabe."**
+**"Osaka lo inventó. El mundo entero lo adoptó. Lima ahora lo sabe."**
 
 Osaka tiene fama de ser la ciudad de Japón donde la gente come mejor, más, y con más alegría. Los osakenses dicen *kuidaore* —"arruínate comiendo"— como filosofía de vida. Y el takoyaki es su emblema más reconocible.
 
@@ -194,7 +194,7 @@ Hacemos delivery dentro de las principales zonas de la ciudad. Escríbenos por W
 
 El tiempo estándar es entre 35 y 55 minutos desde que confirmas el pedido. Trabajamos bajo pedido, lo que significa que tu comida se prepara cuando la pides, no antes. Eso tiene un costo en tiempo y un beneficio enorme en calidad.
 
-**3. ¿Qué es una dark kitchen y por qué es mejor para delivery?**
+**3. ¿Qué es una barra y por qué es mejor para delivery?**
 
 Una dark kitchen es una cocina profesional que existe exclusivamente para producir comida a domicilio. Sin salón, sin meseros, sin mesas que atender. Toda la infraestructura, la energía y la inversión van a un solo lugar: preparar bien tu pedido y despacharlo rápido. El resultado es mejor comida y mejor tiempo de entrega que un restaurante que divide su atención entre el salón y el delivery al mismo tiempo.
 
@@ -212,7 +212,7 @@ Sí, pero con anticipación. Para grupos de más de diez personas necesitamos al
 
 **7. ¿En qué se diferencia Katsudōmo de un restaurante japonés tradicional?**
 
-En que no somos un restaurante. Somos una dark kitchen especializada en street food japonesa. No tenemos sushi, no tenemos tempura de camarones, no tenemos carta extensa de cincuenta platos. Tenemos cuatro platos que hacemos bien, un sistema de delivery eficiente, y la convicción de que la comida de los matsuri japoneses —el takoyaki, el yakisoba, el donburi— merece el mismo respeto que cualquier alta cocina.
+En que no somos un restaurante. Somos una barra especializada en street food japonesa. No tenemos sushi, no tenemos tempura de camarones, no tenemos carta extensa de cincuenta platos. Tenemos cuatro platos que hacemos bien, un sistema de delivery eficiente, y la convicción de que la comida de los matsuri japoneses —el takoyaki, el yakisoba, el donburi— merece el mismo respeto que cualquier alta cocina.
 
 **8. ¿Están en Rappi además de WhatsApp?**
 
@@ -222,9 +222,9 @@ Sí. Puedes encontrarnos en Rappi como Katsudōmo. Sin embargo, si quieres perso
 
 El katsudon (カツ丼) es un tazón de arroz japonés —donburi (丼)— cubierto con una milanesa de cerdo o pollo empanada en panko, cocinada en caldo dashi con salsa de soja, mirin, cebolla y huevo batido que se incorpora a fuego bajo hasta quedar sedoso. Es uno de los platos más populares de la cocina cotidiana japonesa, con más de cien años de historia. En Japón, los estudiantes lo comen antes de exámenes importantes porque *katsu* (勝) también significa "vencer".
 
-**10. ¿Por qué la comida japonesa en Trujillo no es solo sushi?**
+**10. ¿Por qué la comida japonesa en Lima no es solo sushi?**
 
-Porque el sushi es aproximadamente el 2% de lo que los japoneses comen en su vida cotidiana. La otra parte —el ramen, el donburi, el yakisoba, el onigiri, los platos de los matsuri— es lo que la gente come todos los días, en la calle, en casa, en el trabajo. Esa cocina cotidiana, honesta y técnicamente exigente, es la que Katsudōmo trae a Trujillo. No como novedad. Como argumento.
+Porque el sushi es aproximadamente el 2% de lo que los japoneses comen en su vida cotidiana. La otra parte —el ramen, el donburi, el yakisoba, el onigiri, los platos de los matsuri— es lo que la gente come todos los días, en la calle, en casa, en el trabajo. Esa cocina cotidiana, honesta y técnicamente exigente, es la que Katsudōmo trae a Lima. No como novedad. Como argumento.
 
 ---
 
@@ -271,7 +271,7 @@ Decidimos no tener sushi en el menú. No porque no sepamos hacerlo, sino porque 
 ---
 
 ## ¿Te provoca o no te provoca?
-### Delivery en Trujillo. Comida japonesa de verdad.
+### Barra de street food japonesa en Lima. Av. Tomás Marsano 2009.
 
 **Pedir por WhatsApp →** https://wa.me/c/51906777436
 **Ver en Rappi →** https://www.rappi.com.pe/restaurantes/57328-katsudoumo
@@ -305,7 +305,7 @@ Decidimos no tener sushi en el menú. No porque no sepamos hacerlo, sino porque 
     },
     {
       "@type": "Question",
-      "name": "¿Qué es una dark kitchen y por qué es mejor para delivery?",
+      "name": "¿Qué es una barra y por qué es mejor para delivery?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Una dark kitchen es una cocina profesional que existe exclusivamente para producir comida a domicilio. Sin salón ni meseros, toda la infraestructura va a preparar bien tu pedido y despacharlo rápido."
@@ -340,7 +340,7 @@ Decidimos no tener sushi en el menú. No porque no sepamos hacerlo, sino porque 
       "name": "¿En qué se diferencia Katsudōmo de un restaurante japonés?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Somos una dark kitchen especializada en street food japonesa. No tenemos sushi ni carta extensa. Tenemos cuatro platos que hacemos bien y un sistema de delivery eficiente."
+        "text": "Somos una barra especializada en street food japonesa. No tenemos sushi ni carta extensa. Tenemos cuatro platos que hacemos bien y un sistema de delivery eficiente."
       }
     },
     {
@@ -361,10 +361,10 @@ Decidimos no tener sushi en el menú. No porque no sepamos hacerlo, sino porque 
     },
     {
       "@type": "Question",
-      "name": "¿Por qué la comida japonesa en Trujillo no es solo sushi?",
+      "name": "¿Por qué la comida japonesa en Lima no es solo sushi?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Porque el sushi es una fracción pequeña de la cocina japonesa cotidiana. La parte más amplia —donburi, yakisoba, takoyaki, onigiri— es la que la gente come todos los días en Japón. Esa cocina honesta y técnicamente exigente es la que Katsudōmo trae a Trujillo."
+        "text": "Porque el sushi es una fracción pequeña de la cocina japonesa cotidiana. La parte más amplia —donburi, yakisoba, takoyaki, onigiri— es la que la gente come todos los días en Japón. Esa cocina honesta y técnicamente exigente es la que Katsudōmo trae a Lima."
       }
     }
   ]
@@ -373,4 +373,4 @@ Decidimos no tener sushi en el menú. No porque no sepamos hacerlo, sino porque 
 
 ---
 
-*Katsudōmo · Dark Kitchen Trujillo · © 2026*
+*Katsudōmo · Barra Japonesa · Lima · © 2026*
