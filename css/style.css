@@ -716,7 +716,7 @@ a {
 .shokunin_visual,
 .cocina_nikkei_visual,
 .yatai_matsuri_visual,
-.trujillo_encuentro_visual,
+.lima_encuentro_visual,
 .katsudon_visual,
 .takoyaki_visual,
 .yakisoba_visual,
@@ -760,8 +760,8 @@ a {
     font-size: 0.9rem;
 }
 
-.trujillo_encuentro_visual::after {
-    content: "Espacio Visual: Trujillo Japonés (Pendiente de Imagen)";
+.lima_encuentro_visual::after {
+    content: "Espacio Visual: Lima Japonés (Pendiente de Imagen)";
     color: #444;
     font-family: var(--font-body);
     font-size: 0.9rem;
@@ -815,7 +815,7 @@ a {
     .shokunin_visual,
     .cocina_nikkei_visual,
     .yatai_matsuri_visual,
-    .trujillo_encuentro_visual,
+    .lima_encuentro_visual,
     .katsudon_visual,
     .takoyaki_visual,
     .yakisoba_visual,

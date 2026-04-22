@@ -137,16 +137,27 @@ a{text-decoration:none;color:var(--text-primary);transition:var(--transition)}
         "addressCountry": "PE"
       },
       "geo": {"@type": "GeoCoordinates", "latitude": -12.1097, "longitude": -77.0041},
-      "openingHoursSpecification": [{
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Thursday","Friday","Saturday","Sunday"],
-        "opens": "12:00",
-        "closes": "21:30"
-      }],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+          "opens": "13:00",
+          "closes": "16:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+          "opens": "18:00",
+          "closes": "22:00"
+        }
+      ],
       "hasMenu": "https://wa.me/c/51906777436",
+      "hasDelivery": true,
+      "paymentAccepted": ["Yape", "Plin", "Credit Card", "Debit Card"],
+      "currenciesAccepted": "PEN",
       "sameAs": [
-        "https://www.instagram.com/katsudoumotrujillo/",
-        "https://www.facebook.com/katsudoumotrujillo"
+        "https://www.instagram.com/katsudomo/",
+        "https://www.facebook.com/katsudomo"
       ],
       "potentialAction": {
         "@type": "OrderAction",
@@ -763,7 +774,9 @@ a{text-decoration:none;color:var(--text-primary);transition:var(--transition)}
                 <p><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg>
                     <a href="https://wa.me/c/51906777436" target="_blank" rel="noopener">+51 906 777 436</a>
                 </p>
-                <p>📍 ペルー, ラ・リベルタ州, リマ</p>
+                <p>📍 Av. Tomás Marsano 2009, スルキージョ, リマ, ペルー</p>
+                <p>🏪 月～土 · 1:00–4:00 pm／6:00–10:00 pm（日曜定休）</p>
+                <p>💳 Yape · Plin · クレジット／デビットカード（現金不可）</p>
                 <p>🛵 デリバリー対応中！</p>
                 <p>🏪
                     <a href="https://www.rappi.com.pe/restaurantes/57328-katsudoumo" target="_blank"
@@ -773,9 +786,9 @@ a{text-decoration:none;color:var(--text-primary);transition:var(--transition)}
             <div class="footer-social">
                 <h3>フォローする</h3>
                 <div class="social-links">
-                    <a href="https://www.instagram.com/katsudoumotrujillo/" target="_blank" rel="noopener"
+                    <a href="https://www.instagram.com/katsudomo/" target="_blank" rel="noopener"
                         aria-label="Instagram カツドーモ"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-instagram"/></svg></a>
-                    <a href="https://www.facebook.com/katsudoumotrujillo" target="_blank" rel="noopener"
+                    <a href="https://www.facebook.com/katsudomo" target="_blank" rel="noopener"
                         aria-label="Facebook カツドーモ"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-facebook"/></svg></a>
                     <a href="https://wa.me/c/51906777436" target="_blank" rel="noopener" aria-label="WhatsApp カツドーモ"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg></a>
                 </div>

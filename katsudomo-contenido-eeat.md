@@ -20,7 +20,7 @@ Ese día, el vapor Sakura Maru atracó en el puerto del Callao con 790 trabajado
 
 Lo que vino después no tiene paralelo en la historia de la inmigración latinoamericana.
 
-Los primeros issei —nombre que se da a la primera generación de inmigrantes japoneses— llegaron a un Perú en plena expansión agroindustrial. El norte chico y Trujillo, La Libertad, eran el corazón azucarero del país: Cartavio, Casa Grande, Laredo. Ahí trabajaron. Ahí sufrieron. Y ahí echaron raíces que el tiempo no ha podido arrancar.
+Los primeros issei —nombre que se da a la primera generación de inmigrantes japoneses— llegaron a un Perú en plena expansión agroindustrial. El norte chico y Lima, La Libertad, eran el corazón azucarero del país: Cartavio, Casa Grande, Laredo. Ahí trabajaron. Ahí sufrieron. Y ahí echaron raíces que el tiempo no ha podido arrancar.
 
 Pero los japoneses no llegaron solo con sus manos. Llegaron con una filosofía entera.
 
@@ -36,7 +36,7 @@ La escritora nikkei **Doris Moromisato**, nacida en Lima de padres okinawenses, 
 
 El poeta **José Watanabe** —trujillano de padre japonés, uno de los más grandes escritores que ha dado el Perú en el siglo XX— capturó mejor que nadie esa dualidad. En su obra, lo japonés no es adorno ni exotismo: es una forma de ver el mundo. Una manera de encontrar lo esencial en lo pequeño.
 
-> **¿Sabías esto?** José Watanabe nació en Laredo, a pocos kilómetros de Trujillo. Su padre, Harumi Watanabe, fue uno de esos inmigrantes que llegaron al norte peruano a trabajar en las haciendas azucareras y nunca se fue. La tierra trujillana y la sangre japonesa se mezclaron en uno de los poetas más importantes del Perú moderno. Eso no es coincidencia. Es territorio.
+> **¿Sabías esto?** José Watanabe nació en Laredo, a pocos kilómetros de Lima. Su padre, Harumi Watanabe, fue uno de esos inmigrantes que llegaron al norte peruano a trabajar en las haciendas azucareras y nunca se fue. La tierra trujillana y la sangre japonesa se mezclaron en uno de los poetas más importantes del Perú moderno. Eso no es coincidencia. Es territorio.
 
 ---
 
@@ -68,9 +68,9 @@ Los inmigrantes japoneses que llegaron al Perú traían esa cultura en el cuerpo
 
 ---
 
-### Trujillo: tierra donde estas dos historias se encuentran
+### Lima: tierra donde estas dos historias se encuentran
 
-Trujillo no es una ciudad cualquiera en esta historia. Es el punto geográfico donde la inmigración japonesa al norte peruano dejó su huella más profunda. Las haciendas de La Libertad fueron el primer destino de miles de familias que después echaron raíces aquí, tuvieron hijos aquí, construyeron negocios aquí.
+Lima no es una ciudad cualquiera en esta historia. Es el punto geográfico donde la inmigración japonesa al norte peruano dejó su huella más profunda. Las haciendas de La Libertad fueron el primer destino de miles de familias que después echaron raíces aquí, tuvieron hijos aquí, construyeron negocios aquí.
 
 La memoria de esa presencia no está en museos. Está en los apellidos. Está en los rostros. Está en ciertas formas de trabajar, de ser exacto, de no conformarse con lo suficiente cuando lo excelente es posible.
 
@@ -186,7 +186,7 @@ En Katsudōmo los onigiris se hacen a pedido, con rellenos que rotan según disp
 
 ---
 
-**1. ¿Hacen delivery a toda Trujillo?**
+**1. ¿Hacen delivery a toda Lima?**
 
 Hacemos delivery dentro de las principales zonas de la ciudad. Escríbenos por WhatsApp con tu dirección y confirmamos cobertura y costo de envío antes de que hagas el pedido. Sin sorpresas al final.
 
@@ -289,10 +289,10 @@ Decidimos no tener sushi en el menú. No porque no sepamos hacerlo, sino porque 
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "¿Hacen delivery a toda Trujillo?",
+      "name": "¿Hacen delivery a toda Lima?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Hacemos delivery dentro de las principales zonas de Trujillo. Escríbenos por WhatsApp con tu dirección y confirmamos cobertura y costo de envío antes de que hagas el pedido."
+        "text": "Hacemos delivery dentro de las principales zonas de Lima. Escríbenos por WhatsApp con tu dirección y confirmamos cobertura y costo de envío antes de que hagas el pedido."
       }
     },
     {

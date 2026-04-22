@@ -18,7 +18,7 @@
     <meta name="description"
         content="Carta completa de Katsudōmo: takoyaki, onigiri, obento, katsudon, yakisoba y más. Comida japonesa auténtica con delivery en Lima. Pide por WhatsApp.">
     <meta name="keywords"
-        content="comida japonesa Lima, carta Katsudomo, takoyaki Lima, bento Lima, katsudon Lima, izakaya Lima, barra japonesa Surquillo, street food japonés Lima">
+        content="comida japonesa Lima, carta Katsudomo, takoyaki Lima, bento Lima, katsudon Lima, izakaya Lima, barra japonesa Lima, street food japonés Lima">
 
     <!-- Canonical y hreflang (SEO Técnico Absoluto) -->
     <link rel="canonical" href="https://katsudomo.com/menu/carta.html">
@@ -94,7 +94,7 @@ a{text-decoration:none;color:var(--text-primary);transition:var(--transition)}
           "@type": "Menu",
           "@id": "https://katsudomo.com/menu/carta.html#menu",
           "name": "Carta Katsudōmo",
-          "description": "Comida japonesa auténtica en Lima, Perú. Takoyaki, obento, katsudon, yakisoba y más.",
+          "description": "Carta completa de Katsudōmo en Lima: takoyaki, yakisoba, obento, curry kare, katsudon, ramen y el Akira Combo. Comida japonesa auténtica con delivery en Lima.",
           "url": "https://katsudomo.com/menu/carta.html",
           "inLanguage": "es",
           "provider": {
@@ -104,61 +104,97 @@ a{text-decoration:none;color:var(--text-primary);transition:var(--transition)}
             "servesCuisine": "Japanese",
             "address": { "@type": "PostalAddress", "streetAddress": "Av. Tomás Marsano 2009", "addressLocality": "Surquillo", "addressRegion": "Lima", "addressCountry": "PE" },
             "hasDelivery": true,
-            "publicAccess": false,
+            "paymentAccepted": ["Yape", "Plin", "Credit Card", "Debit Card"],
+            "currenciesAccepted": "PEN",
+            "publicAccess": true,
             "areaServed": [
               { "@type": "City", "name": "Lima", "addressRegion": "Lima" },
-              { "@type": "Place", "name": "Surquillo, Lima" },
               { "@type": "Place", "name": "Miraflores, Lima" },
               { "@type": "Place", "name": "San Borja, Lima" },
               { "@type": "Place", "name": "San Isidro, Lima" },
-              { "@type": "Place", "name": "Barranco, Lima" }
+              { "@type": "Place", "name": "Barranco, Lima" },
+              { "@type": "Place", "name": "Santiago de Surco, Lima" }
             ]
           },
           "hasMenuSection": [
             {
               "@type": "MenuSection",
-              "name": "Bocaditos Japoneses",
+              "name": "Takoyaki",
               "hasMenuItem": [
-                { "@type": "MenuItem", "name": "Takoyaki Box Original", "description": "15 bolitas de pulpo crujientes con salsa agridulce Katsudomo, mayonesa japonesa y katsuobushi.", "offers": { "@type": "Offer", "price": "25.00", "priceCurrency": "PEN" } },
-                { "@type": "MenuItem", "name": "Onigiri Box", "description": "6 onigiri de arroz japónica: tsuna mayo y pollito teriyaki.", "offers": { "@type": "Offer", "price": "30.00", "priceCurrency": "PEN" } },
-                { "@type": "MenuItem", "name": "Takoyaki Box Acevichado", "description": "15 bolitas de pulpo con salsa acevichada fusión peruano-japonesa.", "offers": { "@type": "Offer", "price": "26.00", "priceCurrency": "PEN" } }
+                { "@type": "MenuItem", "name": "Takoyaki Box Original", "description": "12 bolitas de pulpo crujientes con salsa Katsudomo, mayonesa Kewpie y katsuobushi.", "offers": { "@type": "Offer", "price": "28.00", "priceCurrency": "PEN" } },
+                { "@type": "MenuItem", "name": "Takoyaki Acevichado", "description": "12 bolitas de pulpo con salsa acevichada, fusión peruano-japonesa.", "offers": { "@type": "Offer", "price": "29.00", "priceCurrency": "PEN" } },
+                { "@type": "MenuItem", "name": "Takoyaki Sweet Chili", "description": "12 bolitas de pulpo con salsa sweet chili casera.", "offers": { "@type": "Offer", "price": "30.00", "priceCurrency": "PEN" } }
+              ]
+            },
+            {
+              "@type": "MenuSection",
+              "name": "Yakisoba",
+              "hasMenuItem": [
+                { "@type": "MenuItem", "name": "Yakisoba Cerdo", "description": "Fideos salteados al wok con filete de cerdo y salsa Katsudomo.", "offers": { "@type": "Offer", "price": "25.00", "priceCurrency": "PEN" } },
+                { "@type": "MenuItem", "name": "Yakisoba Pollo", "description": "Fideos salteados al wok con pollo y salsa Katsudomo.", "offers": { "@type": "Offer", "price": "23.00", "priceCurrency": "PEN" } },
+                { "@type": "MenuItem", "name": "Tamago Yakisoba Pollo", "description": "Yakisoba de pollo con tamagoyaki (tortilla japonesa) encima.", "offers": { "@type": "Offer", "price": "26.00", "priceCurrency": "PEN" } },
+                { "@type": "MenuItem", "name": "Tamago Yakisoba Cerdo", "description": "Yakisoba de cerdo con tamagoyaki encima.", "offers": { "@type": "Offer", "price": "28.00", "priceCurrency": "PEN" } },
+                { "@type": "MenuItem", "name": "Yakisoba Picante", "description": "Fideos salteados con salsa picante al estilo yatai.", "offers": { "@type": "Offer", "price": "27.00", "priceCurrency": "PEN" } }
               ]
             },
             {
               "@type": "MenuSection",
               "name": "Obento",
               "hasMenuItem": [
-                { "@type": "MenuItem", "name": "Obento Chicken Katsu", "description": "Bento completo: filete de pollo panko, tamagoyaki, yakisoba, ensalada, onigiri y salsa.", "offers": { "@type": "Offer", "price": "26.00", "priceCurrency": "PEN" } },
-                { "@type": "MenuItem", "name": "Obento Tonkatsu", "description": "Bento premium con lomo de cerdo empanizado, tamagoyaki, yakisoba y onigiri.", "offers": { "@type": "Offer", "price": "29.00", "priceCurrency": "PEN" } },
-                { "@type": "MenuItem", "name": "Obento Menchi Katsu", "description": "Bento con hamburguesa japonesa rellena de queso cheddar, tamagoyaki, yakisoba y onigiri.", "offers": { "@type": "Offer", "price": "26.00", "priceCurrency": "PEN" } }
-              ]
-            },
-            {
-              "@type": "MenuSection",
-              "name": "Combos",
-              "hasMenuItem": [
-                { "@type": "MenuItem", "name": "Cheese MenchiKatsu Box", "description": "4 hamburguesas japonesas rellenas de queso cheddar con ensalada y salsa Katsudomo.", "offers": { "@type": "Offer", "price": "25.00", "priceCurrency": "PEN" } },
-                { "@type": "MenuItem", "name": "Menchi Katsu Box", "description": "4 hamburguesas de carne japonesa con ensalada y salsa agridulce.", "offers": { "@type": "Offer", "price": "20.00", "priceCurrency": "PEN" } },
-                { "@type": "MenuItem", "name": "Akira Combo Takoyaki", "description": "8 takoyakis + 2 onigiris (tsuna mayo y pollo teriyaki).", "offers": { "@type": "Offer", "price": "25.00", "priceCurrency": "PEN" } }
-              ]
-            },
-            {
-              "@type": "MenuSection",
-              "name": "Platos Especiales",
-              "hasMenuItem": [
-                { "@type": "MenuItem", "name": "Katsudon", "description": "Tonkatsu sobre arroz japónica con caldo de cebolla, huevo batido y sake. Plato bandera.", "offers": { "@type": "Offer", "price": "28.00", "priceCurrency": "PEN" } },
-                { "@type": "MenuItem", "name": "Buta Yakisoba", "description": "Fideos yakisoba con cerdo y verduras salteadas en salsa agridulce Katsudomo.", "offers": { "@type": "Offer", "price": "22.00", "priceCurrency": "PEN" } },
-                { "@type": "MenuItem", "name": "Onigirazu", "description": "Sandwich de arroz japónica envuelto en nori. Relleno a elección.", "offers": { "@type": "Offer", "price": "15.00", "priceCurrency": "PEN" } },
-                { "@type": "MenuItem", "name": "Onigiarazu Honey Buta", "description": "Onigirazu relleno de cerdo glaseado con miel agridulce japonesa.", "offers": { "@type": "Offer", "price": "16.00", "priceCurrency": "PEN" } }
+                { "@type": "MenuItem", "name": "Obento", "description": "Bento completo con proteína, tamagoyaki, yakisoba, ensalada y onigiri.", "offers": { "@type": "Offer", "price": "30.00", "priceCurrency": "PEN" } },
+                { "@type": "MenuItem", "name": "Obento Cerdo", "description": "Bento premium con lomo de cerdo empanizado, tamagoyaki, yakisoba y onigiri.", "offers": { "@type": "Offer", "price": "32.00", "priceCurrency": "PEN" } },
+                { "@type": "MenuItem", "name": "Obento Menchi", "description": "Bento con hamburguesa japonesa rellena, tamagoyaki, yakisoba y onigiri.", "offers": { "@type": "Offer", "price": "30.00", "priceCurrency": "PEN" } }
               ]
             },
             {
               "@type": "MenuSection",
               "name": "Mini Obento",
               "hasMenuItem": [
-                { "@type": "MenuItem", "name": "Mini Obento Tonkatsu", "description": "Versión mini del bento de cerdo panko con tamagoyaki y onigiri.", "offers": { "@type": "Offer", "price": "20.00", "priceCurrency": "PEN" } },
-                { "@type": "MenuItem", "name": "Mini Obento Chicken Katsu", "description": "Versión mini del bento de pollo panko con tamagoyaki y onigiri.", "offers": { "@type": "Offer", "price": "16.00", "priceCurrency": "PEN" } },
-                { "@type": "MenuItem", "name": "Mini Obento Menchi Katsu", "description": "Versión mini del bento de hamburguesita japonesa con tamagoyaki y onigiri.", "offers": { "@type": "Offer", "price": "17.00", "priceCurrency": "PEN" } }
+                { "@type": "MenuItem", "name": "Mini Obento", "description": "Versión reducida del obento clásico.", "offers": { "@type": "Offer", "price": "20.00", "priceCurrency": "PEN" } },
+                { "@type": "MenuItem", "name": "Mini Obento Cerdo", "description": "Mini bento con cerdo panko.", "offers": { "@type": "Offer", "price": "22.00", "priceCurrency": "PEN" } },
+                { "@type": "MenuItem", "name": "Mini Obento Menchi", "description": "Mini bento con hamburguesa japonesa.", "offers": { "@type": "Offer", "price": "22.00", "priceCurrency": "PEN" } }
+              ]
+            },
+            {
+              "@type": "MenuSection",
+              "name": "Curry Kare",
+              "hasMenuItem": [
+                { "@type": "MenuItem", "name": "Tonkatsu Kare", "description": "Lomo de cerdo panko con salsa curry japonesa sobre arroz japónica.", "offers": { "@type": "Offer", "price": "30.00", "priceCurrency": "PEN" } },
+                { "@type": "MenuItem", "name": "Chicken Katsu Kare", "description": "Pollo panko con salsa curry japonesa sobre arroz japónica.", "offers": { "@type": "Offer", "price": "28.00", "priceCurrency": "PEN" } }
+              ]
+            },
+            {
+              "@type": "MenuSection",
+              "name": "Donburi",
+              "hasMenuItem": [
+                { "@type": "MenuItem", "name": "Karaage Donburi", "description": "Tazón con pollo frito estilo karaage sobre arroz japónica.", "offers": { "@type": "Offer", "price": "28.00", "priceCurrency": "PEN" } },
+                { "@type": "MenuItem", "name": "Katsudon", "description": "Tonkatsu sobre arroz japónica con caldo warishita, cebolla y huevo. Plato bandera.", "offers": { "@type": "Offer", "price": "32.00", "priceCurrency": "PEN" } },
+                { "@type": "MenuItem", "name": "Bang Bang Arroz", "description": "Tazón bang bang con arroz japónica.", "offers": { "@type": "Offer", "price": "30.00", "priceCurrency": "PEN" } },
+                { "@type": "MenuItem", "name": "Bang Bang Fideo", "description": "Tazón bang bang con fideos salteados.", "offers": { "@type": "Offer", "price": "32.00", "priceCurrency": "PEN" } }
+              ]
+            },
+            {
+              "@type": "MenuSection",
+              "name": "Ramen",
+              "hasMenuItem": [
+                { "@type": "MenuItem", "name": "Ramen Tonkatsu", "description": "Tazón de fideos ramen en caldo profundo con tonkatsu crujiente.", "offers": { "@type": "Offer", "price": "35.00", "priceCurrency": "PEN" } },
+                { "@type": "MenuItem", "name": "Ramen Picante", "description": "Ramen con caldo picante estilo yatai.", "offers": { "@type": "Offer", "price": "37.00", "priceCurrency": "PEN" } }
+              ]
+            },
+            {
+              "@type": "MenuSection",
+              "name": "Combos",
+              "hasMenuItem": [
+                { "@type": "MenuItem", "name": "Akira Combo", "description": "6 takoyakis + 2 onigiris + bebida (Aloe Nacional, Inca Kola o Coca-Cola).", "offers": { "@type": "Offer", "price": "34.00", "priceCurrency": "PEN" } }
+              ]
+            },
+            {
+              "@type": "MenuSection",
+              "name": "Adicionales",
+              "hasMenuItem": [
+                { "@type": "MenuItem", "name": "Onigiri (unidad)", "description": "Onigiri de arroz japónica con relleno a elección.", "offers": { "@type": "Offer", "price": "6.00", "priceCurrency": "PEN" } },
+                { "@type": "MenuItem", "name": "Adicional Menchi", "description": "Hamburguesa japonesa adicional.", "offers": { "@type": "Offer", "price": "10.00", "priceCurrency": "PEN" } },
+                { "@type": "MenuItem", "name": "Adicional Takoyaki x3", "description": "Tres bolitas de takoyaki adicionales.", "offers": { "@type": "Offer", "price": "10.00", "priceCurrency": "PEN" } }
               ]
             }
           ]
@@ -572,8 +608,8 @@ a{text-decoration:none;color:var(--text-primary);transition:var(--transition)}
         <h1>Nuestra <span>Carta</span></h1>
         <span class="menu_hero__jp">献立 ·献立 · kondate</span>
         <p class="menu_hero__sub">
-            Comida japonesa de calle, hecha con técnica y respeto al producto. Delivery en <strong>California, El Golf,
-                San Andrés, Víctor Larco</strong> y el centro de Trujillo. Cada plato tiene una historia —
+            Comida japonesa de calle, hecha con técnica y respeto al producto. Delivery en <strong>Surquillo, Miraflores,
+                San Isidro, San Borja, Surco</strong> y zonas cercanas de Lima. Cada plato tiene una historia —
             <a href="../cultura-japonesa-peru.html">descúbrela aquí</a>.
         </p>
         <div class="menu_hero__lang">
@@ -596,7 +632,7 @@ a{text-decoration:none;color:var(--text-primary);transition:var(--transition)}
                 <div class="menu_card__img_wrap">
                     <span class="menu_card__kanji" aria-hidden="true">蛸</span>
                     <img src="images/takoyaki-box-original.webp"
-                        alt="Takoyaki Box Original — 15 bolitas de pulpo con salsa agridulce Katsudomo" loading="eager"
+                        alt="Takoyaki Box Original — 12 bolitas de pulpo con salsa Katsudomo" loading="eager"
                         width="800" height="533">
                 </div>
                 <div class="menu_card__body">
@@ -604,12 +640,12 @@ a{text-decoration:none;color:var(--text-primary);transition:var(--transition)}
                     <span class="menu_card__jp">たこ焼きボックス・オリジナル <em>takoyaki bokkusu orijinaru</em></span>
                     <p class="menu_card__tagline">Crujientes por fuera, suaves por dentro — el bocadito que define
                         Osaka.</p>
-                    <p class="menu_card__desc">15 bolitas de pulpo con corteza de masa Dashi-harina (reacción de
+                    <p class="menu_card__desc">12 bolitas de pulpo con corteza de masa Dashi-harina (reacción de
                         Maillard uniforme, crujiente sin exceso de aceite), bañadas en salsa Katsudomo, mayonesa Kewpie
                         y katsuobushi Arabushi —bonito ahumado y secado 6 semanas, fuente directa de IMP para potenciar
                         el umami. Cebollita china como contrapunto fresco.</p>
                     <div class="menu_card__footer">
-                        <p class="menu_card__price"><span>S/</span>25</p>
+                        <p class="menu_card__price"><span>S/</span>28</p>
                         <a href="https://wa.me/51906777436?text=Hola,+quiero+pedir+Takoyaki+Box+Original" class="btn_wa"
                             target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> Pedir</a>
                     </div>
@@ -651,12 +687,12 @@ a{text-decoration:none;color:var(--text-primary);transition:var(--transition)}
                     <h3 class="menu_card__name">Takoyaki Box Acevichado</h3>
                     <span class="menu_card__jp">たこ焼きボックス・アセビチャード <em>takoyaki bokkusu asebicharado</em></span>
                     <p class="menu_card__tagline">La fusión Japón–Perú que el paladar estaba esperando.</p>
-                    <p class="menu_card__desc">15 takoyakis en corteza Dashi crujiente, bañados en salsa acevichada
+                    <p class="menu_card__desc">12 takoyakis en corteza Dashi crujiente, bañados en salsa acevichada
                         (ácido cítrico natural del limón + ají limo) que activa los mismos receptores del umami que el
                         vinagre de arroz japonés. Fusión técnica: el ácido peruano y el shoyu convergen en el mismo
                         punto sensorial.</p>
                     <div class="menu_card__footer">
-                        <p class="menu_card__price"><span>S/</span>26</p>
+                        <p class="menu_card__price"><span>S/</span>29</p>
                         <a href="https://wa.me/51906777436?text=Hola,+quiero+pedir+Takoyaki+Box+Acevichado"
                             class="btn_wa" target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> Pedir</a>
                     </div>
@@ -851,7 +887,7 @@ a{text-decoration:none;color:var(--text-primary);transition:var(--transition)}
                         loading="lazy" width="800" height="533">
                 </div>
                 <div class="menu_card__body">
-                    <h3 class="menu_card__name">Katsudon</h3>
+                    <h3 class="menu_card__name">Katsudon カツ丼</h3>
                     <span class="menu_card__jp">カツ丼 <em>katsudon</em></span>
                     <p class="menu_card__tagline">Nuestro plato bandera: el tazón que los japoneses comen antes de
                         vencer.</p>
@@ -1260,7 +1296,7 @@ a{text-decoration:none;color:var(--text-primary);transition:var(--transition)}
             <div class="footer-brand">
                 <img src="../images/logo-katsudomo-comida-japonesa-trujillo.webp"
                     alt="logo katsudomo comida japonesa en Lima" class="footer-logo">
-                <p>Barra de street food japonesa auténtica.<br>Av. Tomás Marsano 2009, Surquillo, Lima.</p>
+                <p>Barra de street food japonesa auténtica.<br>Av. Tomás Marsano 2009, Lima.</p>
             </div>
             <div class="footer-links">
                 <h4>Carta</h4>
@@ -1289,10 +1325,10 @@ a{text-decoration:none;color:var(--text-primary);transition:var(--transition)}
             <div class="footer-social">
                 <h4>Síguenos</h4>
                 <div class="social-links">
-                    <a href="https://www.instagram.com/katsudoumotrujillo" target="_blank" rel="noopener"
+                    <a href="https://www.instagram.com/katsudomo" target="_blank" rel="noopener"
                         aria-label="Instagram"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-instagram"/></svg></a>
                     <a href="https://wa.me/c/51906777436" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg></a>
-                    <a href="https://www.tiktok.com/@katsudoumotrujillo" target="_blank" rel="noopener"
+                    <a href="https://www.tiktok.com/@katsudomo" target="_blank" rel="noopener"
                         aria-label="TikTok">TK</a>
                 </div>
             </div>

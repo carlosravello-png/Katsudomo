@@ -7,7 +7,7 @@
     Diseño y desarrollo: Carlos Ravello Joo
     Marco conceptual: Modelo de Coherencia Dinámica
     Propiedad intelectual: © 2026 Carlos Ravello Joo · Todos los derechos reservados.
-    Ubicación: Trujillo, Perú
+    Ubicación: Lima, Perú
 
 /* SITIO */
     Nombre: Katsudōmo

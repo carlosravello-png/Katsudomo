@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Katsudōmo · Carta A4 · Impresión</title>
+<style>
+/* ─────────────── Print setup ─────────────── */
+@page {
+  size: A4 portrait;
+  margin: 0;
+  bleed: 3mm;
+  marks: crop;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  color: #1a1410;
+  background: #faf6f0;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.page {
+  width: 210mm;
+  height: 297mm;
+  padding: 14mm 12mm;
+  position: relative;
+  page-break-after: always;
+  overflow: hidden;
+}
+.page:last-child { page-break-after: auto; }
+
+/* ─────────────── PAGE 1: HERO + BOCADITOS + YAKISOBA + OBENTO ─────────────── */
+.page--front {
+  background:
+    radial-gradient(ellipse at top right, rgba(200, 40, 30, 0.06), transparent 50%),
+    radial-gradient(ellipse at bottom left, rgba(30, 30, 30, 0.04), transparent 50%),
+    #faf6f0;
+}
+
+.hero {
+  text-align: center;
+  padding-bottom: 6mm;
+  border-bottom: 2px solid #c8281e;
+  margin-bottom: 6mm;
+}
+.hero__logo {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 34pt;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  color: #1a1410;
+  line-height: 1;
+}
+.hero__logo span { color: #c8281e; }
+.hero__jp {
+  font-size: 11pt;
+  color: #8a6640;
+  margin-top: 2mm;
+  letter-spacing: 0.3em;
+}
+.hero__tag {
+  font-size: 10pt;
+  color: #555;
+  margin-top: 3mm;
+  font-style: italic;
+}
+
+/* ─────────────── Menu layout ─────────────── */
+.menu-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6mm 8mm;
+}
+.section {
+  break-inside: avoid;
+}
+.section__title {
+  font-family: 'Georgia', serif;
+  font-size: 14pt;
+  font-weight: 700;
+  color: #c8281e;
+  border-bottom: 1.5px solid #1a1410;
+  padding-bottom: 1.5mm;
+  margin-bottom: 3mm;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.section__title .jp {
+  font-size: 9pt;
+  color: #8a6640;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2mm;
+  margin-bottom: 2.8mm;
+  align-items: baseline;
+}
+.item__name {
+  font-size: 9.5pt;
+  font-weight: 700;
+  color: #1a1410;
+}
+.item__desc {
+  grid-column: 1 / -1;
+  font-size: 7.8pt;
+  color: #555;
+  line-height: 1.35;
+  margin-top: 0.3mm;
+}
+.item__price {
+  font-family: 'Georgia', serif;
+  font-size: 11pt;
+  font-weight: 700;
+  color: #c8281e;
+  white-space: nowrap;
+}
+.item__price::before { content: "S/ "; font-size: 8pt; color: #8a6640; font-weight: 400; }
+
+/* ─────────────── PAGE 2: PLATOS FUERTES + COMBOS + PIE ─────────────── */
+.page--back {
+  background:
+    radial-gradient(ellipse at bottom right, rgba(200, 40, 30, 0.06), transparent 50%),
+    #faf6f0;
+}
+
+.back-hero {
+  text-align: center;
+  margin-bottom: 5mm;
+  padding-bottom: 3mm;
+  border-bottom: 1px solid #c8281e;
+}
+.back-hero__title {
+  font-family: 'Georgia', serif;
+  font-size: 18pt;
+  font-weight: 900;
+  color: #1a1410;
+}
+.back-hero__title span { color: #c8281e; }
+.back-hero__sub {
+  font-size: 9pt;
+  color: #8a6640;
+  letter-spacing: 0.25em;
+  margin-top: 1mm;
+}
+
+/* Combo feature */
+.combo {
+  background: #1a1410;
+  color: #faf6f0;
+  padding: 5mm 6mm;
+  margin: 5mm 0;
+  border-radius: 2mm;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 3mm;
+  align-items: center;
+}
+.combo__name {
+  font-family: 'Georgia', serif;
+  font-size: 15pt;
+  font-weight: 900;
+  color: #f5b800;
+}
+.combo__desc {
+  font-size: 9pt;
+  line-height: 1.45;
+  color: #f0e6d6;
+  margin-top: 1mm;
+}
+.combo__price {
+  font-family: 'Georgia', serif;
+  font-size: 22pt;
+  font-weight: 900;
+  color: #f5b800;
+  text-align: right;
+  line-height: 1;
+}
+.combo__price small { font-size: 10pt; color: #faf6f0; font-weight: 400; }
+
+/* Footer strip (NAP + payments + QR) */
+.footer {
+  position: absolute;
+  bottom: 10mm;
+  left: 12mm;
+  right: 12mm;
+  border-top: 2px solid #c8281e;
+  padding-top: 4mm;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr auto;
+  gap: 5mm;
+  align-items: center;
+}
+.footer__nap h4 {
+  font-family: 'Georgia', serif;
+  font-size: 10pt;
+  color: #c8281e;
+  margin-bottom: 1.5mm;
+}
+.footer__nap p {
+  font-size: 8.2pt;
+  line-height: 1.5;
+  color: #1a1410;
+}
+.footer__pay h4 {
+  font-family: 'Georgia', serif;
+  font-size: 10pt;
+  color: #c8281e;
+  margin-bottom: 1.5mm;
+}
+.footer__pay p {
+  font-size: 8.2pt;
+  line-height: 1.55;
+  color: #1a1410;
+}
+.footer__pay strong { color: #c8281e; }
+.footer__pay .nocash {
+  display: inline-block;
+  margin-top: 1.5mm;
+  padding: 0.8mm 2mm;
+  background: #c8281e;
+  color: #fff;
+  font-weight: 700;
+  font-size: 7.5pt;
+  letter-spacing: 0.05em;
+  border-radius: 1mm;
+}
+.footer__qr {
+  text-align: center;
+  width: 28mm;
+}
+.footer__qr img,
+.footer__qr svg {
+  width: 26mm;
+  height: 26mm;
+  display: block;
+  margin: 0 auto;
+  background: #fff;
+  padding: 1mm;
+  border: 0.3mm solid #1a1410;
+}
+.footer__qr p {
+  font-size: 6.5pt;
+  color: #8a6640;
+  margin-top: 1mm;
+  letter-spacing: 0.08em;
+}
+
+.bottom-line {
+  position: absolute;
+  bottom: 3mm;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 6.5pt;
+  color: #8a6640;
+  letter-spacing: 0.15em;
+}
+
+/* Decorative corner mark */
+.corner {
+  position: absolute;
+  top: 8mm;
+  right: 8mm;
+  width: 12mm;
+  height: 12mm;
+  opacity: 0.6;
+}
+
+@media print {
+  body { margin: 0; }
+}
+</style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════════════════════
+     PÁGINA 1 · ANVERSO
+     ══════════════════════════════════════════════════════════ -->
+<div class="page page--front">
+  <svg class="corner" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="50" cy="50" r="45" fill="none" stroke="#c8281e" stroke-width="2"/>
+    <circle cx="50" cy="50" r="25" fill="#c8281e"/>
+  </svg>
+
+  <header class="hero">
+    <div class="hero__logo">Katsud<span>ō</span>mo</div>
+    <div class="hero__jp">カツドーモ · 献立</div>
+    <div class="hero__tag">Street food japonés · Lima, Perú · Desde 2024</div>
+  </header>
+
+  <div class="menu-grid">
+
+    <!-- COLUMNA IZQUIERDA -->
+    <div>
+      <section class="section">
+        <h3 class="section__title">Takoyaki <span class="jp">たこ焼き</span></h3>
+        <div class="item">
+          <span class="item__name">Takoyaki Box Original</span>
+          <span class="item__price">28</span>
+          <p class="item__desc">12 bolitas de pulpo crujientes con salsa Katsudōmo, mayo Kewpie y katsuobushi.</p>
+        </div>
+        <div class="item">
+          <span class="item__name">Takoyaki Acevichado</span>
+          <span class="item__price">29</span>
+          <p class="item__desc">12 bolitas con salsa acevichada — fusión peruano-japonesa.</p>
+        </div>
+        <div class="item">
+          <span class="item__name">Takoyaki Sweet Chili</span>
+          <span class="item__price">30</span>
+          <p class="item__desc">12 bolitas con salsa sweet chili casera.</p>
+        </div>
+      </section>
+
+      <section class="section" style="margin-top:6mm;">
+        <h3 class="section__title">Yakisoba <span class="jp">焼きそば</span></h3>
+        <div class="item">
+          <span class="item__name">Yakisoba Pollo</span>
+          <span class="item__price">23</span>
+          <p class="item__desc">Fideos salteados al wok con pollo y salsa Katsudōmo.</p>
+        </div>
+        <div class="item">
+          <span class="item__name">Yakisoba Cerdo</span>
+          <span class="item__price">25</span>
+          <p class="item__desc">Fideos salteados con filete de cerdo y salsa Katsudōmo.</p>
+        </div>
+        <div class="item">
+          <span class="item__name">Tamago Yakisoba Pollo</span>
+          <span class="item__price">26</span>
+          <p class="item__desc">Yakisoba de pollo rematado con tamagoyaki.</p>
+        </div>
+        <div class="item">
+          <span class="item__name">Yakisoba Picante</span>
+          <span class="item__price">27</span>
+          <p class="item__desc">Fideos salteados con salsa picante estilo yatai.</p>
+        </div>
+        <div class="item">
+          <span class="item__name">Tamago Yakisoba Cerdo</span>
+          <span class="item__price">28</span>
+          <p class="item__desc">Yakisoba de cerdo rematado con tamagoyaki.</p>
+        </div>
+      </section>
+    </div>
+
+    <!-- COLUMNA DERECHA -->
+    <div>
+      <section class="section">
+        <h3 class="section__title">Obento <span class="jp">お弁当</span></h3>
+        <div class="item">
+          <span class="item__name">Obento</span>
+          <span class="item__price">30</span>
+          <p class="item__desc">Bento completo: proteína, tamagoyaki, yakisoba, ensalada y onigiri.</p>
+        </div>
+        <div class="item">
+          <span class="item__name">Obento Menchi</span>
+          <span class="item__price">30</span>
+          <p class="item__desc">Bento con hamburguesa japonesa rellena, tamagoyaki, yakisoba y onigiri.</p>
+        </div>
+        <div class="item">
+          <span class="item__name">Obento Cerdo</span>
+          <span class="item__price">32</span>
+          <p class="item__desc">Bento premium con lomo de cerdo empanizado, tamagoyaki, yakisoba y onigiri.</p>
+        </div>
+      </section>
+
+      <section class="section" style="margin-top:6mm;">
+        <h3 class="section__title">Mini Obento <span class="jp">ミニお弁当</span></h3>
+        <div class="item">
+          <span class="item__name">Mini Obento</span>
+          <span class="item__price">20</span>
+          <p class="item__desc">Versión reducida del obento clásico.</p>
+        </div>
+        <div class="item">
+          <span class="item__name">Mini Obento Cerdo</span>
+          <span class="item__price">22</span>
+          <p class="item__desc">Mini bento con cerdo panko.</p>
+        </div>
+        <div class="item">
+          <span class="item__name">Mini Obento Menchi</span>
+          <span class="item__price">22</span>
+          <p class="item__desc">Mini bento con hamburguesa japonesa.</p>
+        </div>
+      </section>
+
+      <section class="section" style="margin-top:6mm;">
+        <h3 class="section__title">Curry Kare <span class="jp">カレー</span></h3>
+        <div class="item">
+          <span class="item__name">Chicken Katsu Kare</span>
+          <span class="item__price">28</span>
+          <p class="item__desc">Pollo panko con salsa curry japonesa sobre arroz japónica.</p>
+        </div>
+        <div class="item">
+          <span class="item__name">Tonkatsu Kare</span>
+          <span class="item__price">30</span>
+          <p class="item__desc">Lomo de cerdo panko con salsa curry sobre arroz japónica.</p>
+        </div>
+      </section>
+    </div>
+
+  </div>
+
+  <p class="bottom-line">Pide por WhatsApp · +51 906 777 436 · katsudomo.com · Lado 1 / 2</p>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════
+     PÁGINA 2 · REVERSO
+     ══════════════════════════════════════════════════════════ -->
+<div class="page page--back">
+  <svg class="corner" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="50" cy="50" r="45" fill="none" stroke="#c8281e" stroke-width="2"/>
+    <circle cx="50" cy="50" r="25" fill="#c8281e"/>
+  </svg>
+
+  <header class="back-hero">
+    <div class="back-hero__title">Platos <span>fuertes</span> &amp; combos</div>
+    <div class="back-hero__sub">丼 · ラーメン · コンボ</div>
+  </header>
+
+  <div class="menu-grid">
+
+    <!-- COLUMNA IZQUIERDA -->
+    <div>
+      <section class="section">
+        <h3 class="section__title">Arroz &amp; Donburi <span class="jp">丼物</span></h3>
+        <div class="item">
+          <span class="item__name">Karaage Donburi</span>
+          <span class="item__price">28</span>
+          <p class="item__desc">Tazón con pollo frito estilo karaage sobre arroz japónica.</p>
+        </div>
+        <div class="item">
+          <span class="item__name">Bang Bang Arroz</span>
+          <span class="item__price">30</span>
+          <p class="item__desc">Tazón bang bang con arroz japónica.</p>
+        </div>
+        <div class="item">
+          <span class="item__name">Katsudon</span>
+          <span class="item__price">32</span>
+          <p class="item__desc">Tonkatsu sobre arroz japónica con caldo warishita, cebolla y huevo. Plato bandera.</p>
+        </div>
+        <div class="item">
+          <span class="item__name">Bang Bang Fideo</span>
+          <span class="item__price">32</span>
+          <p class="item__desc">Tazón bang bang con fideos salteados.</p>
+        </div>
+      </section>
+
+      <section class="section" style="margin-top:6mm;">
+        <h3 class="section__title">Ramen <span class="jp">ラーメン</span></h3>
+        <div class="item">
+          <span class="item__name">Ramen Tonkatsu</span>
+          <span class="item__price">35</span>
+          <p class="item__desc">Fideos ramen en caldo profundo con tonkatsu crujiente.</p>
+        </div>
+        <div class="item">
+          <span class="item__name">Ramen Picante</span>
+          <span class="item__price">37</span>
+          <p class="item__desc">Ramen con caldo picante estilo yatai.</p>
+        </div>
+      </section>
+    </div>
+
+    <!-- COLUMNA DERECHA -->
+    <div>
+      <section class="section">
+        <h3 class="section__title">Adicionales <span class="jp">追加</span></h3>
+        <div class="item">
+          <span class="item__name">Onigiri (unidad)</span>
+          <span class="item__price">6</span>
+          <p class="item__desc">Arroz japónica con relleno a elección.</p>
+        </div>
+        <div class="item">
+          <span class="item__name">Adicional Menchi</span>
+          <span class="item__price">10</span>
+          <p class="item__desc">Hamburguesa japonesa adicional.</p>
+        </div>
+        <div class="item">
+          <span class="item__name">Adicional Takoyaki x3</span>
+          <span class="item__price">10</span>
+          <p class="item__desc">Tres bolitas de takoyaki adicionales.</p>
+        </div>
+      </section>
+
+      <section class="section" style="margin-top:6mm;">
+        <h3 class="section__title">Bebidas <span class="jp">飲み物</span></h3>
+        <div class="item">
+          <span class="item__name">Aloe Nacional</span>
+          <span class="item__price">7</span>
+        </div>
+        <div class="item">
+          <span class="item__name">Inca Kola / Coca-Cola</span>
+          <span class="item__price">6</span>
+        </div>
+        <div class="item">
+          <span class="item__name">Agua mineral</span>
+          <span class="item__price">5</span>
+        </div>
+      </section>
+    </div>
+
+  </div>
+
+  <!-- Akira Combo destacado -->
+  <div class="combo">
+    <div>
+      <div class="combo__name">★ Akira Combo</div>
+      <p class="combo__desc">6 takoyakis + 2 onigiris + bebida (Aloe Nacional, Inca Kola o Coca-Cola). La forma más rápida de probarlo todo.</p>
+    </div>
+    <div class="combo__price">S/ 34<br><small>combo completo</small></div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__nap">
+      <h4>Visítanos / Delivery</h4>
+      <p>
+        <strong>Av. Tomás Marsano 2009</strong><br>
+        Surquillo, Lima, Perú<br>
+        Lun – Sáb · 1:00–4:00 pm · 6:00–10:00 pm<br>
+        Domingo cerrado · +51 906 777 436
+      </p>
+    </div>
+    <div class="footer__pay">
+      <h4>Pagos &amp; Pedidos</h4>
+      <p>
+        <strong>Yape · Plin</strong><br>
+        Tarjeta de crédito / débito<br>
+        Pide por WhatsApp o Rappi
+      </p>
+      <span class="nocash">NO ACEPTAMOS EFECTIVO</span>
+    </div>
+    <div class="footer__qr">
+      <!-- QR placeholder — reemplazar por el QR real de Google Business Profile -->
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-label="QR Google Business Profile">
+        <rect width="100" height="100" fill="#fff"/>
+        <!-- Patrón QR estilizado (decorativo; reemplazar por QR real antes de imprimir) -->
+        <g fill="#1a1410">
+          <rect x="8" y="8" width="20" height="20"/>
+          <rect x="12" y="12" width="12" height="12" fill="#fff"/>
+          <rect x="14" y="14" width="8" height="8"/>
+          <rect x="72" y="8" width="20" height="20"/>
+          <rect x="76" y="12" width="12" height="12" fill="#fff"/>
+          <rect x="78" y="14" width="8" height="8"/>
+          <rect x="8" y="72" width="20" height="20"/>
+          <rect x="12" y="76" width="12" height="12" fill="#fff"/>
+          <rect x="14" y="78" width="8" height="8"/>
+          <rect x="34" y="8" width="4" height="4"/>
+          <rect x="40" y="8" width="4" height="4"/>
+          <rect x="48" y="8" width="4" height="4"/>
+          <rect x="54" y="8" width="4" height="4"/>
+          <rect x="60" y="8" width="4" height="4"/>
+          <rect x="8" y="34" width="4" height="4"/>
+          <rect x="8" y="40" width="4" height="4"/>
+          <rect x="8" y="48" width="4" height="4"/>
+          <rect x="8" y="54" width="4" height="4"/>
+          <rect x="8" y="60" width="4" height="4"/>
+          <rect x="34" y="34" width="6" height="6"/>
+          <rect x="44" y="38" width="4" height="4"/>
+          <rect x="52" y="34" width="4" height="4"/>
+          <rect x="58" y="44" width="6" height="6"/>
+          <rect x="38" y="48" width="4" height="4"/>
+          <rect x="46" y="52" width="6" height="6"/>
+          <rect x="56" y="56" width="4" height="4"/>
+          <rect x="66" y="40" width="4" height="4"/>
+          <rect x="72" y="48" width="4" height="4"/>
+          <rect x="82" y="36" width="4" height="4"/>
+          <rect x="88" y="44" width="4" height="4"/>
+          <rect x="34" y="66" width="4" height="4"/>
+          <rect x="42" y="72" width="4" height="4"/>
+          <rect x="48" y="66" width="6" height="6"/>
+          <rect x="58" y="72" width="4" height="4"/>
+          <rect x="66" y="66" width="6" height="6"/>
+          <rect x="76" y="76" width="4" height="4"/>
+          <rect x="82" y="72" width="4" height="4"/>
+          <rect x="88" y="82" width="4" height="4"/>
+        </g>
+      </svg>
+      <p>ESCANEA ·<br>google reviews</p>
+    </div>
+  </footer>
+
+  <p class="bottom-line">© 2026 Katsudōmo · katsudomo.com · @katsudomo · Lado 2 / 2</p>
+</div>
+
+</body>
+</html>
