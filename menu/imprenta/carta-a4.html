@@ -185,6 +185,20 @@ html, body {
 }
 .combo__price small { font-size: 10pt; color: #faf6f0; font-weight: 400; }
 
+/* Take-away surcharge note */
+.takeaway {
+  margin: 4mm 0 2mm;
+  padding: 2.5mm 4mm;
+  background: rgba(200, 40, 30, 0.08);
+  border-left: 2.5pt solid #c8281e;
+  font-family: 'Georgia', serif;
+  font-size: 9pt;
+  color: #1a1410;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+.takeaway strong { color: #c8281e; }
+
 /* Footer strip (NAP + payments + QR) */
 .footer {
   position: absolute;
@@ -504,6 +518,11 @@ html, body {
       </section>
     </div>
 
+  </div>
+
+  <!-- Recargo take-away -->
+  <div class="takeaway">
+    📦 <strong>Recargo por empaque para llevar:</strong> +S/ 2 por pedido
   </div>
 
   <!-- Akira Combo destacado -->

@@ -80,7 +80,15 @@ a{text-decoration:none;color:var(--text-primary);transition:var(--transition)}
 .nav-links{margin-top:0;flex-wrap:nowrap;justify-content:flex-end;gap:15px}
 .nav-links>a:not([href*="carta.html"]):not([href*="#menu"]){display:none}
 }
-    </style>
+    
+        .menu_section__lead { color: var(--text-secondary); margin-top: 0.5rem; font-style: italic; font-size: 0.95rem; }
+        .menu_section--featured { background: linear-gradient(180deg, rgba(200,40,30,0.04), transparent); padding: 2rem 1rem; border-radius: 8px; }
+        .menu_card__pending { position: absolute; top: 0.5rem; right: 0.5rem; background: rgba(26,20,16,0.85); color: #f5b800; font-size: 0.7rem; padding: 0.25rem 0.5rem; border-radius: 4px; letter-spacing: 0.05em; }
+        .menu_card__img_wrap { position: relative; }
+        .menu_note { max-width: 900px; margin: 2rem auto 1rem; padding: 1rem 1.5rem; background: rgba(200,40,30,0.08); border-left: 4px solid var(--brand, #c8281e); border-radius: 4px; text-align: center; font-size: 0.95rem; }
+        .menu_note p { margin: 0; color: var(--text-primary); font-weight: 600; letter-spacing: 0.02em; }
+
+        </style>
     <!-- Full stylesheet: async-loaded, non-blocking -->
     <link rel="stylesheet" href="../css/style.css?v=1.4" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="../css/style.css?v=1.4"></noscript>
@@ -617,658 +625,554 @@ a{text-decoration:none;color:var(--text-primary);transition:var(--transition)}
         </div>
     </header>
 
-    <!-- ═══════════════════════════════════════════════════════
-         SECCIÓN 1 — BOCADITOS JAPONESES
+<!-- ═══════════════════════════════════════════════════════
+         SECCIÓN — TAKOYAKI
     ═══════════════════════════════════════════════════════ -->
-    <section class="menu_section" id="bocaditos">
+    <section class="menu_section" id="takoyaki">
         <div class="menu_section__header">
-            <h2 class="menu_section__title">Bocaditos Japoneses</h2>
-            <span class="menu_section__kanji">小食 · おつまみ</span>
+            <h2 class="menu_section__title">Takoyaki</h2>
+            <span class="menu_section__kanji">蛸 · たこ焼き</span>
+            <p class="menu_section__lead">12 bolitas. La firma de Osaka.</p>
         </div>
         <div class="menu_grid">
-
-            <!-- Takoyaki Box Original -->
-            <article class="menu_card">
+            <article class="menu_card" data-slug="takoyaki-original">
                 <div class="menu_card__img_wrap">
                     <span class="menu_card__kanji" aria-hidden="true">蛸</span>
-                    <img src="images/takoyaki-box-original.webp"
-                        alt="Takoyaki Box Original — 12 bolitas de pulpo con salsa Katsudomo" loading="eager"
-                        width="800" height="533">
+                    <img src="images/takoyaki-box-original.webp" alt="Takoyaki Original — Crujientes por fuera, cremosas por dentro." loading="eager" width="800" height="533">
                 </div>
                 <div class="menu_card__body">
-                    <h3 class="menu_card__name">Takoyaki Box Original</h3>
-                    <span class="menu_card__jp">たこ焼きボックス・オリジナル <em>takoyaki bokkusu orijinaru</em></span>
-                    <p class="menu_card__tagline">Crujientes por fuera, suaves por dentro — el bocadito que define
-                        Osaka.</p>
-                    <p class="menu_card__desc">12 bolitas de pulpo con corteza de masa Dashi-harina (reacción de
-                        Maillard uniforme, crujiente sin exceso de aceite), bañadas en salsa Katsudomo, mayonesa Kewpie
-                        y katsuobushi Arabushi —bonito ahumado y secado 6 semanas, fuente directa de IMP para potenciar
-                        el umami. Cebollita china como contrapunto fresco.</p>
+                    <h3 class="menu_card__name">Takoyaki Original</h3>
+                    <span class="menu_card__jp">たこ焼き・オリジナル <em>takoyaki orijinaru</em></span>
+                    <p class="menu_card__tagline">Crujientes por fuera, cremosas por dentro.</p>
+                    <p class="menu_card__desc">12 bolitas de pulpo en corteza Dashi de harina, reacción de Maillard uniforme. Salsa Katsudōmo, mayo Kewpie y katsuobushi Arabushi.</p>
                     <div class="menu_card__footer">
                         <p class="menu_card__price"><span>S/</span>28</p>
-                        <a href="https://wa.me/51906777436?text=Hola,+quiero+pedir+Takoyaki+Box+Original" class="btn_wa"
-                            target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> Pedir</a>
+                        <a href="https://wa.me/51906777436?text=Hola,+quiero+pedir+Takoyaki+Original" class="btn_wa" target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> Pedir</a>
                     </div>
                 </div>
             </article>
-
-            <!-- Onigiri Box -->
-            <article class="menu_card">
-                <div class="menu_card__img_wrap">
-                    <span class="menu_card__kanji" aria-hidden="true">握</span>
-                    <img src="images/onigiri-box.webp"
-                        alt="Onigiri Box — 6 onigiri de arroz japónica rellenos de tsuna mayo y pollito teriyaki"
-                        loading="lazy" width="800" height="533">
-                </div>
-                <div class="menu_card__body">
-                    <h3 class="menu_card__name">Onigiri Box</h3>
-                    <span class="menu_card__jp">おにぎりボックス <em>onigiri bokkusu</em></span>
-                    <p class="menu_card__tagline">El lunch box de Japón: arroz japónica con alma de calle.</p>
-                    <p class="menu_card__desc">6 onigiri de arroz japónica de grano corto (alto en amilopectina: la
-                        textura compacta se forma sola, sin aglutinante), 3 de tsuna mayo y 3 de pollito teriyaki
-                        agridulce, cada uno sellado en alga nori seca para mantener el crujido hasta la entrega.</p>
-                    <div class="menu_card__footer">
-                        <p class="menu_card__price"><span>S/</span>30</p>
-                        <a href="https://wa.me/51906777436?text=Hola,+quiero+pedir+Onigiri+Box" class="btn_wa"
-                            target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> Pedir</a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Takoyaki Box Acevichado -->
-            <article class="menu_card">
+            <article class="menu_card" data-slug="takoyaki-acevichado">
                 <div class="menu_card__img_wrap">
                     <span class="menu_card__kanji" aria-hidden="true">融</span>
-                    <img src="images/takoyaki-box-acevichado.webp"
-                        alt="Takoyaki Box Acevichado — bolitas de pulpo con salsa acevichada fusión peruano-japonesa"
-                        loading="lazy" width="800" height="533">
+                    <img src="images/takoyaki-box-acevichado.webp" alt="Takoyaki Acevichado — Fusión Japón–Perú. Limón, ají limo y shoyu." loading="lazy" width="800" height="533">
                 </div>
                 <div class="menu_card__body">
-                    <h3 class="menu_card__name">Takoyaki Box Acevichado</h3>
-                    <span class="menu_card__jp">たこ焼きボックス・アセビチャード <em>takoyaki bokkusu asebicharado</em></span>
-                    <p class="menu_card__tagline">La fusión Japón–Perú que el paladar estaba esperando.</p>
-                    <p class="menu_card__desc">12 takoyakis en corteza Dashi crujiente, bañados en salsa acevichada
-                        (ácido cítrico natural del limón + ají limo) que activa los mismos receptores del umami que el
-                        vinagre de arroz japonés. Fusión técnica: el ácido peruano y el shoyu convergen en el mismo
-                        punto sensorial.</p>
+                    <h3 class="menu_card__name">Takoyaki Acevichado</h3>
+                    <span class="menu_card__jp">たこ焼き・アセビチャード <em>takoyaki asebicharado</em></span>
+                    <p class="menu_card__tagline">Fusión Japón–Perú. Limón, ají limo y shoyu.</p>
+                    <p class="menu_card__desc">12 takoyakis bañados en salsa acevichada casera: ácido cítrico del limón y ají limo activan los mismos receptores umami que el vinagre de arroz.</p>
                     <div class="menu_card__footer">
                         <p class="menu_card__price"><span>S/</span>29</p>
-                        <a href="https://wa.me/51906777436?text=Hola,+quiero+pedir+Takoyaki+Box+Acevichado"
-                            class="btn_wa" target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> Pedir</a>
+                        <a href="https://wa.me/51906777436?text=Hola,+quiero+pedir+Takoyaki+Acevichado" class="btn_wa" target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> Pedir</a>
                     </div>
                 </div>
             </article>
-
+            <article class="menu_card" data-slug="takoyaki-sweet-chili">
+                <div class="menu_card__img_wrap">
+                    <span class="menu_card__kanji" aria-hidden="true">甘</span>
+                    <img src="images/sweet-chili-oil.webp" alt="Takoyaki Sweet Chili — Dulce primero, picante después. Secuencia sensorial." loading="lazy" width="800" height="533">
+                </div>
+                <div class="menu_card__body">
+                    <h3 class="menu_card__name">Takoyaki Sweet Chili</h3>
+                    <span class="menu_card__jp">たこ焼き・スイートチリ <em>takoyaki suīto chiri</em></span>
+                    <p class="menu_card__tagline">Dulce primero, picante después. Secuencia sensorial.</p>
+                    <p class="menu_card__desc">12 bolitas con salsa sweet chili casera calibrada entre 8 000 y 12 000 SHU. El dulce llega un segundo antes del picante: secuencia, no golpe.</p>
+                    <div class="menu_card__footer">
+                        <p class="menu_card__price"><span>S/</span>30</p>
+                        <a href="https://wa.me/51906777436?text=Hola,+quiero+pedir+Takoyaki+Sweet+Chili" class="btn_wa" target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> Pedir</a>
+                    </div>
+                </div>
+            </article>
         </div>
     </section>
 
     <!-- ═══════════════════════════════════════════════════════
-         SECCIÓN 2 — OBENTO
+         SECCIÓN — YAKISOBA
+    ═══════════════════════════════════════════════════════ -->
+    <section class="menu_section" id="yakisoba">
+        <div class="menu_section__header">
+            <h2 class="menu_section__title">Yakisoba</h2>
+            <span class="menu_section__kanji">焼 · 焼きそば</span>
+            <p class="menu_section__lead">Fideos salteados al wok. Tradición de yatai.</p>
+        </div>
+        <div class="menu_grid">
+            <article class="menu_card" data-slug="yakisoba-pollo">
+                <div class="menu_card__img_wrap">
+                    <span class="menu_card__kanji" aria-hidden="true">鶏</span>
+                    <img src="images/buta-yakisoba.webp" alt="Yakisoba Pollo — Pollo marinado, wok de alta temperatura." loading="lazy" width="800" height="533">
+                    <span class="menu_card__pending" title="Foto próximamente">📸 pronto</span>
+                </div>
+                <div class="menu_card__body">
+                    <h3 class="menu_card__name">Yakisoba Pollo</h3>
+                    <span class="menu_card__jp">鶏焼きそば <em>tori yakisoba</em></span>
+                    <p class="menu_card__tagline">Pollo marinado, wok de alta temperatura.</p>
+                    <p class="menu_card__desc">Fideos salteados con pechuga de pollo marinada 4 horas en shoyu-mirin y salsa Katsudōmo. Col, zanahoria y cebollita china.</p>
+                    <div class="menu_card__footer">
+                        <p class="menu_card__price"><span>S/</span>23</p>
+                        <a href="https://wa.me/51906777436?text=Hola,+quiero+pedir+Yakisoba+Pollo" class="btn_wa" target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> Pedir</a>
+                    </div>
+                </div>
+            </article>
+            <article class="menu_card" data-slug="yakisoba-cerdo">
+                <div class="menu_card__img_wrap">
+                    <span class="menu_card__kanji" aria-hidden="true">豚</span>
+                    <img src="images/buta-yakisoba.webp" alt="Yakisoba Cerdo — El clásico japonés con filete de cerdo." loading="lazy" width="800" height="533">
+                </div>
+                <div class="menu_card__body">
+                    <h3 class="menu_card__name">Yakisoba Cerdo</h3>
+                    <span class="menu_card__jp">豚焼きそば <em>buta yakisoba</em></span>
+                    <p class="menu_card__tagline">El clásico japonés con filete de cerdo.</p>
+                    <p class="menu_card__desc">Fideos salteados al wok con filete de cerdo en láminas finas, salsa Katsudōmo, col y zanahoria. Intenso, ahumado, honesto.</p>
+                    <div class="menu_card__footer">
+                        <p class="menu_card__price"><span>S/</span>25</p>
+                        <a href="https://wa.me/51906777436?text=Hola,+quiero+pedir+Yakisoba+Cerdo" class="btn_wa" target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> Pedir</a>
+                    </div>
+                </div>
+            </article>
+            <article class="menu_card" data-slug="yakisoba-picante">
+                <div class="menu_card__img_wrap">
+                    <span class="menu_card__kanji" aria-hidden="true">辛</span>
+                    <img src="images/buta-yakisoba.webp" alt="Yakisoba Picante — Estilo yatai nocturno. Picante calibrado." loading="lazy" width="800" height="533">
+                    <span class="menu_card__pending" title="Foto próximamente">📸 pronto</span>
+                </div>
+                <div class="menu_card__body">
+                    <h3 class="menu_card__name">Yakisoba Picante</h3>
+                    <span class="menu_card__jp">辛焼きそば <em>kara yakisoba</em></span>
+                    <p class="menu_card__tagline">Estilo yatai nocturno. Picante calibrado.</p>
+                    <p class="menu_card__desc">Yakisoba con salsa picante casera estilo yatai, ají togarashi y aceite de chili. Perfil equilibrado, no quema: despierta.</p>
+                    <div class="menu_card__footer">
+                        <p class="menu_card__price"><span>S/</span>27</p>
+                        <a href="https://wa.me/51906777436?text=Hola,+quiero+pedir+Yakisoba+Picante" class="btn_wa" target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> Pedir</a>
+                    </div>
+                </div>
+            </article>
+            <article class="menu_card" data-slug="tamago-yakisoba-pollo">
+                <div class="menu_card__img_wrap">
+                    <span class="menu_card__kanji" aria-hidden="true">玉</span>
+                    <img src="images/buta-yakisoba.webp" alt="Tamago Yakisoba Pollo — Yakisoba de pollo con tamagoyaki encima." loading="lazy" width="800" height="533">
+                    <span class="menu_card__pending" title="Foto próximamente">📸 pronto</span>
+                </div>
+                <div class="menu_card__body">
+                    <h3 class="menu_card__name">Tamago Yakisoba Pollo</h3>
+                    <span class="menu_card__jp">玉子焼きそば・鶏 <em>tamago yakisoba tori</em></span>
+                    <p class="menu_card__tagline">Yakisoba de pollo con tamagoyaki encima.</p>
+                    <p class="menu_card__desc">Nuestro yakisoba de pollo coronado con tamagoyaki (tortilla japonesa en capas, cocción lenta a 140 °C). Dulce, umami, doble textura.</p>
+                    <div class="menu_card__footer">
+                        <p class="menu_card__price"><span>S/</span>26</p>
+                        <a href="https://wa.me/51906777436?text=Hola,+quiero+pedir+Tamago+Yakisoba+Pollo" class="btn_wa" target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> Pedir</a>
+                    </div>
+                </div>
+            </article>
+            <article class="menu_card" data-slug="tamago-yakisoba-cerdo">
+                <div class="menu_card__img_wrap">
+                    <span class="menu_card__kanji" aria-hidden="true">玉</span>
+                    <img src="images/buta-yakisoba.webp" alt="Tamago Yakisoba Cerdo — Yakisoba de cerdo con tamagoyaki encima." loading="lazy" width="800" height="533">
+                    <span class="menu_card__pending" title="Foto próximamente">📸 pronto</span>
+                </div>
+                <div class="menu_card__body">
+                    <h3 class="menu_card__name">Tamago Yakisoba Cerdo</h3>
+                    <span class="menu_card__jp">玉子焼きそば・豚 <em>tamago yakisoba buta</em></span>
+                    <p class="menu_card__tagline">Yakisoba de cerdo con tamagoyaki encima.</p>
+                    <p class="menu_card__desc">Yakisoba de cerdo rematado con tamagoyaki en capas. La dulzura del huevo balancea el umami del shoyu y el ahumado del cerdo.</p>
+                    <div class="menu_card__footer">
+                        <p class="menu_card__price"><span>S/</span>28</p>
+                        <a href="https://wa.me/51906777436?text=Hola,+quiero+pedir+Tamago+Yakisoba+Cerdo" class="btn_wa" target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> Pedir</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECCIÓN — OBENTO
     ═══════════════════════════════════════════════════════ -->
     <section class="menu_section" id="obento">
         <div class="menu_section__header">
             <h2 class="menu_section__title">Obento</h2>
-            <span class="menu_section__kanji">お弁当</span>
+            <span class="menu_section__kanji">弁 · お弁当</span>
+            <p class="menu_section__lead">Caja completa. Equilibrio japonés en una sola bandeja.</p>
         </div>
         <div class="menu_grid">
-
-            <!-- Obento Chicken Katsu -->
-            <article class="menu_card">
+            <article class="menu_card" data-slug="obento">
                 <div class="menu_card__img_wrap">
                     <span class="menu_card__kanji" aria-hidden="true">弁</span>
-                    <img src="images/obento-chicken-katsu.webp"
-                        alt="Obento Chicken Katsu — bento completo con filete de pollo panko, tamagoyaki y yakisoba"
-                        loading="lazy" width="800" height="533">
+                    <img src="images/obento-chicken-katsu.webp" alt="Obento — Proteína, tamagoyaki, yakisoba y onigiri." loading="lazy" width="800" height="533">
                 </div>
                 <div class="menu_card__body">
-                    <h3 class="menu_card__name">Obento Chicken Katsu</h3>
-                    <span class="menu_card__jp">お弁当チキンカツ <em>obentō chikin katsu</em></span>
-                    <p class="menu_card__tagline">El bento completo del guerrero cotidiano: proteína, carbos y umami.
-                    </p>
-                    <p class="menu_card__desc">½ pechuga a 72°C interno, empanizada en panko japonés de grano grueso que
-                        crea cámara de aire crujiente sin absorber grasa en exceso. 2 tamagoyaki en capas finas,
-                        yakisoba agridulce, ensalada de repollo japonés y onigiri a elección.</p>
+                    <h3 class="menu_card__name">Obento</h3>
+                    <span class="menu_card__jp">お弁当 <em>obento</em></span>
+                    <p class="menu_card__tagline">Proteína, tamagoyaki, yakisoba y onigiri.</p>
+                    <p class="menu_card__desc">Bento completo con pollo chicken katsu, tamagoyaki, yakisoba corto, ensalada y onigiri. La fórmula japonesa del ichijū-sansai en una sola caja.</p>
                     <div class="menu_card__footer">
-                        <p class="menu_card__price"><span>S/</span>26</p>
-                        <a href="https://wa.me/51906777436?text=Hola,+quiero+pedir+Obento+Chicken+Katsu" class="btn_wa"
-                            target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> Pedir</a>
+                        <p class="menu_card__price"><span>S/</span>30</p>
+                        <a href="https://wa.me/51906777436?text=Hola,+quiero+pedir+Obento" class="btn_wa" target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> Pedir</a>
                     </div>
                 </div>
             </article>
-
-            <!-- Obento Tonkatsu -->
-            <article class="menu_card">
+            <article class="menu_card" data-slug="obento-menchi">
+                <div class="menu_card__img_wrap">
+                    <span class="menu_card__kanji" aria-hidden="true">挽</span>
+                    <img src="images/obento-menchi-katsu.webp" alt="Obento Menchi — Hamburguesa japonesa rellena de carne y cebolla." loading="lazy" width="800" height="533">
+                </div>
+                <div class="menu_card__body">
+                    <h3 class="menu_card__name">Obento Menchi</h3>
+                    <span class="menu_card__jp">お弁当メンチカツ <em>obento menchikatsu</em></span>
+                    <p class="menu_card__tagline">Hamburguesa japonesa rellena de carne y cebolla.</p>
+                    <p class="menu_card__desc">Bento con menchi katsu — hamburguesa japonesa de carne molida de res y cerdo empanizada en panko. Tamagoyaki, yakisoba y onigiri.</p>
+                    <div class="menu_card__footer">
+                        <p class="menu_card__price"><span>S/</span>30</p>
+                        <a href="https://wa.me/51906777436?text=Hola,+quiero+pedir+Obento+Menchi" class="btn_wa" target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> Pedir</a>
+                    </div>
+                </div>
+            </article>
+            <article class="menu_card" data-slug="obento-cerdo">
                 <div class="menu_card__img_wrap">
                     <span class="menu_card__kanji" aria-hidden="true">豚</span>
-                    <img src="images/obento-tonkatsu.webp"
-                        alt="Obento Tonkatsu — bento con lomo de cerdo empanizado, tamagoyaki, yakisoba y onigiri"
-                        loading="lazy" width="800" height="533">
+                    <img src="images/obento-tonkatsu.webp" alt="Obento Cerdo — Premium: lomo de cerdo panko dorado." loading="lazy" width="800" height="533">
                 </div>
                 <div class="menu_card__body">
-                    <h3 class="menu_card__name">Obento Tonkatsu</h3>
-                    <span class="menu_card__jp">お弁当豚カツ <em>obentō tonkatsu</em></span>
-                    <p class="menu_card__tagline">El rey de los bentos: lomo de cerdo con panko y alma japonesa.</p>
-                    <p class="menu_card__desc">½ lomo de cerdo (1.5 cm, punto exacto para dorar el panko antes de que el
-                        centro se seque) frito a 170°C. 2 tamagoyaki en capas, yakisoba, ensalada de repollo y onigiri a
-                        elección. El bento que más veces repiten nuestros clientes.</p>
+                    <h3 class="menu_card__name">Obento Cerdo</h3>
+                    <span class="menu_card__jp">お弁当豚カツ <em>obento tonkatsu</em></span>
+                    <p class="menu_card__tagline">Premium: lomo de cerdo panko dorado.</p>
+                    <p class="menu_card__desc">Bento premium con tonkatsu — lomo de cerdo empanizado en panko, corteza dorada y crujiente. Tamagoyaki, yakisoba y onigiri.</p>
                     <div class="menu_card__footer">
-                        <p class="menu_card__price"><span>S/</span>29</p>
-                        <a href="https://wa.me/51906777436?text=Hola,+quiero+pedir+Obento+Tonkatsu" class="btn_wa"
-                            target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> Pedir</a>
+                        <p class="menu_card__price"><span>S/</span>32</p>
+                        <a href="https://wa.me/51906777436?text=Hola,+quiero+pedir+Obento+Cerdo" class="btn_wa" target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> Pedir</a>
                     </div>
                 </div>
             </article>
-
-            <!-- Obento Menchi Katsu -->
-            <article class="menu_card">
-                <div class="menu_card__img_wrap">
-                    <span class="menu_card__kanji" aria-hidden="true">勝</span>
-                    <img src="images/obento-menchi-katsu.webp"
-                        alt="Obento Menchi Katsu — bento con hamburguesa japonesa rellena de queso cheddar"
-                        loading="lazy" width="800" height="533">
-                </div>
-                <div class="menu_card__body">
-                    <h3 class="menu_card__name">Obento Menchi Katsu</h3>
-                    <span class="menu_card__jp">お弁当メンチカツ <em>obentō menchi katsu</em></span>
-                    <p class="menu_card__tagline">La hamburguesa japonesa que se derrite: queso cheddar en el interior.
-                    </p>
-                    <p class="menu_card__desc">1 menchi katsu de carne molida sazonada con shoyu, jengibre y sake —la
-                        base aromática del yatai japonés— rellena de queso cheddar que alcanza punto de fusión completo
-                        al freír. 2 tamagoyaki, yakisoba, ensalada de repollo y onigiri a elección.</p>
-                    <div class="menu_card__footer">
-                        <p class="menu_card__price"><span>S/</span>26</p>
-                        <a href="https://wa.me/51906777436?text=Hola,+quiero+pedir+Obento+Menchi+Katsu" class="btn_wa"
-                            target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> Pedir</a>
-                    </div>
-                </div>
-            </article>
-
         </div>
     </section>
 
     <!-- ═══════════════════════════════════════════════════════
-         SECCIÓN 3 — COMBOS
+         SECCIÓN — CURRY KARE
     ═══════════════════════════════════════════════════════ -->
-    <section class="menu_section" id="combos">
+    <section class="menu_section" id="curry">
         <div class="menu_section__header">
-            <h2 class="menu_section__title">Combos</h2>
-            <span class="menu_section__kanji">コンボ</span>
+            <h2 class="menu_section__title">Curry Kare</h2>
+            <span class="menu_section__kanji">咖 · カレー</span>
+            <p class="menu_section__lead">Salsa curry japonesa sobre arroz japónica.</p>
         </div>
         <div class="menu_grid">
-
-            <!-- Cheese MenchiKatsu Box -->
-            <article class="menu_card">
+            <article class="menu_card" data-slug="chicken-katsu-kare">
                 <div class="menu_card__img_wrap">
-                    <span class="menu_card__kanji" aria-hidden="true">チ</span>
-                    <img src="images/cheese-menchikatsu-box.webp"
-                        alt="Cheese MenchiKatsu Box — 4 hamburguesas japonesas rellenas de queso cheddar" loading="lazy"
-                        width="800" height="533">
+                    <span class="menu_card__kanji" aria-hidden="true">咖</span>
+                    <img src="images/obento-chicken-katsu.webp" alt="Chicken Katsu Kare — Pollo panko con salsa curry especiada." loading="lazy" width="800" height="533">
+                    <span class="menu_card__pending" title="Foto próximamente">📸 pronto</span>
                 </div>
                 <div class="menu_card__body">
-                    <h3 class="menu_card__name">Cheese MenchiKatsu Box</h3>
-                    <span class="menu_card__jp">チーズメンチカツボックス <em>chiizu menchi katsu bokkusu</em></span>
-                    <p class="menu_card__tagline">Cuatro hamburguesas con queso que se estira — la burguer party
-                        definitiva.</p>
-                    <p class="menu_card__desc">4 menchi katsu con técnica tsutsumiage (relleno encerrado): queso cheddar
-                        sellado dentro de la carne molida antes de freír, imposible que escurra antes de servir.
-                        Ensalada de repollo japonés y salsa Katsudomo.</p>
-                    <div class="menu_card__footer">
-                        <p class="menu_card__price"><span>S/</span>25</p>
-                        <a href="https://wa.me/51906777436?text=Hola,+quiero+pedir+Cheese+MenchiKatsu+Box"
-                            class="btn_wa" target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> Pedir</a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Menchi Katsu Box -->
-            <article class="menu_card">
-                <div class="menu_card__img_wrap">
-                    <span class="menu_card__kanji" aria-hidden="true">勝</span>
-                    <img src="images/menchi-katsu-box.webp"
-                        alt="Menchi Katsu Box — 4 hamburguesas japonesas crocantes con ensalada de repollo"
-                        loading="lazy" width="800" height="533">
-                </div>
-                <div class="menu_card__body">
-                    <h3 class="menu_card__name">Menchi Katsu Box</h3>
-                    <span class="menu_card__jp">メンチカツボックス <em>menchi katsu bokkusu</em></span>
-                    <p class="menu_card__tagline">Cuatro hamburguesas japonesas crocantes para conquistar la tarde.</p>
-                    <p class="menu_card__desc">4 hamburguesas de carne molida al estilo Yatai —sazonadas con shoyu,
-                        jengibre y cebolla— con corteza de panko de grano grueso. Ensalada de repollo japonés con
-                        aderezo y salsa agridulce para acompañar.</p>
-                    <div class="menu_card__footer">
-                        <p class="menu_card__price"><span>S/</span>20</p>
-                        <a href="https://wa.me/51906777436?text=Hola,+quiero+pedir+Menchi+Katsu+Box" class="btn_wa"
-                            target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> Pedir</a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Akira Combo Takoyaki -->
-            <article class="menu_card">
-                <div class="menu_card__img_wrap">
-                    <span class="menu_card__kanji" aria-hidden="true">明</span>
-                    <img src="images/akira-combo-takoyaki.webp"
-                        alt="Akira Combo Takoyaki — 8 takoyakis y 2 onigiris para compartir" loading="lazy" width="800"
-                        height="533">
-                </div>
-                <div class="menu_card__body">
-                    <h3 class="menu_card__name">Akira Combo Takoyaki</h3>
-                    <span class="menu_card__jp">明コンビ：蛸焼 <em>akira konbi: takoyaki</em></span>
-                    <p class="menu_card__tagline">8 takoyakis + 2 onigiris: el combo del marmoteo en casa.</p>
-                    <p class="menu_card__desc">8 takoyakis de pulpo con katsuobushi Arabushi (rico en IMP que combina
-                        con el glutamato del shoyu para multiplicar el umami) + 2 onigiris de arroz japónica (1 tsuna
-                        mayo + 1 pollo teriyaki). El combo para una tarde larga o para dos.</p>
-                    <div class="menu_card__footer">
-                        <p class="menu_card__price"><span>S/</span>25</p>
-                        <a href="https://wa.me/51906777436?text=Hola,+quiero+pedir+Akira+Combo+Takoyaki" class="btn_wa"
-                            target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> Pedir</a>
-                    </div>
-                </div>
-            </article>
-
-        </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════════════════════
-         SECCIÓN 4 — PLATOS ESPECIALES
-    ═══════════════════════════════════════════════════════ -->
-    <section class="menu_section" id="platos-especiales">
-        <div class="menu_section__header">
-            <h2 class="menu_section__title">Platos Especiales</h2>
-            <span class="menu_section__kanji">特別料理</span>
-        </div>
-        <div class="menu_grid">
-
-            <!-- Katsudon -->
-            <article class="menu_card">
-                <div class="menu_card__img_wrap">
-                    <span class="menu_card__kanji" aria-hidden="true">丼</span>
-                    <img src="images/katsudon.webp" alt="katsudon japones crujiente comida japonesa en Lima"
-                        loading="lazy" width="800" height="533">
-                </div>
-                <div class="menu_card__body">
-                    <h3 class="menu_card__name">Katsudon カツ丼</h3>
-                    <span class="menu_card__jp">カツ丼 <em>katsudon</em></span>
-                    <p class="menu_card__tagline">Nuestro plato bandera: el tazón que los japoneses comen antes de
-                        vencer.</p>
-                    <p class="menu_card__desc">Tonkatsu sobre arroz japónica, bañado en caldo Warishita (dashi + shoyu +
-                        mirin + sake) con cebolla blanca. El huevo se incorpora a 70°C: la clara cuaja apenas y la yema
-                        permanece cremosa —técnica que lleva 100 años sin modificarse en Japón. El plato más reordenado
-                        de la carta.</p>
+                    <h3 class="menu_card__name">Chicken Katsu Kare</h3>
+                    <span class="menu_card__jp">チキンカツカレー <em>chikin katsu karē</em></span>
+                    <p class="menu_card__tagline">Pollo panko con salsa curry especiada.</p>
+                    <p class="menu_card__desc">Pechuga de pollo empanizada en panko con salsa curry japonesa de 12 especias, cocida a fuego lento 3 horas. Arroz japónica de grano corto.</p>
                     <div class="menu_card__footer">
                         <p class="menu_card__price"><span>S/</span>28</p>
-                        <a href="https://wa.me/51906777436?text=Hola,+quiero+pedir+Katsudon" class="btn_wa"
-                            target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> Pedir</a>
+                        <a href="https://wa.me/51906777436?text=Hola,+quiero+pedir+Chicken+Katsu+Kare" class="btn_wa" target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> Pedir</a>
                     </div>
                 </div>
             </article>
-
-            <!-- Buta Yakisoba -->
-            <article class="menu_card">
+            <article class="menu_card" data-slug="tonkatsu-kare">
                 <div class="menu_card__img_wrap">
-                    <span class="menu_card__kanji" aria-hidden="true">麺</span>
-                    <img src="images/buta-yakisoba.webp"
-                        alt="Buta Yakisoba — fideos japoneses salteados con cerdo y verduras en salsa agridulce"
-                        loading="lazy" width="800" height="533">
+                    <span class="menu_card__kanji" aria-hidden="true">豚</span>
+                    <img src="images/obento-tonkatsu.webp" alt="Tonkatsu Kare — Lomo de cerdo panko con salsa curry." loading="lazy" width="800" height="533">
+                    <span class="menu_card__pending" title="Foto próximamente">📸 pronto</span>
                 </div>
                 <div class="menu_card__body">
-                    <h3 class="menu_card__name">Buta Yakisoba</h3>
-                    <span class="menu_card__jp">豚焼きそば <em>buta yakisoba</em></span>
-                    <p class="menu_card__tagline">Fideos salteados con cerdo que explotan en sabor agridulce.</p>
-                    <p class="menu_card__desc">Fideos salteados a fuego alto con técnica Wok Hei (volatilización de los
-                        compuestos de la salsa que impregnan el fideo en décimas de segundo) con verduras y filete de
-                        cerdo. Salsa Katsudomo de shoyu fermentado y azúcar de caña. También en versión salada.</p>
+                    <h3 class="menu_card__name">Tonkatsu Kare</h3>
+                    <span class="menu_card__jp">豚カツカレー <em>tonkatsu karē</em></span>
+                    <p class="menu_card__tagline">Lomo de cerdo panko con salsa curry.</p>
+                    <p class="menu_card__desc">Tonkatsu de lomo de cerdo sobre arroz japónica bañado en salsa curry japonesa. Crujiente por fuera, jugoso por dentro, balanceado por el curry.</p>
                     <div class="menu_card__footer">
-                        <p class="menu_card__price"><span>S/</span>22</p>
-                        <a href="https://wa.me/51906777436?text=Hola,+quiero+pedir+Buta+Yakisoba" class="btn_wa"
-                            target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> Pedir</a>
+                        <p class="menu_card__price"><span>S/</span>30</p>
+                        <a href="https://wa.me/51906777436?text=Hola,+quiero+pedir+Tonkatsu+Kare" class="btn_wa" target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> Pedir</a>
                     </div>
                 </div>
             </article>
-
-            <!-- Onigirazu -->
-            <article class="menu_card">
-                <div class="menu_card__img_wrap">
-                    <span class="menu_card__kanji" aria-hidden="true">握</span>
-                    <img src="images/onigirazu-comida-japonesa-trujillo.webp"
-                        alt="onigirazu sándwich de arroz comida japonesa Lima" loading="lazy" width="800"
-                        height="533">
-                </div>
-                <div class="menu_card__body">
-                    <h3 class="menu_card__name">Onigirazu</h3>
-                    <span class="menu_card__jp">おにぎらず <em>onigirazu</em></span>
-                    <p class="menu_card__tagline">El sándwich de arroz japonés que no cierra pero jamás se olvida.</p>
-                    <p class="menu_card__desc">Dos capas de arroz japónica con proteína en el centro, sellado en alga
-                        nori. Al cortarlo, el corte transversal expone todas las capas —la firma visual del onigirazu.
-                        Rellenos: Tsuna Mayo con sriracha y palta, o Pollo Teriyaki con repollo.</p>
-                    <div class="menu_card__footer">
-                        <p class="menu_card__price"><span>S/</span>15</p>
-                        <a href="https://wa.me/51906777436?text=Hola,+quiero+pedir+Onigirazu" class="btn_wa"
-                            target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> Pedir</a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Onigiarazu Honey Buta -->
-            <article class="menu_card">
-                <div class="menu_card__img_wrap">
-                    <span class="menu_card__kanji" aria-hidden="true">蜜</span>
-                    <img src="images/onigiarazu-honey-buta.webp"
-                        alt="Onigiarazu Honey Buta — onigirazu con cerdo glaseado en miel agridulce japonesa"
-                        loading="lazy" width="800" height="533">
-                </div>
-                <div class="menu_card__body">
-                    <h3 class="menu_card__name">Onigiarazu Honey Buta</h3>
-                    <span class="menu_card__jp">おにぎらず蜂蜜豚 <em>onigirazu hachimitsu buta</em></span>
-                    <p class="menu_card__tagline">Cerdo con miel japonesa envuelto en nori: dulce, crujiente,
-                        irresistible.</p>
-                    <p class="menu_card__desc">Onigirazu relleno de cerdo glaseado en tare de miel, shoyu y mirin (la
-                        tríada agridulce de la cocina japonesa clásica). La miel carameliza la superficie del cerdo en
-                        sartén antes de incorporarse al arroz. Versión premium para amantes del cerdo.</p>
-                    <div class="menu_card__footer">
-                        <p class="menu_card__price"><span>S/</span>16</p>
-                        <a href="https://wa.me/51906777436?text=Hola,+quiero+pedir+Onigiarazu+Honey+Buta" class="btn_wa"
-                            target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> Pedir</a>
-                    </div>
-                </div>
-            </article>
-
         </div>
     </section>
 
     <!-- ═══════════════════════════════════════════════════════
-         SECCIÓN 5 — MINI OBENTO
+         SECCIÓN — MINI OBENTO
     ═══════════════════════════════════════════════════════ -->
     <section class="menu_section" id="mini-obento">
         <div class="menu_section__header">
             <h2 class="menu_section__title">Mini Obento</h2>
-            <span class="menu_section__kanji">小お弁当</span>
+            <span class="menu_section__kanji">小 · ミニお弁当</span>
+            <p class="menu_section__lead">Versión reducida para almuerzos rápidos.</p>
         </div>
         <div class="menu_grid">
-
-            <!-- Mini Obento Tonkatsu -->
-            <article class="menu_card">
+            <article class="menu_card" data-slug="mini-obento">
                 <div class="menu_card__img_wrap">
                     <span class="menu_card__kanji" aria-hidden="true">小</span>
-                    <img src="images/mini-obento-tonkatsu.webp"
-                        alt="Mini Obento Tonkatsu — media porción de cerdo panko con tamagoyaki y onigiri"
-                        loading="lazy" width="800" height="533">
+                    <img src="images/mini-obento-chicken-katsu.webp" alt="Mini Obento — Versión reducida del obento clásico." loading="lazy" width="800" height="533">
                 </div>
                 <div class="menu_card__body">
-                    <h3 class="menu_card__name">Mini Obento Tonkatsu</h3>
-                    <span class="menu_card__jp">小お弁当豚カツ <em>mini obentō tonkatsu</em></span>
-                    <p class="menu_card__tagline">El bento mini que prueba que el tamaño no define la intensidad.</p>
-                    <p class="menu_card__desc">½ lomo de cerdo en panko —misma técnica y temperatura (170°C) que el
-                        Obento full size, solo menor gramaje. 2 tamagoyaki, ensalada de repollo japonesa y onigiri a
-                        elección. Ideal para descubrir la cocina Katsudomo sin compromiso.</p>
+                    <h3 class="menu_card__name">Mini Obento</h3>
+                    <span class="menu_card__jp">ミニお弁当 <em>mini obento</em></span>
+                    <p class="menu_card__tagline">Versión reducida del obento clásico.</p>
+                    <p class="menu_card__desc">Mini bento con chicken katsu, tamagoyaki, arroz japónica y vegetales salteados. Mismo balance, porción de almuerzo rápido.</p>
                     <div class="menu_card__footer">
                         <p class="menu_card__price"><span>S/</span>20</p>
-                        <a href="https://wa.me/51906777436?text=Hola,+quiero+pedir+Mini+Obento+Tonkatsu" class="btn_wa"
-                            target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> Pedir</a>
+                        <a href="https://wa.me/51906777436?text=Hola,+quiero+pedir+Mini+Obento" class="btn_wa" target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> Pedir</a>
                     </div>
                 </div>
             </article>
-
-            <!-- Mini Obento Chicken Katsu -->
-            <article class="menu_card">
+            <article class="menu_card" data-slug="mini-obento-cerdo">
                 <div class="menu_card__img_wrap">
-                    <span class="menu_card__kanji" aria-hidden="true">小</span>
-                    <img src="images/mini-obento-chicken-katsu.webp"
-                        alt="Mini Obento Chicken Katsu — media porción de pollo panko con tamagoyaki y onigiri"
-                        loading="lazy" width="800" height="533">
+                    <span class="menu_card__kanji" aria-hidden="true">豚</span>
+                    <img src="images/mini-obento-tonkatsu.webp" alt="Mini Obento Cerdo — Mini bento con tonkatsu de cerdo." loading="lazy" width="800" height="533">
                 </div>
                 <div class="menu_card__body">
-                    <h3 class="menu_card__name">Mini Obento Chicken Katsu</h3>
-                    <span class="menu_card__jp">小お弁当チキンカツ <em>mini obentō chikin katsu</em></span>
-                    <p class="menu_card__tagline">Pollo crujiente con panko en versión mini: sabor completo, porción
-                        ligera.</p>
-                    <p class="menu_card__desc">½ pechuga a 72°C interno, empanizada en panko de grano grueso. 2
-                        tamagoyaki en capas, ensalada de repollo japonesa, onigiri a elección y salsa Katsu (shoyu +
-                        mirin reducidos). La entrada perfecta a la carta.</p>
+                    <h3 class="menu_card__name">Mini Obento Cerdo</h3>
+                    <span class="menu_card__jp">ミニお弁当豚カツ <em>mini obento tonkatsu</em></span>
+                    <p class="menu_card__tagline">Mini bento con tonkatsu de cerdo.</p>
+                    <p class="menu_card__desc">Mini bento con tonkatsu de cerdo empanizado, tamagoyaki y arroz. Porción reducida, mismo crujido.</p>
                     <div class="menu_card__footer">
-                        <p class="menu_card__price"><span>S/</span>16</p>
-                        <a href="https://wa.me/51906777436?text=Hola,+quiero+pedir+Mini+Obento+Chicken+Katsu"
-                            class="btn_wa" target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> Pedir</a>
+                        <p class="menu_card__price"><span>S/</span>22</p>
+                        <a href="https://wa.me/51906777436?text=Hola,+quiero+pedir+Mini+Obento+Cerdo" class="btn_wa" target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> Pedir</a>
                     </div>
                 </div>
             </article>
-
-            <!-- Mini Obento Menchi Katsu -->
-            <article class="menu_card">
+            <article class="menu_card" data-slug="mini-obento-menchi">
                 <div class="menu_card__img_wrap">
-                    <span class="menu_card__kanji" aria-hidden="true">小</span>
-                    <img src="images/mini-obento-menchi-katsu.webp"
-                        alt="Mini Obento Menchi Katsu — hamburguesita japonesa con tamagoyaki y onigiri" loading="lazy"
-                        width="800" height="533">
+                    <span class="menu_card__kanji" aria-hidden="true">挽</span>
+                    <img src="images/mini-obento-menchi-katsu.webp" alt="Mini Obento Menchi — Mini bento con hamburguesa japonesa." loading="lazy" width="800" height="533">
                 </div>
                 <div class="menu_card__body">
-                    <h3 class="menu_card__name">Mini Obento Menchi Katsu</h3>
-                    <span class="menu_card__jp">小お弁当メンチカツ <em>mini obentō menchi katsu</em></span>
-                    <p class="menu_card__tagline">La hamburguesita japonesa frita en versión mini — todo el espíritu del
-                        bento.</p>
-                    <p class="menu_card__desc">1 menchi katsu en proporción 70/30 (magra/grasa) para el punto exacto de
-                        jugosidad tras la fritura en aceite neutro. 2 tamagoyaki, ensalada de repollo japonesa y onigiri
-                        a elección.</p>
+                    <h3 class="menu_card__name">Mini Obento Menchi</h3>
+                    <span class="menu_card__jp">ミニお弁当メンチカツ <em>mini obento menchikatsu</em></span>
+                    <p class="menu_card__tagline">Mini bento con hamburguesa japonesa.</p>
+                    <p class="menu_card__desc">Mini bento con menchi katsu — hamburguesa de res y cerdo empanizada en panko. Tamagoyaki y arroz japónica.</p>
                     <div class="menu_card__footer">
-                        <p class="menu_card__price"><span>S/</span>17</p>
-                        <a href="https://wa.me/51906777436?text=Hola,+quiero+pedir+Mini+Obento+Menchi+Katsu"
-                            class="btn_wa" target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> Pedir</a>
+                        <p class="menu_card__price"><span>S/</span>22</p>
+                        <a href="https://wa.me/51906777436?text=Hola,+quiero+pedir+Mini+Obento+Menchi" class="btn_wa" target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> Pedir</a>
                     </div>
                 </div>
             </article>
-
         </div>
     </section>
 
     <!-- ═══════════════════════════════════════════════════════
-         SECCIÓN 6 — COMBOS DE TEMPORADA
+         SECCIÓN — DONBURI
     ═══════════════════════════════════════════════════════ -->
-    <section class="menu_section" id="temporada">
+    <section class="menu_section" id="donburi">
         <div class="menu_section__header">
-            <h2 class="menu_section__title">Combos de Temporada</h2>
-            <span class="menu_section__kanji">侍コンボ</span>
-            <span class="menu_section__badge">⏳ Tiempo Limitado</span>
+            <h2 class="menu_section__title">Donburi</h2>
+            <span class="menu_section__kanji">丼 · どんぶり</span>
+            <p class="menu_section__lead">Tazón de arroz con proteína encima.</p>
         </div>
         <div class="menu_grid">
-
-            <!-- Combo Verano Samurai Matcha Milk -->
-            <article class="menu_card">
+            <article class="menu_card" data-slug="karaage-donburi">
                 <div class="menu_card__img_wrap">
-                    <span class="menu_card__kanji" aria-hidden="true">侍</span>
-                    <img src="images/combo-verano-samurai-matcha.webp"
-                        alt="Combo Verano Samurai Matcha Milk — menchi katsu con queso y té de matcha" loading="lazy"
-                        width="800" height="533">
+                    <span class="menu_card__kanji" aria-hidden="true">揚</span>
+                    <img src="images/katsudon.webp" alt="Karaage Donburi — Pollo frito japonés sobre arroz." loading="lazy" width="800" height="533">
+                    <span class="menu_card__pending" title="Foto próximamente">📸 pronto</span>
                 </div>
                 <div class="menu_card__body">
-                    <h3 class="menu_card__name">Combo Verano Samurai — Matcha Milk</h3>
-                    <span class="menu_card__jp">夏侍コンボ・抹茶ミルク <em>natsu samurai konbo: matcha miruku</em></span>
-                    <p class="menu_card__tagline">El sabor del verano japonés: menchi con queso derretido y té matcha
-                        helado.</p>
-                    <p class="menu_card__desc">2 MenchiKatsus con queso de fusión interna + arroz japónica cocinado en
-                        proporción 1:1.1 (sin sal, sin aceite — que el umami hable solo) + ensalada con aderezo japonés.
-                        Té Matcha Usucha con leche 310ml. Producto de temporada.</p>
+                    <h3 class="menu_card__name">Karaage Donburi</h3>
+                    <span class="menu_card__jp">唐揚げ丼 <em>karaage donburi</em></span>
+                    <p class="menu_card__tagline">Pollo frito japonés sobre arroz.</p>
+                    <p class="menu_card__desc">Pollo marinado en shoyu-jengibre-ajo-sake, rebozado en katakuriko (fécula de papa) y frito en dos temperaturas. Sobre arroz japónica con cebolla y huevo.</p>
                     <div class="menu_card__footer">
-                        <p class="menu_card__price"><span>S/</span>29</p>
-                        <a href="https://wa.me/51906777436?text=Hola,+quiero+pedir+Combo+Verano+Samurai+Matcha+Milk"
-                            class="btn_wa" target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> Pedir</a>
+                        <p class="menu_card__price"><span>S/</span>28</p>
+                        <a href="https://wa.me/51906777436?text=Hola,+quiero+pedir+Karaage+Donburi" class="btn_wa" target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> Pedir</a>
                     </div>
                 </div>
             </article>
-
-            <!-- Combo Verano Samurai Beer -->
-            <article class="menu_card">
+            <article class="menu_card" data-slug="bang-bang-arroz">
                 <div class="menu_card__img_wrap">
-                    <span class="menu_card__kanji" aria-hidden="true">侍</span>
-                    <img src="images/combo-verano-samurai-beer.webp"
-                        alt="Combo Verano Samurai Beer — karaage con salsa Bang Bang y cerveza Klauhoff" loading="lazy"
-                        width="800" height="533">
+                    <span class="menu_card__kanji" aria-hidden="true">爆</span>
+                    <img src="images/katsudon.webp" alt="Bang Bang Arroz — Estilo bang bang sobre arroz japónica." loading="lazy" width="800" height="533">
+                    <span class="menu_card__pending" title="Foto próximamente">📸 pronto</span>
                 </div>
                 <div class="menu_card__body">
-                    <h3 class="menu_card__name">Combo Verano Samurai — Beer</h3>
-                    <span class="menu_card__jp">夏侍コンボ・ビール <em>natsu samurai konbo: biiru</em></span>
-                    <p class="menu_card__tagline">Karaage crujiente con salsa Bang Bang y una cerveza helada para el
-                        verano.</p>
-                    <p class="menu_card__desc">Karaage en doble fritura (160°C para cocinar + 180°C para fijar la
-                        corteza crujiente duradera) con salsa Bang Bang (mayo Kewpie + sriracha + miel). Arroz japónica,
-                        ensalada de repollo y 1 cerveza Klauhoff helada. Solo por tiempo limitado.</p>
+                    <h3 class="menu_card__name">Bang Bang Arroz</h3>
+                    <span class="menu_card__jp">バンバン丼 <em>banban don</em></span>
+                    <p class="menu_card__tagline">Estilo bang bang sobre arroz japónica.</p>
+                    <p class="menu_card__desc">Tazón bang bang con pollo marinado, salsa cremosa picante, sésamo tostado y cebollita china sobre arroz japónica.</p>
                     <div class="menu_card__footer">
-                        <p class="menu_card__price"><span>S/</span>25</p>
-                        <a href="https://wa.me/51906777436?text=Hola,+quiero+pedir+Combo+Verano+Samurai+Beer"
-                            class="btn_wa" target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> Pedir</a>
+                        <p class="menu_card__price"><span>S/</span>30</p>
+                        <a href="https://wa.me/51906777436?text=Hola,+quiero+pedir+Bang+Bang+Arroz" class="btn_wa" target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> Pedir</a>
                     </div>
                 </div>
             </article>
-
+            <article class="menu_card" data-slug="katsudon">
+                <div class="menu_card__img_wrap">
+                    <span class="menu_card__kanji" aria-hidden="true">丼</span>
+                    <img src="images/katsudon.webp" alt="Katsudon — Plato bandera. Tonkatsu, huevo y warishita." loading="lazy" width="800" height="533">
+                </div>
+                <div class="menu_card__body">
+                    <h3 class="menu_card__name">Katsudon</h3>
+                    <span class="menu_card__jp">カツ丼 <em>katsudon</em></span>
+                    <p class="menu_card__tagline">Plato bandera. Tonkatsu, huevo y warishita.</p>
+                    <p class="menu_card__desc">Tonkatsu sobre arroz japónica con caldo warishita (dashi + shoyu + mirin + azúcar), cebolla y huevo ligeramente cuajado. El plato que le da nombre a la casa.</p>
+                    <div class="menu_card__footer">
+                        <p class="menu_card__price"><span>S/</span>32</p>
+                        <a href="https://wa.me/51906777436?text=Hola,+quiero+pedir+Katsudon" class="btn_wa" target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> Pedir</a>
+                    </div>
+                </div>
+            </article>
+            <article class="menu_card" data-slug="bang-bang-fideo">
+                <div class="menu_card__img_wrap">
+                    <span class="menu_card__kanji" aria-hidden="true">麺</span>
+                    <img src="images/buta-yakisoba.webp" alt="Bang Bang Fideo — Estilo bang bang sobre fideos salteados." loading="lazy" width="800" height="533">
+                    <span class="menu_card__pending" title="Foto próximamente">📸 pronto</span>
+                </div>
+                <div class="menu_card__body">
+                    <h3 class="menu_card__name">Bang Bang Fideo</h3>
+                    <span class="menu_card__jp">バンバン焼きそば <em>banban yakisoba</em></span>
+                    <p class="menu_card__tagline">Estilo bang bang sobre fideos salteados.</p>
+                    <p class="menu_card__desc">Fideos salteados al wok con pollo marinado, salsa bang bang cremosa, sésamo y cebollita china. Versión noodle del clásico de arroz.</p>
+                    <div class="menu_card__footer">
+                        <p class="menu_card__price"><span>S/</span>32</p>
+                        <a href="https://wa.me/51906777436?text=Hola,+quiero+pedir+Bang+Bang+Fideo" class="btn_wa" target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> Pedir</a>
+                    </div>
+                </div>
+            </article>
         </div>
     </section>
 
     <!-- ═══════════════════════════════════════════════════════
-         SECCIÓN 7 — ADICIONALES
+         SECCIÓN — RAMEN
+    ═══════════════════════════════════════════════════════ -->
+    <section class="menu_section" id="ramen">
+        <div class="menu_section__header">
+            <h2 class="menu_section__title">Ramen</h2>
+            <span class="menu_section__kanji">麺 · ラーメン</span>
+            <p class="menu_section__lead">Tazón de fideos en caldo profundo.</p>
+        </div>
+        <div class="menu_grid">
+            <article class="menu_card" data-slug="ramen-tonkatsu">
+                <div class="menu_card__img_wrap">
+                    <span class="menu_card__kanji" aria-hidden="true">麺</span>
+                    <img src="images/katsudon.webp" alt="Ramen Tonkatsu — Caldo profundo con tonkatsu crujiente." loading="lazy" width="800" height="533">
+                    <span class="menu_card__pending" title="Foto próximamente">📸 pronto</span>
+                </div>
+                <div class="menu_card__body">
+                    <h3 class="menu_card__name">Ramen Tonkatsu</h3>
+                    <span class="menu_card__jp">豚カツラーメン <em>tonkatsu rāmen</em></span>
+                    <p class="menu_card__tagline">Caldo profundo con tonkatsu crujiente.</p>
+                    <p class="menu_card__desc">Fideos ramen en caldo shoyu de hueso de cerdo cocinado 12 horas, coronado con tonkatsu recién frito, huevo marinado ajitsuke y nori.</p>
+                    <div class="menu_card__footer">
+                        <p class="menu_card__price"><span>S/</span>35</p>
+                        <a href="https://wa.me/51906777436?text=Hola,+quiero+pedir+Ramen+Tonkatsu" class="btn_wa" target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> Pedir</a>
+                    </div>
+                </div>
+            </article>
+            <article class="menu_card" data-slug="ramen-picante">
+                <div class="menu_card__img_wrap">
+                    <span class="menu_card__kanji" aria-hidden="true">辛</span>
+                    <img src="images/katsudon.webp" alt="Ramen Picante — Caldo picante estilo yatai." loading="lazy" width="800" height="533">
+                    <span class="menu_card__pending" title="Foto próximamente">📸 pronto</span>
+                </div>
+                <div class="menu_card__body">
+                    <h3 class="menu_card__name">Ramen Picante</h3>
+                    <span class="menu_card__jp">辛ラーメン <em>kara rāmen</em></span>
+                    <p class="menu_card__tagline">Caldo picante estilo yatai.</p>
+                    <p class="menu_card__desc">Ramen con caldo picante estilo yatai, aceite de chili rojo, ají togarashi, huevo marinado y cebollita china. Calor que despierta, no quema.</p>
+                    <div class="menu_card__footer">
+                        <p class="menu_card__price"><span>S/</span>37</p>
+                        <a href="https://wa.me/51906777436?text=Hola,+quiero+pedir+Ramen+Picante" class="btn_wa" target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> Pedir</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECCIÓN — AKIRA COMBO
+    ═══════════════════════════════════════════════════════ -->
+    <section class="menu_section menu_section--featured" id="akira-combo">
+        <div class="menu_section__header">
+            <h2 class="menu_section__title">Akira Combo</h2>
+            <span class="menu_section__kanji">特 · 明コンボ</span>
+            <p class="menu_section__lead">La forma más rápida de probarlo todo.</p>
+        </div>
+        <div class="menu_grid">
+            <article class="menu_card" data-slug="akira-combo">
+                <div class="menu_card__img_wrap">
+                    <span class="menu_card__kanji" aria-hidden="true">明</span>
+                    <img src="images/akira-combo-takoyaki.webp" alt="Akira Combo — 6 takoyakis + 2 onigiris + bebida." loading="lazy" width="800" height="533">
+                </div>
+                <div class="menu_card__body">
+                    <h3 class="menu_card__name">Akira Combo</h3>
+                    <span class="menu_card__jp">明コンボ <em>akira konbo</em></span>
+                    <p class="menu_card__tagline">6 takoyakis + 2 onigiris + bebida.</p>
+                    <p class="menu_card__desc">6 bolitas de takoyaki original, 2 onigiris (tsuna mayo y pollito teriyaki) y bebida a elección: Aloe Nacional, Inca Kola o Coca-Cola. Para descubrir Katsudōmo en una sola orden.</p>
+                    <div class="menu_card__footer">
+                        <p class="menu_card__price"><span>S/</span>34</p>
+                        <a href="https://wa.me/51906777436?text=Hola,+quiero+pedir+Akira+Combo" class="btn_wa" target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> Pedir</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECCIÓN — ADICIONALES
     ═══════════════════════════════════════════════════════ -->
     <section class="menu_section" id="adicionales">
         <div class="menu_section__header">
             <h2 class="menu_section__title">Adicionales</h2>
-            <span class="menu_section__kanji">追加 · サイド</span>
+            <span class="menu_section__kanji">追 · 追加</span>
+            <p class="menu_section__lead">Para complementar tu pedido.</p>
         </div>
-        <div class="menu_grid menu_grid--adicionales">
-
-            <!-- Mini Takoyaki Set -->
-            <article class="menu_card">
-                <div class="menu_card__img_wrap">
-                    <span class="menu_card__kanji" aria-hidden="true">蛸</span>
-                    <img src="images/mini-takoyaki-set.webp" alt="Mini Takoyaki Set — 5 takoyakis de pulpo"
-                        loading="lazy" width="800" height="533">
-                </div>
-                <div class="menu_card__body">
-                    <h3 class="menu_card__name">Mini Takoyaki Set</h3>
-                    <span class="menu_card__jp">ミニたこ焼きセット <em>mini takoyaki setto</em></span>
-                    <p class="menu_card__tagline">5 bolitas de pulpo para complementar cualquier plato.</p>
-                    <p class="menu_card__desc">5 takoyakis con masa base Dashi-harina (exterior crujiente, interior
-                        cremoso por el vapor atrapado), salsa agridulce Katsudomo, mayonesa Kewpie y katsuobushi
-                        ahumado. El adicional que convierte cualquier bento en una experiencia de Yatai.</p>
-                    <div class="menu_card__footer">
-                        <p class="menu_card__price"><span>S/</span>8.50</p>
-                        <a href="https://wa.me/51906777436?text=Hola,+quiero+pedir+Mini+Takoyaki+Set" class="btn_wa"
-                            target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> Pedir</a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Menchi Katsu adicional -->
-            <article class="menu_card">
-                <div class="menu_card__img_wrap">
-                    <span class="menu_card__kanji" aria-hidden="true">勝</span>
-                    <img src="images/menchi-katsu-adicional.webp"
-                        alt="Menchi Katsu adicional — hamburguesa japonesa individual con queso cheddar" loading="lazy"
-                        width="800" height="533">
-                </div>
-                <div class="menu_card__body">
-                    <h3 class="menu_card__name">Menchi Katsu</h3>
-                    <span class="menu_card__jp">メンチカツ <em>menchi katsu</em></span>
-                    <p class="menu_card__tagline">Una hamburguesa japonesa extra con queso para los más hambrientos.</p>
-                    <p class="menu_card__desc">Menchi katsu de carne molida con shoyu + jengibre (la base aromática que
-                        distingue la versión japonesa de cualquier otra), rellena de queso cheddar fundente. El
-                        adicional que no deberías saltarte.</p>
-                    <div class="menu_card__footer">
-                        <p class="menu_card__price"><span>S/</span>8.50</p>
-                        <a href="https://wa.me/51906777436?text=Hola,+quiero+pedir+Menchi+Katsu+adicional"
-                            class="btn_wa" target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> Pedir</a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Onigiri adicional -->
-            <article class="menu_card">
+        <div class="menu_grid">
+            <article class="menu_card" data-slug="onigiri-unidad">
                 <div class="menu_card__img_wrap">
                     <span class="menu_card__kanji" aria-hidden="true">握</span>
-                    <img src="images/onigiri-adicional.webp"
-                        alt="Onigiri adicional — bolita de arroz japónica rellena a elección" loading="lazy" width="800"
-                        height="533">
+                    <img src="images/onigiri-adicional.webp" alt="Onigiri (unidad) — Arroz japónica con relleno a elección." loading="lazy" width="800" height="533">
                 </div>
                 <div class="menu_card__body">
-                    <h3 class="menu_card__name">Onigiri Adicional</h3>
-                    <span class="menu_card__jp">おにぎり（追加） <em>onigiri tsuika</em></span>
-                    <p class="menu_card__tagline">Un onigiri más para quienes saben que uno no es suficiente.</p>
-                    <p class="menu_card__desc">Onigiri de arroz japónica lavado en 3 aguas (elimina el exceso de almidón
-                        superficial) y reposado 30 min antes de cocinar, relleno de tsuna mayo o pollito teriyaki
-                        agridulce. El acompañamiento que completa el plato.</p>
+                    <h3 class="menu_card__name">Onigiri (unidad)</h3>
+                    <span class="menu_card__jp">おにぎり（単品） <em>onigiri tanpin</em></span>
+                    <p class="menu_card__tagline">Arroz japónica con relleno a elección.</p>
+                    <p class="menu_card__desc">Onigiri de arroz japónica de grano corto, relleno a elección: tsuna mayo o pollito teriyaki. Envuelto en alga nori seca.</p>
                     <div class="menu_card__footer">
                         <p class="menu_card__price"><span>S/</span>6</p>
-                        <a href="https://wa.me/51906777436?text=Hola,+quiero+pedir+Onigiri+adicional" class="btn_wa"
-                            target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> Pedir</a>
+                        <a href="https://wa.me/51906777436?text=Hola,+quiero+pedir+Onigiri+(unidad)" class="btn_wa" target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> Pedir</a>
                     </div>
                 </div>
             </article>
-
-            <!-- Salsa Katsudoumo -->
-            <article class="menu_card">
+            <article class="menu_card" data-slug="adicional-menchi">
                 <div class="menu_card__img_wrap">
-                    <span class="menu_card__kanji" aria-hidden="true">醤</span>
-                    <img src="images/salsa-katsudoumo.webp"
-                        alt="Salsa Katsudoumo — salsa agridulce característica 2 onzas" loading="lazy" width="800"
-                        height="533">
+                    <span class="menu_card__kanji" aria-hidden="true">挽</span>
+                    <img src="images/menchi-katsu-adicional.webp" alt="Adicional Menchi — Hamburguesa japonesa suelta." loading="lazy" width="800" height="533">
                 </div>
                 <div class="menu_card__body">
-                    <h3 class="menu_card__name">Salsa Katsudoumo</h3>
-                    <span class="menu_card__jp">かつどうもソース <em>katsudoumo sōsu</em></span>
-                    <p class="menu_card__tagline">El sabor secreto de Asia en tu mesa — porción de 2 onzas.</p>
-                    <p class="menu_card__desc">Base de shoyu y mirin reducidos con toque de rice vinegar y azúcar
-                        morena. Equilibrio umami-ácido-dulce que nació para el takoyaki pero viaja igual de bien a
-                        bentos, arroz y frituras. Porción 2 oz.</p>
+                    <h3 class="menu_card__name">Adicional Menchi</h3>
+                    <span class="menu_card__jp">追加メンチカツ <em>tsuika menchikatsu</em></span>
+                    <p class="menu_card__tagline">Hamburguesa japonesa suelta.</p>
+                    <p class="menu_card__desc">Menchi katsu individual — carne molida de res y cerdo empanizada en panko, crujiente por fuera y jugosa por dentro.</p>
                     <div class="menu_card__footer">
-                        <p class="menu_card__price"><span>S/</span>3</p>
-                        <a href="https://wa.me/51906777436?text=Hola,+quiero+pedir+Salsa+Katsudoumo" class="btn_wa"
-                            target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> Pedir</a>
+                        <p class="menu_card__price"><span>S/</span>10</p>
+                        <a href="https://wa.me/51906777436?text=Hola,+quiero+pedir+Adicional+Menchi" class="btn_wa" target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> Pedir</a>
                     </div>
                 </div>
             </article>
-
-            <!-- Chili Oil -->
-            <article class="menu_card">
+            <article class="menu_card" data-slug="adicional-takoyaki-3">
                 <div class="menu_card__img_wrap">
-                    <span class="menu_card__kanji" aria-hidden="true">辛</span>
-                    <img src="images/chili-oil.webp" alt="Chili Oil — aceite picante de chilli flakes 2 onzas"
-                        loading="lazy" width="800" height="533">
+                    <span class="menu_card__kanji" aria-hidden="true">蛸</span>
+                    <img src="images/mini-takoyaki-set.webp" alt="Adicional Takoyaki x3 — Tres bolitas de takoyaki adicionales." loading="lazy" width="800" height="533">
                 </div>
                 <div class="menu_card__body">
-                    <h3 class="menu_card__name">Chili Oil</h3>
-                    <span class="menu_card__jp">ラー油 <em>rā-yu</em></span>
-                    <p class="menu_card__tagline">El aceite de chilli que despierta los sentidos en cada gota.</p>
-                    <p class="menu_card__desc">Chilli flakes infusionados en aceite neutro a 190°C para activar
-                        capsaicinoides y liberar los compuestos volátiles aromáticos. Fondo de aceite de sésamo tostado.
-                        El picante que no aplasta, que complementa. 2 onzas.</p>
+                    <h3 class="menu_card__name">Adicional Takoyaki x3</h3>
+                    <span class="menu_card__jp">追加たこ焼き×3 <em>tsuika takoyaki san</em></span>
+                    <p class="menu_card__tagline">Tres bolitas de takoyaki adicionales.</p>
+                    <p class="menu_card__desc">3 bolitas de takoyaki original adicionales para acompañar cualquier plato. Misma receta, mismo crujido.</p>
                     <div class="menu_card__footer">
-                        <p class="menu_card__price"><span>S/</span>5</p>
-                        <a href="https://wa.me/51906777436?text=Hola,+quiero+pedir+Chili+Oil" class="btn_wa"
-                            target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> Pedir</a>
+                        <p class="menu_card__price"><span>S/</span>10</p>
+                        <a href="https://wa.me/51906777436?text=Hola,+quiero+pedir+Adicional+Takoyaki+x3" class="btn_wa" target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> Pedir</a>
                     </div>
                 </div>
             </article>
-
-            <!-- Sweet Chili Oil -->
-            <article class="menu_card">
-                <div class="menu_card__img_wrap">
-                    <span class="menu_card__kanji" aria-hidden="true">甘</span>
-                    <img src="images/sweet-chili-oil.webp" alt="Sweet Chili Oil — aceite dulce y picante 2 onzas"
-                        loading="lazy" width="800" height="533">
-                </div>
-                <div class="menu_card__body">
-                    <h3 class="menu_card__name">Sweet Chili Oil</h3>
-                    <span class="menu_card__jp">甘ラー油 <em>ama rā-yu</em></span>
-                    <p class="menu_card__tagline">El equilibrio perfecto entre lo dulce y lo picante.</p>
-                    <p class="menu_card__desc">Aceite de chilli calibrado entre 8 000 y 12 000 SHU con azúcar invertida
-                        de caña: el dulce llega un segundo después del picante, creando una secuencia sensorial en vez
-                        de un golpe único. 2 onzas.</p>
-                    <div class="menu_card__footer">
-                        <p class="menu_card__price"><span>S/</span>4</p>
-                        <a href="https://wa.me/51906777436?text=Hola,+quiero+pedir+Sweet+Chili+Oil" class="btn_wa"
-                            target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> Pedir</a>
-                    </div>
-                </div>
-            </article>
-
         </div>
     </section>
+
+    <!-- Nota recargo take-away -->
+    <aside class="menu_note">
+        <p>📦 Recargo por empaque para llevar: +S/ 2</p>
+    </aside>
 
     <!-- ═══════════════════════════════════════════════════════
          CTA BLOCK
@@ -1300,13 +1204,16 @@ a{text-decoration:none;color:var(--text-primary);transition:var(--transition)}
             </div>
             <div class="footer-links">
                 <h4>Carta</h4>
-                <a href="#bocaditos">Bocaditos Japoneses</a>
+                <a href="#takoyaki">Takoyaki</a>
+                <a href="#yakisoba">Yakisoba</a>
                 <a href="#obento">Obento</a>
-                <a href="#combos">Combos</a>
-                <a href="#platos-especiales">Platos Especiales</a>
+                <a href="#curry">Curry Kare</a>
                 <a href="#mini-obento">Mini Obento</a>
+                <a href="#donburi">Donburi</a>
+                <a href="#ramen">Ramen</a>
+                <a href="#akira-combo">Akira Combo</a>
                 <a href="#adicionales">Adicionales</a>
-            </div>
+                        </div>
             <div class="footer-links">
                 <h4>Recetas</h4>
                 <a href="../recetas/katsudon.html">カツ丼 Katsudon</a>
