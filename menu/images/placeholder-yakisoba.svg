@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 533" role="img" aria-label="Katsudomo — foto próximamente">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0a0a"/>
+      <stop offset="50%" stop-color="#1a0a08"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#c8281e" stop-opacity="0.12"/>
+      <stop offset="60%" stop-color="#c8281e" stop-opacity="0.03"/>
+      <stop offset="100%" stop-color="#c8281e" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" x="0" y="0" width="14" height="14" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.6" fill="#faf6f0" fill-opacity="0.04"/>
+    </pattern>
+  </defs>
+
+  <!-- Base -->
+  <rect width="800" height="533" fill="url(#bg)"/>
+  <rect width="800" height="533" fill="url(#glow)"/>
+  <rect width="800" height="533" fill="url(#dots)"/>
+
+  <!-- Red circular seal reminiscent of hinomaru -->
+  <circle cx="400" cy="266" r="180" fill="#c8281e" fill-opacity="0.08"/>
+  <circle cx="400" cy="266" r="180" fill="none" stroke="#c8281e" stroke-opacity="0.25" stroke-width="1.5"/>
+
+  <!-- Main kanji -->
+  <text x="400" y="308"
+        text-anchor="middle"
+        font-family="'Yu Mincho','Hiragino Mincho ProN','Noto Serif JP',serif"
+        font-size="240"
+        font-weight="700"
+        fill="#faf6f0"
+        fill-opacity="0.82">焼</text>
+
+  <!-- Romaji subtitle -->
+  <text x="400" y="430"
+        text-anchor="middle"
+        font-family="'Georgia','Cormorant Garamond',serif"
+        font-size="22"
+        letter-spacing="6"
+        fill="#c8281e"
+        fill-opacity="0.85"
+        font-style="italic">YAKISOBA</text>
+
+  <!-- Foot: small brand wordmark + pending note -->
+  <text x="400" y="472"
+        text-anchor="middle"
+        font-family="'Georgia',serif"
+        font-size="12"
+        letter-spacing="4"
+        fill="#faf6f0"
+        fill-opacity="0.35">KATSUDŌMO · foto próximamente</text>
+</svg>
