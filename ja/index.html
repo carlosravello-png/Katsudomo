@@ -48,7 +48,7 @@
     <meta name="twitter:image" content="https://katsudomo.com/images/hero-comida-callejera-japonesa-trujillo.webp">
 
     <!-- Preloads – Core Web Vitals / LCP -->
-    <link rel="preload" href="../css/style.css?v=1.4" as="style">
+    <link rel="preload" href="../css/style.css?v=1.5" as="style">
     <link rel="preload" href="../images/hero-comida-callejera-japonesa-trujillo.webp" as="image" fetchpriority="high">
 
     <!-- ============================================================ -->
@@ -108,8 +108,8 @@ a{text-decoration:none;color:var(--text-primary);transition:var(--transition)}
     </style>
 
     <!-- Full stylesheet: async-loaded, non-blocking -->
-    <link rel="stylesheet" href="../css/style.css?v=1.4" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="../css/style.css?v=1.4"></noscript>
+    <link rel="stylesheet" href="../css/style.css?v=1.5" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="../css/style.css?v=1.5"></noscript>
 
     <!-- ============================================================ -->
     <!-- JSON-LD SEO Schema                                           -->
@@ -748,6 +748,49 @@ a{text-decoration:none;color:var(--text-primary);transition:var(--transition)}
         </section>
 
     </main>
+
+    <!-- =========================================================== -->
+    <!-- ACCESS / LOCATE SECTION (Google Maps embed)                  -->
+    <!-- =========================================================== -->
+    <section id="access" class="locate-section" aria-labelledby="locate-title">
+        <div class="locate-section__inner">
+            <header class="locate-section__head">
+                <span class="locate-section__kanji" aria-hidden="true">場所</span>
+                <h2 id="locate-title">店舗アクセス — スルキージョ</h2>
+                <p class="locate-section__lead"><strong>Av. Tomás Marsano 2009</strong>(イゲレタ交差点から1ブロック)のカウンター店。リマ南部・中心部へのデリバリーも対応。</p>
+            </header>
+            <div class="locate-section__grid">
+                <div class="locate-section__map">
+                    <iframe
+                        title="カツドーモ所在地マップ、Av. Tomás Marsano 2009, Surquillo"
+                        src="https://maps.google.com/maps?q=Av.%20Tom%C3%A1s%20Marsano%202009%2C%20Surquillo%2C%20Lima%2C%20Per%C3%BA&hl=ja&z=17&output=embed"
+                        width="100%" height="360"
+                        style="border:0; border-radius:10px; display:block;"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        allowfullscreen></iframe>
+                </div>
+                <aside class="locate-section__info">
+                    <dl>
+                        <dt>📍 住所</dt>
+                        <dd>Av. Tomás Marsano 2009<br>Surquillo, Lima, Perú</dd>
+                        <dt>🕐 営業時間</dt>
+                        <dd>月〜土<br>13:00 – 16:00 / 18:00 – 22:00<br><span style="opacity:.7;">日曜定休</span></dd>
+                        <dt>💳 お支払い</dt>
+                        <dd>Yape・Plin・カード<br><span style="opacity:.7;">現金不可</span></dd>
+                        <dt>🛵 デリバリー</dt>
+                        <dd>WhatsApp または Rappi でご注文</dd>
+                    </dl>
+                    <div class="locate-section__ctas">
+                        <a href="https://maps.app.goo.gl/b8scQZeE4DjSWqXJ7" class="btn-primary" target="_blank" rel="noopener">道順を見る →</a>
+                        <a href="https://wa.me/51906777436?text=%E3%81%93%E3%82%93%E3%81%AB%E3%81%A1%E3%81%AF%E3%80%81%E6%B3%A8%E6%96%87%E3%81%97%E3%81%9F%E3%81%84%E3%81%A7%E3%81%99" class="btn-outline" target="_blank" rel="noopener">
+                            <svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> WhatsAppで注文
+                        </a>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
 
     <!-- =========================================================== -->
     <!-- FOOTER                                                       -->

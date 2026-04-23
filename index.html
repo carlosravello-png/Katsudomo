@@ -50,7 +50,7 @@
     <meta name="twitter:image" content="https://katsudomo.com/images/hero-comida-callejera-japonesa-trujillo.webp">
 
     <!-- Preloads for LCP Optimization -->
-    <link rel="preload" href="css/style.css?v=1.4" as="style">
+    <link rel="preload" href="css/style.css?v=1.5" as="style">
     <link rel="preload" href="images/hero-comida-callejera-japonesa-trujillo.webp" as="image" fetchpriority="high">
 
     <!-- Canonical and Hreflang for Absolute SEO -->
@@ -107,8 +107,8 @@ a{text-decoration:none;color:var(--text-primary);transition:var(--transition)}
     </style>
 
     <!-- Full stylesheet: async-loaded, non-blocking -->
-    <link rel="stylesheet" href="css/style.css?v=1.4" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="css/style.css?v=1.4"></noscript>
+    <link rel="stylesheet" href="css/style.css?v=1.5" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="css/style.css?v=1.5"></noscript>
 
     <!-- =========================================================== -->
     <!-- JSON-LD SEO Schema                                           -->
@@ -845,6 +845,50 @@ a{text-decoration:none;color:var(--text-primary);transition:var(--transition)}
         </section>
 
     </main>
+
+    <!-- =========================================================== -->
+    <!-- UBÍCANOS · Google Maps embed                                 -->
+    <!-- =========================================================== -->
+    <section id="ubicanos" class="locate-section" aria-labelledby="locate-title">
+        <div class="locate-section__inner">
+            <header class="locate-section__head">
+                <span class="locate-section__kanji" aria-hidden="true">場所</span>
+                <h2 id="locate-title">Ubícanos en Surquillo</h2>
+                <p class="locate-section__lead">Barra en <strong>Av. Tomás Marsano 2009</strong>, a una cuadra del óvalo Higuereta. Delivery en Lima Sur y Centro.</p>
+            </header>
+
+            <div class="locate-section__grid">
+                <div class="locate-section__map">
+                    <iframe
+                        title="Mapa de Katsudōmo, Av. Tomás Marsano 2009, Surquillo"
+                        src="https://maps.google.com/maps?q=Av.%20Tom%C3%A1s%20Marsano%202009%2C%20Surquillo%2C%20Lima%2C%20Per%C3%BA&hl=es&z=17&output=embed"
+                        width="100%" height="360"
+                        style="border:0; border-radius:10px; display:block;"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        allowfullscreen></iframe>
+                </div>
+                <aside class="locate-section__info">
+                    <dl>
+                        <dt>📍 Dirección</dt>
+                        <dd>Av. Tomás Marsano 2009<br>Surquillo, Lima, Perú</dd>
+                        <dt>🕐 Horario</dt>
+                        <dd>Lun – Sáb<br>1:00 – 4:00 pm · 6:00 – 10:00 pm<br><span style="opacity:.7;">Domingo cerrado</span></dd>
+                        <dt>💳 Pagos</dt>
+                        <dd>Yape · Plin · Tarjeta<br><span style="opacity:.7;">No aceptamos efectivo</span></dd>
+                        <dt>🛵 Delivery</dt>
+                        <dd>Pide por WhatsApp o Rappi</dd>
+                    </dl>
+                    <div class="locate-section__ctas">
+                        <a href="https://maps.app.goo.gl/b8scQZeE4DjSWqXJ7" class="btn-primary" target="_blank" rel="noopener">Cómo llegar →</a>
+                        <a href="https://wa.me/51906777436?text=Hola,+quiero+pedir" class="btn-outline" target="_blank" rel="noopener">
+                            <svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> Pedir por WhatsApp
+                        </a>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
 
     <!-- =========================================================== -->
     <!-- FOOTER                                                       -->
