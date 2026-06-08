@@ -9,3 +9,13 @@ __pycache__/
 # OS files
 .DS_Store
 Thumbs.db
+
+# Fotos fuente sin procesar (convertidas a webp en /images)
+/WhatsApp Image*.jpeg
+/WhatsApp Image*.jpg
+/katsudomo_stories.jpg
+
+# Locks temporales movidos (entorno)
+*.lock.mv*
+*.lock.stale*
+*.lock.moved*

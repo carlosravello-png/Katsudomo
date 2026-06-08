@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<!--
+  Estrategia digital, arquitectura web y SEO semántico: Carlos Eduardo Ravello Joo
+  Portfolio: https://carlosravello.com | Proyecto: katsudomo.com | 2026
+  HTML puro · Sin frameworks · Sin CMS
+-->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="designer" content="Carlos Eduardo Ravello Joo">
+
+    <title>Ramen en Lima | Tonkotsu, Shoyu y la Tradición del Yatai | Katsudōmo</title>
+    <meta name="description" content="Qué es el ramen de verdad: el tare, el caldo, los fideos kansui y los cuatro estilos —shoyu, shio, miso, tonkotsu—. Su historia desde Yokohama hasta hoy. Ramen estilo yatai en nuestra barra de Surquillo, Lima, y delivery a Surco y San Borja. Desde S/ 35.">
+
+    <!-- Canonical y hreflang -->
+    <link rel="canonical" href="https://katsudomo.com/ramen-lima.html">
+    <link rel="alternate" hreflang="x-default" href="https://katsudomo.com/ramen-lima.html">
+    <link rel="alternate" hreflang="es" href="https://katsudomo.com/ramen-lima.html">
+    <link rel="alternate" hreflang="ja" href="https://katsudomo.com/ja/ramen-lima.html">
+
+    <!-- Favicon & PWA -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Ramen en Lima | Tonkotsu, Shoyu y la Tradición del Yatai | Katsudōmo">
+    <meta property="og:description" content="El ramen no es sopa instantánea. Es una arquitectura de cuatro partes con un siglo de historia. Te la contamos, y te la servimos en Surquillo. Desde S/ 35.">
+    <meta property="og:image" content="https://katsudomo.com/images/ramen-tonkotsu-chashu-estilo-yatai-surquillo-lima.webp">
+    <meta property="og:url" content="https://katsudomo.com/ramen-lima.html">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="es_PE">
+    <meta property="og:locale:alternate" content="ja_JP">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ramen en Lima · La tradición del yatai | Katsudōmo">
+    <meta name="twitter:description" content="Tare, caldo, fideos kansui y los cuatro estilos del ramen. Historia y técnica. En Surquillo o delivery a Surco y San Borja.">
+    <meta name="twitter:image" content="https://katsudomo.com/images/ramen-tonkotsu-chashu-estilo-yatai-surquillo-lima.webp">
+
+    <!-- PWA -->
+    <meta name="theme-color" content="#0a0a0a">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Outfit:wght@300;500;700&display=swap"
+        rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Outfit:wght@300;500;700&display=swap" rel="stylesheet"></noscript>
+
+    <link rel="preload" href="css/style.css?v=1.5" as="style">
+    <!-- Critical CSS inline -->
+    <style>
+:root{--bg-color:#0a0a0a;--bg-card:#141414;--text-primary:#f5f5f5;--text-secondary:#aaaaaa;--accent-red:#d32f2f;--accent-red-hover:#b71c1c;--font-heading:'Noto Serif JP',"Hiragino Mincho ProN","Yu Mincho","MS PMincho",serif;--font-body:'Outfit',"Hiragino Sans","Meiryo","Yu Gothic",sans-serif;--transition:all 0.3s ease}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;overflow-x:hidden}
+body{background-color:var(--bg-color);color:var(--text-primary);font-family:var(--font-body);line-height:1.6;overflow-x:hidden}
+h1,h2,h3,h4{font-family:var(--font-heading);font-weight:700}
+a{text-decoration:none;color:var(--text-primary);transition:var(--transition)}
+.btn-primary{background-color:var(--accent-red);color:#fff;padding:10px 24px;border-radius:4px;font-weight:700;text-transform:uppercase;letter-spacing:1px;display:inline-block}
+.navbar{display:flex;justify-content:space-between;align-items:center;padding:20px 5%;background-color:rgba(10,10,10,.95);position:fixed;width:100%;top:0;z-index:1000;border-bottom:1px solid #222}
+.nav-logo{height:90px;width:auto;filter:drop-shadow(0 2px 4px rgba(0,0,0,.5))}
+.nav-links{display:flex;align-items:center;gap:30px}
+.nav-links a{font-weight:500;text-transform:uppercase;font-size:.9rem;letter-spacing:1px}
+.svg-icon{display:inline-block;vertical-align:-.125em;width:1em;height:1em;fill:currentColor}
+.btn-lang{font-size:.72rem;font-weight:600;letter-spacing:1.5px;border:1px solid #333;padding:6px 13px;border-radius:3px;color:var(--text-secondary)!important;transition:var(--transition);white-space:nowrap}
+@media(max-width:768px){
+.navbar{flex-direction:row;padding:10px 5%;justify-content:space-between;flex-wrap:nowrap}
+.nav-logo{height:80px}
+.nav-links{margin-top:0;flex-wrap:nowrap;justify-content:flex-end;gap:15px}
+.nav-links>a:not(.btn-primary):not(.btn-lang){display:none}
+}
+    </style>
+    <link rel="stylesheet" href="css/style.css?v=1.5" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="css/style.css?v=1.5"></noscript>
+
+    <!-- JSON-LD: Article + FAQPage + Restaurant + BreadcrumbList -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Ramen en Lima: el tare, el caldo, los fideos y los cuatro estilos",
+      "description": "Guía editorial sobre el ramen japonés: su historia desde Yokohama, la arquitectura de sus cuatro componentes y los estilos shoyu, shio, miso y tonkotsu. Por Katsudōmo, barra de street food japonesa en Surquillo, Lima.",
+      "image": "https://katsudomo.com/images/ramen-tonkotsu-chashu-estilo-yatai-surquillo-lima.webp",
+      "author": {"@type": "Organization", "name": "Katsudōmo", "url": "https://katsudomo.com/"},
+      "publisher": {"@type": "Organization", "name": "Katsudōmo", "logo": {"@type": "ImageObject", "url": "https://katsudomo.com/images/logo-katsudomo-comida-japonesa-lima.webp"}},
+      "datePublished": "2026-06-08",
+      "inLanguage": "es",
+      "about": ["Ramen", "Tonkotsu", "Cocina japonesa", "Street food japonesa"],
+      "mainEntityOfPage": "https://katsudomo.com/ramen-lima.html"
+    },
+    {
+      "@type": "Restaurant",
+      "@id": "https://katsudomo.com/#restaurant",
+      "name": "Katsudōmo",
+      "url": "https://katsudomo.com/",
+      "image": "https://katsudomo.com/images/ramen-tonkotsu-chashu-estilo-yatai-surquillo-lima.webp",
+      "servesCuisine": ["Japanese", "Ramen", "Japanese Street Food", "Nikkei"],
+      "priceRange": "$$",
+      "telephone": "+51906777436",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Tomás Marsano 2009",
+        "addressLocality": "Surquillo",
+        "addressRegion": "Lima",
+        "postalCode": "15048",
+        "addressCountry": "PE"
+      },
+      "geo": {"@type": "GeoCoordinates", "latitude": -12.1097, "longitude": -77.0041},
+      "hasMenu": "https://katsudomo.com/menu/carta.html",
+      "openingHoursSpecification": [
+        {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"13:00","closes":"16:00","name":"Almuerzo"},
+        {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"18:00","closes":"22:00","name":"Cena"}
+      ],
+      "areaServed": ["Surquillo", "Santiago de Surco", "San Borja", "Miraflores", "San Isidro", "Lima"]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type":"Question","name":"¿Qué es el ramen exactamente?","acceptedAnswer":{"@type":"Answer","text":"El ramen es un plato japonés de fideos de trigo alcalinizado (kansui) servidos en un caldo caliente sazonado con un tare —una base concentrada de shoyu, sal o miso— y rematado con toppings como chashu, huevo marinado, menma y cebolla verde. No es una sopa con fideos: es una arquitectura de cuatro componentes independientes que se montan en el momento."}},
+        {"@type":"Question","name":"¿El ramen es lo mismo que la sopa instantánea?","acceptedAnswer":{"@type":"Answer","text":"No. El ramen instantáneo, inventado por Momofuku Ando en 1958, es un pariente lejano del ramen de barra. Comparten el nombre y poco más: el ramen de verdad se monta con un caldo cocido aparte, un tare propio y fideos frescos. Confundirlos es como confundir un café soluble con un espresso."}},
+        {"@type":"Question","name":"¿Qué estilos de ramen existen?","acceptedAnswer":{"@type":"Answer","text":"Los cuatro estilos clásicos se definen por su tare: shoyu (salsa de soja, originario de Tokio), shio (sal, el más antiguo y ligero), miso (pasta de soja fermentada, de Sapporo) y tonkotsu (caldo de huesos de cerdo hervidos hasta volverse blanco y cremoso, de Fukuoka). El estilo no lo decide el caldo solo, sino la combinación de tare, caldo y fideo."}},
+        {"@type":"Question","name":"¿De qué está hecho el caldo del ramen?","acceptedAnswer":{"@type":"Answer","text":"El caldo se construye con huesos (de cerdo o pollo), a veces verduras y dashi de algas y katsuobushi. Hay dos familias: chintan, un caldo claro de fuego suave, y paitan, un caldo turbio y emulsionado por horas de hervor fuerte, como el tonkotsu. El tiempo y el control del fuego son lo que separa un buen caldo de uno grasoso."}},
+        {"@type":"Question","name":"¿Dónde comer ramen auténtico en Lima?","acceptedAnswer":{"@type":"Answer","text":"En Katsudōmo, barra de street food japonesa en Av. Tomás Marsano 2009, Surquillo (a una cuadra del óvalo Higuereta). Servimos ramen estilo yatai, montado al momento, con tonkatsu crujiente y en versión picante. También hacemos delivery a Surco, San Borja, Miraflores y San Isidro."}},
+        {"@type":"Question","name":"¿Cuánto cuesta el ramen en Katsudōmo?","acceptedAnswer":{"@type":"Answer","text":"El ramen está desde S/ 35, en versión con tonkatsu crujiente o picante estilo yatai. Consulta la carta completa para las variantes vigentes."}},
+        {"@type":"Question","name":"¿Katsudōmo abre para almuerzo?","acceptedAnswer":{"@type":"Answer","text":"Sí. Atendemos en almuerzo de 1:00 a 4:00 pm y en cena de 6:00 a 10:00 pm, de lunes a sábado. El ramen y toda la carta están disponibles en ambos turnos, en la barra de Surquillo y por delivery a Surco, San Borja y Miraflores."}}
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type":"ListItem","position":1,"name":"Inicio","item":"https://katsudomo.com/"},
+        {"@type":"ListItem","position":2,"name":"Ramen en Lima","item":"https://katsudomo.com/ramen-lima.html"}
+      ]
+    }
+  ]
+}
+    </script>
+    <link rel="author" href="humans.txt">
+</head>
+
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <symbol id="icon-whatsapp" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></symbol>
+  <symbol id="icon-instagram" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></symbol>
+  <symbol id="icon-facebook" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></symbol>
+</svg>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="/"><img src="images/logo-katsudomo-comida-japonesa-lima.webp" alt="logo katsudomo comida japonesa en Surquillo, Lima" class="nav-logo"></a>
+        </div>
+        <div class="nav-links">
+            <a href="menu/carta.html">Carta</a>
+            <a href="/#recetas">Recetas</a>
+            <a href="/#cultura">Cultura</a>
+            <a href="ja/ramen-lima.html" class="btn-lang" hreflang="ja">🇯🇵 日本語</a>
+            <a href="https://wa.me/c/51906777436" class="btn-primary" target="_blank" rel="noopener">Pedir Ahora</a>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <nav class="recipe_breadcrumb" aria-label="Miga de pan">
+        <a href="/">Inicio</a>
+        <span>›</span>
+        <span>Ramen en Lima</span>
+    </nav>
+
+    <!-- Artículo principal -->
+    <article class="recipe_article">
+
+        <div class="recipe_header_image" style="background-image:url('images/ramen-tonkotsu-chashu-estilo-yatai-surquillo-lima.webp')" role="img" aria-label="Ramen tonkotsu con chashu, ajitama y nori al estilo yatai, servido en Katsudōmo, barra de comida japonesa en Surquillo, Lima"></div>
+
+        <a href="/" class="back_to_recetas">← Volver al inicio</a>
+
+        <h1>ラーメン · Ramen</h1>
+        <p class="recipe_tagline">Un tazón con más de un siglo de historia. Y una de las cocinas peor entendidas fuera de Japón.</p>
+
+        <p>Fuera de Japón, la palabra "ramen" significa dos cosas que no tienen casi nada que ver: un sobre instantáneo de tres soles, o un tazón humeante que la gente hace cola para comer. Ese malentendido es el punto de partida de todo lo que vamos a contarte.</p>
+
+        <p>Porque el ramen de verdad no es una sopa con fideos. Es una <strong>arquitectura de cuatro partes</strong> —tare, caldo, fideo y toppings— donde cada una se prepara aparte, cada una decide algo, y un error en cualquiera arruina el tazón completo. Dominar esas cuatro decisiones es el oficio de toda una vida en Japón. Y hay otra ironía: el ramen ni siquiera nació japonés.</p>
+
+        <aside class="aio-answers" style="background:var(--bg-card);border-left:3px solid var(--accent-red);border-radius:6px;padding:1.4rem 1.6rem;margin:2rem 0;">
+            <p style="font-family:var(--font-heading);font-size:.78rem;letter-spacing:2px;color:var(--accent-red);text-transform:uppercase;margin-bottom:1rem;">En breve 早わかり</p>
+            <p style="margin-bottom:.85rem;"><strong>¿Qué es el ramen?</strong> Fideo de trigo alcalinizado (kansui) servido en un caldo caliente sazonado con un <em>tare</em> —shoyu, sal o miso— y rematado con chashu, huevo marinado (ajitama), menma y cebolla verde. No es una sopa con fideos: es una arquitectura de cuatro componentes montada al momento.</p>
+            <p style="margin-bottom:.85rem;"><strong>¿Cuántos estilos existen?</strong> Cuatro clásicos, definidos por su tare: <strong>shoyu</strong> (Tokio), <strong>shio</strong> (el más antiguo), <strong>miso</strong> (Sapporo) y <strong>tonkotsu</strong> (Fukuoka).</p>
+            <p style="margin-bottom:.85rem;"><strong>¿El instantáneo es lo mismo?</strong> No. El ramen instantáneo (1958) es un pariente lejano del ramen de barra: comparten el nombre y poco más.</p>
+            <p style="margin-bottom:0;"><strong>¿Dónde se come al estilo tradicional en Lima?</strong> Se prepara a la manera de los <em>yatai</em> japoneses en <strong>Katsudōmo</strong>, barra de comida callejera japonesa en Av. Tomás Marsano 2009, <strong>Surquillo</strong> (óvalo Higuereta), abierta en <strong>almuerzo y cena</strong>, con delivery a Surco, San Borja y Miraflores.</p>
+        </aside>
+
+        <h2>El origen: un plato chino que Japón reconstruyó</h2>
+
+        <p>Los fideos llegaron de China. A fines del siglo XIX y comienzos del XX, los barrios chinos de <strong>Yokohama</strong> y Tokio servían un plato de fideos de trigo en caldo que los japoneses llamaron <em>shina soba</em> (支那そば) y después <em>chūka soba</em> (中華そば): literalmente, "fideo chino". La palabra "ramen" viene del chino <em>lā miàn</em> (拉麺), "fideo estirado a mano".</p>
+
+        <p>Lo que lo convirtió en plato nacional fue el hambre. Tras la Segunda Guerra Mundial, Japón recibió toneladas de harina de trigo estadounidense. El arroz escaseaba; el trigo, no. El ramen —barato, caliente, contundente— se volvió el combustible de un país en reconstrucción. De ahí saltó a los <em>yatai</em> (屋台), los puestos callejeros, y de los yatai a la leyenda.</p>
+
+        <blockquote class="fact_callout">
+            <strong>¿Sabías esto?</strong>
+            En 1958, <strong>Momofuku Ando</strong> (安藤百福) inventó el ramen instantáneo en una caseta de su jardín, tras meses de fracasos secando fideos en aceite. Su <em>Chikin Ramen</em> cambió la alimentación del planeta: hoy se consumen más de cien mil millones de porciones de ramen instantáneo al año. Pero ese invento y el tazón de una barra son parientes lejanos, no la misma cosa. El instantáneo resolvió el hambre. El de barra resuelve otra cosa.
+        </blockquote>
+
+        <h2>La anatomía del ramen: cuatro decisiones</h2>
+
+        <p>Quien entiende estas cuatro piezas entiende cualquier tazón de ramen del mundo. No hay un quinto secreto.</p>
+
+        <h3>1. El tare (タレ) — el alma</h3>
+        <p>El tare es la base concentrada de sabor que va al fondo del tazón antes que el caldo. Es lo que <strong>define el estilo</strong>: si el tare es de salsa de soja, tienes shoyu ramen; si es de sal, shio; si es de pasta de miso, miso ramen. Una cucharada que decide la identidad de todo el plato. Por eso un buen cocinero protege su tare como una firma.</p>
+
+        <h3>2. El caldo (出汁・スープ) — el cuerpo</h3>
+        <p>Hay dos grandes familias. El <em>chintan</em> es un caldo claro, de fuego suave, donde los huesos sueltan sabor sin nublarse. El <em>paitan</em> es lo contrario: huesos —de cerdo, en el caso del <strong>tonkotsu</strong>— hervidos a fuego fuerte durante horas hasta que el colágeno emulsiona y el caldo se vuelve blanco y cremoso. No turbio por grasa: turbio por colágeno. Esa distinción lo es todo.</p>
+
+        <h3>3. Los fideos (麺・men) — la estructura</h3>
+        <p>El fideo del ramen no es un fideo cualquiera. Lleva <em>kansui</em> (鹹水), agua mineral alcalina que le da su color amarillo, su elasticidad y esa mordida característica. Y el grosor no es decoración: el fideo se elige según el caldo. Fino y recto para un tonkotsu de Hakata, que se come rápido antes de que se ablande; más grueso y ondulado para un miso de Sapporo, que tiene que cargar un caldo espeso.</p>
+
+        <h3>4. Los toppings — el remate</h3>
+        <p>Cada uno tiene una función, ninguno está por relleno: el <em>chashu</em> (チャーシュー), panceta de cerdo glaseada y cocida lento; el <em>ajitama</em> (味玉), huevo marinado en shoyu con la yema apenas cuajada; el <em>menma</em> (メンマ), brote de bambú fermentado que aporta acidez y textura; la cebolla verde (<em>negi</em>), el nori, a veces el <em>naruto</em>. El tazón se monta caliente y se come caliente. El ramen no espera.</p>
+
+        <h2>Los estilos: no existe "el" ramen</h2>
+        <p>Pedir "un ramen" en Japón es como pedir "un plato de comida". Estos son los cuatro pilares, cada uno con su región y su carácter:</p>
+        <ul>
+            <li><strong>Shoyu (醤油)</strong> — el de Tokio, base de salsa de soja, caldo marrón translúcido. El más clásico y el más equilibrado.</li>
+            <li><strong>Shio (塩)</strong> — el más antiguo y ligero, sazonado con sal. Caldo claro que no esconde nada: o el caldo es bueno, o se nota.</li>
+            <li><strong>Miso (味噌)</strong> — nacido en Sapporo, Hokkaidō, en los años 60. Denso, profundo, hecho para el frío del norte.</li>
+            <li><strong>Tonkotsu (豚骨)</strong> — de Fukuoka, en el sur. Huesos de cerdo llevados al límite hasta que el caldo se vuelve blanco. El más adictivo, y el más fácil de hacer mal.</li>
+        </ul>
+
+        <blockquote class="fact_callout">
+            <strong>El error más común</strong>
+            Creer que "más espeso es mejor". Un tonkotsu mal hecho es simplemente grasa flotando; un tonkotsu bien hecho es colágeno que recubre el paladar sin pesar. La diferencia no es un atajo ni un espesante: son horas de fuego controlado y atención. En el ramen, como en casi toda la cocina japonesa, la paciencia se prueba.
+        </blockquote>
+
+        <h2>La tradición que servimos en Lima</h2>
+        <p>En Katsudōmo no servimos el ramen de los salones elegantes. Servimos el de los <em>yatai</em>: el tazón que en Japón se come de pie, en la calle, entre el humo y el ruido. Caldo profundo, montado en el momento del pedido, rematado con <strong>tonkatsu crujiente</strong> —un cruce honesto entre dos clásicos, no una fusión de marketing— y disponible también en versión picante estilo yatai. El plato caliente que pide una noche de Lima.</p>
+
+        <p>Es la misma historia que cuenta toda nuestra cocina: un plato que viajó, se adaptó y se quedó. El ramen es la prueba de que lo "auténticamente japonés" muchas veces fue prestado y reconstruido con oficio —exactamente lo que hizo la <a href="cultura-japonesa-peru.html">cocina nikkei en el Perú</a> hace más de un siglo. Por eso lo servimos sin complejos: con respeto a la técnica, y con los pies en Surquillo.</p>
+
+        <h2>Dónde comer ramen en Lima</h2>
+        <p>Ven a la barra en <strong>Av. Tomás Marsano 2009, Surquillo</strong> (a una cuadra del óvalo Higuereta) y cómelo recién montado, o pídelo a casa: hacemos <a href="delivery-comida-japonesa-surquillo.html">delivery a Surquillo, Surco, San Borja, Miraflores y San Isidro</a>. El ramen está <strong>desde S/ 35</strong>. Mira la <a href="menu/carta.html">carta completa</a> para las variantes vigentes.</p>
+        <p>Atendemos de <strong>lunes a sábado, 1:00–4:00 pm (almuerzo) y 6:00–10:00 pm (cena)</strong>. Pagos con Yape, Plin y tarjeta. <em>Itadakimasu</em> (いただきます).</p>
+
+        <h2>Preguntas frecuentes sobre el ramen</h2>
+
+        <details>
+            <summary><strong>¿Qué es el ramen exactamente?</strong></summary>
+            <p>El ramen es un plato japonés de fideos de trigo alcalinizado (kansui) servidos en un caldo caliente sazonado con un <em>tare</em> —una base concentrada de shoyu, sal o miso— y rematado con toppings como chashu, huevo marinado, menma y cebolla verde. No es una sopa con fideos: es una arquitectura de cuatro componentes independientes que se montan en el momento.</p>
+        </details>
+        <details>
+            <summary><strong>¿El ramen es lo mismo que la sopa instantánea?</strong></summary>
+            <p>No. El ramen instantáneo, inventado por Momofuku Ando en 1958, es un pariente lejano del ramen de barra. Comparten el nombre y poco más: el ramen de verdad se monta con un caldo cocido aparte, un tare propio y fideos frescos. Confundirlos es como confundir un café soluble con un espresso.</p>
+        </details>
+        <details>
+            <summary><strong>¿Qué estilos de ramen existen?</strong></summary>
+            <p>Los cuatro estilos clásicos se definen por su tare: <strong>shoyu</strong> (salsa de soja, de Tokio), <strong>shio</strong> (sal, el más antiguo y ligero), <strong>miso</strong> (pasta de soja fermentada, de Sapporo) y <strong>tonkotsu</strong> (huesos de cerdo hervidos hasta volverse blanco y cremoso, de Fukuoka). El estilo no lo decide el caldo solo, sino la combinación de tare, caldo y fideo.</p>
+        </details>
+        <details>
+            <summary><strong>¿De qué está hecho el caldo del ramen?</strong></summary>
+            <p>El caldo se construye con huesos (de cerdo o pollo), a veces verduras y dashi de algas y katsuobushi. Hay dos familias: <em>chintan</em>, un caldo claro de fuego suave, y <em>paitan</em>, un caldo turbio y emulsionado por horas de hervor fuerte, como el tonkotsu. El tiempo y el control del fuego separan un buen caldo de uno grasoso.</p>
+        </details>
+        <details>
+            <summary><strong>¿Dónde comer ramen auténtico en Lima?</strong></summary>
+            <p>En Katsudōmo, barra de comida callejera japonesa en Av. Tomás Marsano 2009, Surquillo (a una cuadra del óvalo Higuereta). Servimos ramen al estilo <em>yatai</em>, montado al momento, con tonkatsu crujiente y en versión picante. También hacemos delivery a Surco, San Borja, Miraflores y San Isidro.</p>
+        </details>
+        <details>
+            <summary><strong>¿Katsudōmo abre para almuerzo?</strong></summary>
+            <p>Sí. Atendemos en almuerzo de 1:00 a 4:00 pm y en cena de 6:00 a 10:00 pm, de lunes a sábado. El ramen y toda la carta están disponibles en ambos turnos, en la barra de Surquillo y por delivery a Surco, San Borja y Miraflores.</p>
+        </details>
+        <details>
+            <summary><strong>¿Cuánto cuesta el ramen en Katsudōmo?</strong></summary>
+            <p>El ramen está desde S/ 35, en versión con tonkatsu crujiente o picante estilo yatai. Consulta la <a href="menu/carta.html">carta completa</a> para las variantes vigentes.</p>
+        </details>
+
+        <p style="margin-top:32px;text-align:center;">
+            <a href="https://wa.me/51906777436?text=Hola,+quiero+pedir+ramen" class="btn-primary" target="_blank" rel="noopener">Pedir ramen por WhatsApp</a>
+        </p>
+
+    </article>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>Katsudōmo</h3>
+                <p>Barra de street food japonesa en Surquillo, Lima. El espíritu del yatai y los matsuri, con delivery a Surco, San Borja y Miraflores.</p>
+            </div>
+            <div class="footer-nav">
+                <h3>Explorar</h3>
+                <ul>
+                    <li><a href="menu/carta.html">Nuestra Carta</a></li>
+                    <li><a href="delivery-comida-japonesa-surquillo.html">Delivery en Surquillo</a></li>
+                    <li><a href="takoyaki-lima.html">Takoyaki en Lima</a></li>
+                    <li><a href="cultura-japonesa-peru.html">Cultura Japonesa</a></li>
+                    <li><a href="ja/ramen-lima.html">🇯🇵 日本語</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contacto</h3>
+                <p><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg> +51 906 777 436</p>
+                <p>📍 Av. Tomás Marsano 2009, Surquillo, Lima</p>
+                <p>🏪 Lun – Sáb · 1:00–4:00 pm (almuerzo) y 6:00–10:00 pm (cena)</p>
+            </div>
+            <div class="footer-social">
+                <h3>Síguenos</h3>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/katsudomo/" target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-instagram"/></svg></a>
+                    <a href="https://www.facebook.com/katsudomo" target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-facebook"/></svg></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Katsudōmo. Todos los derechos reservados.</p>
+            <p class="author-credits">Diseñado y desarrollado por Carlos Eduardo Ravello Joo &nbsp;&bull;&nbsp; Modelo de Coherencia Dinámico &nbsp;&bull;&nbsp; M.C.D. &nbsp;&bull;&nbsp; &copy; 2026</p>
+        </div>
+        <p class="footer-designer" style="font-size:10px;opacity:0.5;">Estrategia digital, arquitectura web y SEO por <a href="https://carlosravello.com" rel="nofollow">Carlos Ravello Joo</a></p>
+    </footer>
+
+    <a href="https://wa.me/c/51906777436" class="float_wa" target="_blank" rel="noopener" aria-label="Pedir por WhatsApp">
+        <svg class="svg-icon" aria-hidden="true" width="1em" height="1em"><use href="#icon-whatsapp"/></svg>
+        <span class="float_wa__label">Pedir ahora</span>
+    </a>
+
+</body>
+
+</html>

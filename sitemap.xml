@@ -227,4 +227,24 @@
     <priority>0.6</priority>
   </url>
 
+  <url>
+    <loc>https://katsudomo.com/ramen-lima.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://katsudomo.com/ramen-lima.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://katsudomo.com/ramen-lima.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://katsudomo.com/ja/ramen-lima.html" />
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://katsudomo.com/ja/ramen-lima.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://katsudomo.com/ramen-lima.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://katsudomo.com/ramen-lima.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://katsudomo.com/ja/ramen-lima.html" />
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
