@@ -186,4 +186,45 @@
     <priority>0.5</priority>
   </url>
 
+  <!-- ===== LANDINGS LOCALES (ES + JA) ===== -->
+  <url>
+    <loc>https://katsudomo.com/delivery-comida-japonesa-surquillo.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://katsudomo.com/delivery-comida-japonesa-surquillo.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://katsudomo.com/delivery-comida-japonesa-surquillo.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://katsudomo.com/ja/delivery-comida-japonesa-surquillo.html" />
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://katsudomo.com/ja/delivery-comida-japonesa-surquillo.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://katsudomo.com/delivery-comida-japonesa-surquillo.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://katsudomo.com/delivery-comida-japonesa-surquillo.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://katsudomo.com/ja/delivery-comida-japonesa-surquillo.html" />
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://katsudomo.com/takoyaki-lima.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://katsudomo.com/takoyaki-lima.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://katsudomo.com/takoyaki-lima.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://katsudomo.com/ja/takoyaki-lima.html" />
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://katsudomo.com/ja/takoyaki-lima.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://katsudomo.com/takoyaki-lima.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://katsudomo.com/takoyaki-lima.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://katsudomo.com/ja/takoyaki-lima.html" />
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
 </urlset>
